@@ -1,0 +1,41 @@
+{
+  "short_name": "Shifty",
+  "name": "Studio Shifty",
+  "catch_phrase": "Optimisez le potentiel de&nbsp;votre&nbsp;marque&nbsp;!",
+  "baseline": "Shifty, le studio spécialisé en stratégie de marque, identité visuelle et projets&nbsp;digitaux.",
+  "contact": {
+    "content": "Nous contacter",
+    "url": "/nous-contacter"
+  },
+  "about": {
+    "tag": "Pourquoi nous choisir",
+    "welcome": "Découvrez le studio Shifty",
+    "desc": "<p>Le studio Shifty vous apporte son <b>expertise</b> dans la transformation&nbsp;digitale de votre marque. Grâce à notre <b>collaboration</b>, vous bénéficiez d'un accompagnement personnalisé pour atteindre efficacement vos <b>objectifs</b> de croissance et de fidélisation</p>",
+    "cta": "Découvrir le studio",
+    "story": {
+      "title": "Le studio",
+      "content": "<p>Shifty est fondé en 2023 à l'initiative de David Marcos en réponse à une demande croissante de clients cherchant à externaliser la communication de leur entreprise.</p><p>Fort de plusieurs années d’expériences en freelance en tant que graphiste et développeur web et face à cette demande exigeante, David réalise que répondre de manière optimale nécessite du temps mais surtout de l’expertise dans chacun des domaines.</p><p>Il décide alors de créer le studio Shifty et de s’entourer d’autres experts de la communication tels que des graphistes, développeurs, monteurs, vidéastes, photographes, rédacteurs, ...</p><p>Cette collaboration permet une meilleure réactivité vis à vis des clients, une palette de services plus large mais surtout des prestations de meilleure qualité.</p>"
+    },
+    "vision": {
+      "title": "Les valeurs Shifty",
+      "content": "<p>L’aspiration du studio est d'accompagner les entreprises dans le développement de leur image de marque et devenir un partenaire de confiance pour ses clients sur le long terme.</p><p>Chez Shifty, nous sommes convaincus que <b>chaque projet est unique</b> et mérite une approche personnalisée et adaptée aux besoins de votre projet, c’est pourquoi nous veillons à ce qu'il soit réalisé avec soin et efficacité pour garantir une entière satisfaction.</p><p>Nous vous considérons comme un partenaire&nbsp! Nous adoptons une approche basée sur la confiance et la transparence pour une collaboration fructueuse et durable.</p><p>Nous mettons tout en œuvre pour répondre à vos besoins et atteindre vos objectifs, dans le but de rendre vos marques visibles et performantes.</p>"
+    }
+  },
+  "services": {
+    "title": "Découvrez notre offre",
+    "subtitle": "Nos offres",
+    "tag": "Penser. Proposer. Réaliser."
+  },
+  "projects": {
+    "title": "Découvrez nos collaborations",
+    "tag": "Et si vous étiez le prochain&nbsp;?"
+  },
+  "feedback": {
+    "title": "Ils ont fait confiance au studio Shifty"
+  },
+  "simulator": {
+    "tag": "Estimer votre projet",
+    "title": "Découvrez notre simulateur",
+    "content": "<p>Shifty met à votre disposition un simulateur de prestation de services en ligne pour vous aider à estimer les coûts associés à votre besoin.</p><p>Le prix indiqué est une estimation, il peut varier en fonction de la complexité et des exigences de votre projet.</p><p>Contactez-nous pour une évaluation précise et personnalisée de vos besoins.</p>"
+  }
+}

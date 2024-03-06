@@ -1,9 +1,8 @@
-import React from "react";
-import Head from "../head";
+import Head from "../head"
 
-import HeroBanner from "../../container/heroBanner/heroBanner";
-import Studio from "../../container/studio";
-import Services from "../../container/services";
+import HeroBanner from "../../container/heroBanner/homepage"
+import Services from "../../container/services"
+import Studio from "../../container/studio"
 
 const About = () => {
   return (
@@ -15,7 +14,7 @@ const About = () => {
         <Services />
       </main>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

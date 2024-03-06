@@ -1,15 +1,15 @@
-import Footer from "@container/footer";
-import Header from "@container/header";
-import { ThemeProvider } from "@lib/components/theme-provider";
-import { useScroll } from "framer-motion";
-import React from "react";
+import Footer from "@container/footer"
+import Header from "@container/header"
+import { ThemeProvider } from "@lib/components/theme-provider"
+import { useScroll } from "framer-motion"
+import React from "react"
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-  const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll()
   return (
     <ThemeProvider
       attribute="class"
@@ -17,11 +17,11 @@ export default function RootLayout({
       enableSystem
       disableTransitionOnChange
     >
-      <div className={`App`}>
+      <div className="App dark:bg-blue-dark">
         <Header />
         {children}
         <Footer />
       </div>
     </ThemeProvider>
-  );
+  )
 }

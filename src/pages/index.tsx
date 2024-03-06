@@ -1,13 +1,12 @@
-"use client";
-import Feedback from "@container/feedback";
-import HeroBanner from "@container/heroBanner/heroBanner";
-import Presentation from "@container/presentation";
-import Projects from "@container/projects";
-import Services from "@container/services";
-import React from "react";
-import Head from "./head";
+"use client"
+import HeroBanner from "@/container/heroBanner/homepage"
+import Feedback from "@container/feedback"
+import Presentation from "@container/presentation"
+import Projects from "@container/projects"
+import Services from "@container/services"
+import Head from "./head"
 
-const name = process.env.NAME as string;
+const name = process.env.NAME as string
 
 const Page = () => {
   return (
@@ -21,7 +20,7 @@ const Page = () => {
         <Feedback />
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Page;
+export default Page

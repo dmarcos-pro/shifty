@@ -2,15 +2,15 @@
   "short_name": "Shifty",
   "name": "Studio Shifty",
   "catch_phrase": "Optimisez le potentiel de&nbsp;votre&nbsp;marque&nbsp;!",
-  "baseline": "Shifty, le studio spécialisé en stratégie de marque, identité visuelle et projets&nbsp;digitaux.",
+  "baseline": "Shifty, le studio  spécialisé en stratégie de marque, identité visuelle et projets&nbsp;digitaux.",
   "contact": {
     "content": "Nous contacter",
     "url": "/nous-contacter"
   },
   "about": {
-    "tag": "Pourquoi nous choisir",
+    "tag": "Pourquoi nous choisir&nbsp;?",
     "welcome": "Découvrez le studio Shifty",
-    "desc": "<p>Le studio Shifty vous apporte son <b>expertise</b> dans la transformation&nbsp;digitale de votre marque. Grâce à notre <b>collaboration</b>, vous bénéficiez d'un accompagnement personnalisé pour atteindre efficacement vos <b>objectifs</b> de croissance et de fidélisation</p>",
+    "desc": "Le studio Shifty vous apporte son expertise dans la transformation digitale de votre marque. Grâce à notre collaboration, vous bénéficiez d'un accompagnement personnalisé pour atteindre efficacement vos objectifs de croissance et de fidélisation",
     "cta": "Découvrir le studio",
     "story": {
       "title": "Le studio",
@@ -24,10 +24,35 @@
   "services": {
     "title": "Découvrez notre offre",
     "subtitle": "Nos offres",
-    "tag": "Penser. Proposer. Réaliser."
+    "tag": "Penser. Proposer. Réaliser.",
+    "service": {
+      "digital": [
+        { "title": "Création de wireframe et de maquette" },
+        {
+          "title": "Développement de site e-commerce ou vitrine"
+        },
+        { "title": "Développement de landing page" },
+        { "title": "Marketing de contenu" },
+        { "title": "Optimisation des conversions" },
+        { "title": "Amélioration du référencement" }
+      ],
+      "branding": [
+        { "title": "Création du logo et charte graphique" },
+        { "title": "Conception de l'identité visuelle" },
+        { "title": "Réalisation de supports de communication" },
+        { "title": "Mise en place d'une stratégie de marque" },
+        { "title": "Marketing d'influence" }
+      ],
+      "motion": [
+        { "title": "Réalisation de vidéos promotionnelles" },
+        { "title": "Rédaction de posts" },
+        { "title": "Production de film d'entreprise" },
+        { "title": "Réalisation de shooting photo" }
+      ]
+    }
   },
   "projects": {
-    "title": "Découvrez nos collaborations",
+    "title": "Découvrez nos dernières collaborations",
     "tag": "Et si vous étiez le prochain&nbsp;?"
   },
   "feedback": {

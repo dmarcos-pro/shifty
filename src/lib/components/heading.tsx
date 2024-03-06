@@ -1,11 +1,11 @@
-import { cn } from "@lib/utils";
-import { Anton as FontTitle } from "next/font/google";
-import { type HeadingProps } from "../../type/component";
+import { cn } from "@lib/utils"
+import { type HeadingProps } from "@type/component"
+import { Anton as FontTitle } from "next/font/google"
 
 export const fontTitle = FontTitle({
   subsets: ["latin"],
   weight: "400",
-});
+})
 
 const Heading = ({ tag, content }: HeadingProps) => {
   return (
@@ -24,12 +24,12 @@ const Heading = ({ tag, content }: HeadingProps) => {
       )}
       {tag === "h3" && (
         <h3
-          className={cn("text-h3", fontTitle.className)}
+          className={cn("text-h3")}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )}
     </>
-  );
-};
+  )
+}
 
-export default Heading;
+export default Heading

@@ -1,70 +1,45 @@
-"use client";
-import content from "@contentJson";
-import React, { useEffect, useRef, useState } from "react";
-import { useQuery } from "react-query";
-import { fetchServices } from "../api/index";
-import { type ServicesContainer } from "../type/container";
-import Service from "./service";
+"use client"
+import { fetchServices } from "@/api/index"
+import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
+import { type ServicesProps } from "@/type/component"
+import content from "@contentJson"
+import Heading from "@lib/components/heading"
+import { useQuery } from "react-query"
+import { animated } from "react-spring"
+import Service from "./service"
 
 const Services = () => {
-  const [isVisible, setIsVisible] = useState({
-    title: true,
-  });
-
-  const ref = {
-    title: useRef(null),
-  };
-
-  const inView = (elementRef: any) => {
-    if (elementRef.current) {
-      const boundingBox = elementRef.current.getBoundingClientRect();
-      return (
-        boundingBox.top < window.innerHeight - 150 && boundingBox.bottom >= 0
-      );
-    }
-    return true;
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsVisible((prev) => ({
-        ...prev,
-        title: inView(ref.title),
-      }));
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [ref.title]);
-
-  const { data: services } = useQuery("services", () => fetchServices());
-
+  const { data: services } = useQuery("services", () => fetchServices())
+  const { ref: animate, fadeIn } = UseFadeInAnimation()
   return (
-    <section>
-      <div>
-        <div ref={ref.title}>
-          <span className="">{content.services.tag}</span>
-          <h2>{content.services.title}</h2>
+    <section className="pt-48">
+      <div className="container">
+        <div className="text-center">
+          <animated.div ref={animate} style={fadeIn}>
+            <span className="mb-3 block text-sm uppercase text-blue dark:text-blue-light">
+              {content.services.tag}
+            </span>
+            <Heading tag="h2" content={content.services.title} />
+          </animated.div>
         </div>
-
-        <div>
+        <div className="grid grid-cols-3 gap-3 mt-16">
           {services &&
-            services.map((service: ServicesContainer, index: number) => {
+            services.map((service: ServicesProps, index: number) => {
               return (
                 <Service
                   key={`offer-${service.id}`}
                   category={service.category}
-                  title={service.name}
+                  name={service.name}
                   id={service.id}
+                  title={service.title}
                   index={index}
                 />
-              );
+              )
             })}
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

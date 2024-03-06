@@ -14,7 +14,7 @@ const buttonVariants = cva(
           "border text-gray-400 border-gray-400 hover:text-white hover:border-white transition",
       },
       size: {
-        default: "px-4 py-2 border-3",
+        default: "px-6 py-4 border-3",
         sm: "px-3 py-2",
         lg: "rounded-md px-8",
         icon: "h-10 w-10",

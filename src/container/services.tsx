@@ -1,9 +1,11 @@
 "use client"
 import { fetchServices } from "@/api/index"
+import { Button } from "@/lib/components/ui/button"
 import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
 import { type ServicesProps } from "@/type/component"
 import content from "@contentJson"
 import Heading from "@lib/components/heading"
+import Link from "next/link"
 import { useQuery } from "react-query"
 import { animated } from "react-spring"
 import Service from "./service"
@@ -12,11 +14,11 @@ const Services = () => {
   const { data: services } = useQuery("services", () => fetchServices())
   const { ref: animate, fadeIn } = UseFadeInAnimation()
   return (
-    <section className="pt-48">
+    <section id="services" className="pt-48">
       <div className="container">
         <div className="text-center">
           <animated.div ref={animate} style={fadeIn}>
-            <span className="mb-3 block text-sm uppercase text-blue dark:text-blue-light">
+            <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
               {content.services.tag}
             </span>
             <Heading tag="h2" content={content.services.title} />
@@ -37,6 +39,9 @@ const Services = () => {
               )
             })}
         </div>
+        <Button asChild className="my-10 mx-auto table">
+          <Link href={content.contact.url}>{content.contact.content}</Link>
+        </Button>
       </div>
     </section>
   )

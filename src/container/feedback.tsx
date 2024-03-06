@@ -1,115 +1,64 @@
-"use client";
+"use client"
 
-import { fetchFeedback } from "@api";
-import content from "@contentJson";
-import { FeedbackContainer } from "@type/container";
-import { useEffect, useRef, useState } from "react";
-import { useQuery } from "react-query";
-import { useSwipeable } from "react-swipeable";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/lib/components/ui/carousel"
+import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
+import { FeedbackContainer } from "@/type/component"
+import { fetchFeedback } from "@api"
+import content from "@contentJson"
+import { useQuery } from "react-query"
+import { animated } from "react-spring"
 
 const Feedback = () => {
-  const [step, setStep] = useState<number>(0);
-  const [feed, setFeed] = useState<number>(0);
-
   const {
     data: feedback,
     isLoading,
     isError,
-  } = useQuery("feedback", () => fetchFeedback());
-
-  useEffect(() => {
-    if (!isLoading && feedback) setFeed(feedback.length);
-  }, [isLoading, feedback]);
-
-  const maxStep = feed - 1;
-
-  const incrementStep = () => {
-    if (step < maxStep) {
-      setStep(step + 1);
-    }
-  };
-  const decrementStep = () => {
-    if (step !== 0) {
-      setStep(step - 1);
-    }
-  };
-  const swipeHandlers = useSwipeable({
-    onSwipedLeft: incrementStep,
-    onSwipedRight: decrementStep,
-  });
-
-  const [isVisible, setIsVisible] = useState<boolean>(false);
-
-  const refBox = useRef<any>(null);
-
-  const inView = (elementRef: React.RefObject<any>) => {
-    if (elementRef.current) {
-      const boundingBox = elementRef.current.getBoundingClientRect();
-      return (
-        boundingBox.top < window.innerHeight - 150 && boundingBox.bottom >= 0
-      );
-    }
-    return false;
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsVisible(inView(refBox));
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  } = useQuery("feedback", () => fetchFeedback())
+  const { ref: animate, fadeIn } = UseFadeInAnimation()
 
   return (
-    <section>
-      <div ref={refBox}>
-        <div>
-          <span>{content.feedback.title}</span>
-        </div>
-        <div
-          content-step={step}
-          style={{ left: -step * 100 + "%" }}
-          {...swipeHandlers}
-        >
-          {feedback &&
-            feedback.map((feedback: FeedbackContainer, index: number) => {
-              return (
-                <div key={`feedback-${index}`}>
-                  <div>
-                    <div dangerouslySetInnerHTML={{ __html: feedback.text }} />
-                    <div>
-                      <p>{feedback.who}</p>
-                      <p>
-                        {feedback.job} chez {feedback.brand}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-        </div>
-
-        <span
-          onClick={() => {
-            decrementStep();
-          }}
-          className={`link`}
-        >
-          {/* <Icon value="angleLeft" /> */}
-        </span>
-        <span
-          onClick={() => {
-            incrementStep();
-          }}
-          className={`link`}
-        >
-          {/* <Icon value="angleRight" /> */}
-        </span>
+    <section className="py-48">
+      <div className="text-center">
+        <animated.div ref={animate} style={fadeIn}>
+          <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
+            {content.feedback.title}
+          </span>
+        </animated.div>
+      </div>
+      <div className="container pt-10">
+        {feedback && (
+          <Carousel className="mx-auto w-2/3 px-12">
+            <CarouselContent>
+              {feedback.map((feedback: FeedbackContainer, index: number) => {
+                return (
+                  <CarouselItem key={index} className="text-center">
+                    <div
+                      className="mb-4 text-xl leading-8"
+                      dangerouslySetInnerHTML={{
+                        __html: feedback.text,
+                      }}
+                    />
+                    <p className="text-sm">{feedback.who}</p>
+                    <p className="text-sm mt-1 text-gray-500">
+                      {feedback.job} - {feedback.brand}
+                    </p>
+                  </CarouselItem>
+                )
+              })}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        )}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Feedback;
+export default Feedback

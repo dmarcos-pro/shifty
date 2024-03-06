@@ -1,6 +1,5 @@
 "use client"
 import Heading from "@/lib/components/heading"
-import { BackgroundBeams } from "@/lib/components/ui/background-beams"
 import { Button } from "@/lib/components/ui/button"
 import { fetchProjects } from "@api"
 import content from "@contentJson"
@@ -66,8 +65,10 @@ const HeroBanner = () => {
   }
 
   return (
-    <div className="py-24 h-screen flex items-center justify-center overflow-hidden">
-      <BackgroundBeams />
+    <div
+      id="hero-banner"
+      className="py-24 h-screen flex items-center justify-center overflow-hidden"
+    >
       <div className="container text-center relative">
         <figure className="table mx-auto my-10">
           <Image

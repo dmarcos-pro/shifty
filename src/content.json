@@ -37,17 +37,18 @@
         { "title": "Amélioration du référencement" }
       ],
       "branding": [
-        { "title": "Création du logo et charte graphique" },
+        { "title": "Création de logo et de charte graphique" },
         { "title": "Conception de l'identité visuelle" },
         { "title": "Réalisation de supports de communication" },
-        { "title": "Mise en place d'une stratégie de marque" },
+        { "title": "Mise en place de stratégie de marque" },
         { "title": "Marketing d'influence" }
       ],
       "motion": [
         { "title": "Réalisation de vidéos promotionnelles" },
         { "title": "Rédaction de posts" },
         { "title": "Production de film d'entreprise" },
-        { "title": "Réalisation de shooting photo" }
+        { "title": "Réalisation de shooting photo" },
+        { "title": "Marketing d'influence" }
       ]
     }
   },

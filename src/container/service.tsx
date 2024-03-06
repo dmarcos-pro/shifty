@@ -29,7 +29,7 @@ const Service = ({ id, category, name, title, index }: ServicesProps) => {
       <Card>
         <CardHeader>
           <CardDescription>{title}</CardDescription>
-          <CardSubDescription>{name}</CardSubDescription>
+          <CardSubDescription>{category}</CardSubDescription>
         </CardHeader>
         <CardContent>
           {notifications.map((cat, index: number) => {

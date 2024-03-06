@@ -50,11 +50,28 @@
   }
 }
 
-/* @layer base {
+@layer base {
   * {
+    scroll-behavior: smooth;
+  }
+  /*ul {
+    margin-top: 8px;
+  }
+  li {
+    padding: 5px 0 0 16px;
+    position: relative;
+    &::before {
+      content: "•";
+      color: var(--color-cyan);
+      position: absolute;
+      top: 4px;
+      left: 0;
+    }
+  }*/
+  /** {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
-  }
-} */
+  }*/
+}

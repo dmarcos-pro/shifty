@@ -22,56 +22,18 @@ module.exports = {
       colors: {
         blue: {
           DEFAULT: "var(--color-blue)",
-          light: "var(--color-cyan)",
-          dark: "var(--color-darkblue)",
-          dark2: "var(--color-darkblue2)",
+          light: "var(--color-bluelight)",
         },
-        black: "var(--color-black)",
-        grey: {
-          DEFAULT: "var(--color-grey)",
-          light: "var(--color-lightgrey)",
-          dark: "var(--color-darkgrey)",
+        deepblue: {
+          DEFAULT: "var(--color-deepblue)",
+          light: "var(--color-deepbluelight)",
         },
-        white: {
-          DEFAULT: "var(--color-white)",
-          off: "var(--color-offWhite)",
-          beige: "var(--color-beige)",
+        green: {
+          DEFAULT: "var(--color-green)",
+          mint: "var(--color-mint)",
         },
-        red: {
-          DEFAULT: "var(--color-red)",
-          salmon: "var(--color-salmon)",
-        },
-        yellow: "var(--color-yellow)",
-
-        border: "var(--color-white)",
-        input: "var(--color-white)",
-        ring: "var(--color-white)",
         primary: {
           DEFAULT: "var(--color-blue)",
-          foreground: "var(--color-white)",
-        },
-        secondary: {
-          DEFAULT: "var(--color-cyan)",
-          foreground: "var(--color-darkblue)",
-        },
-        destructive: {
-          DEFAULT: "var(--white)",
-          foreground: "var(--white)",
-        },
-        muted: {
-          DEFAULT: "var(--white)",
-          foreground: "var(--white)",
-        },
-        accent: {
-          DEFAULT: "var(--white)",
-          foreground: "var(--white)",
-        },
-        popover: {
-          DEFAULT: "var(--white)",
-          foreground: "var(--color-yellow)",
-        },
-        card: {
-          DEFAULT: "var(--white)",
         },
       },
       spacing: {
@@ -97,13 +59,14 @@ module.exports = {
       },
       fontSize: {
         h1: ["6rem", "7rem"],
-        h2: ["2rem", "2.5rem"],
+        h2: ["1.6rem", "2rem"],
         h3: ["1.2rem", "1.5rem"],
         base: ["1rem", "1.2rem"],
         xs: [".6rem", ".8rem"],
         sm: [".8rem", "1rem"],
-        lg: ["1.2rem", "1.4rem"],
-        xl: ["1.4rem", "1.6rem"],
+        md: ["1.2rem", "1.5rem"],
+        lg: ["1.5rem", "2rem"],
+        xl: ["2rem", "2.5rem"],
       },
       borderRadius: {
         DEFAULT: "var(--radius)",

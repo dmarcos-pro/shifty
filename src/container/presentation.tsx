@@ -14,7 +14,7 @@ const Presentation = () => {
           <animated.div ref={animate} style={fadeIn}>
             <div>
               <span
-                className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500"
+                className="mb-3 block text-sm uppercase text-gray-300 dark:text-gray-500"
                 dangerouslySetInnerHTML={{ __html: content.about.tag }}
               />
               <TextGenerateEffect words={content.about.desc} />

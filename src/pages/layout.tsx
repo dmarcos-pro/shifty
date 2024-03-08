@@ -17,7 +17,7 @@ export default function RootLayout({
       enableSystem
       disableTransitionOnChange
     >
-      <div className="App bg-gray-200 dark:bg-blue-dark">
+      <div className="App dark:bg-deepblue">
         <Header />
         {children}
         <Footer />

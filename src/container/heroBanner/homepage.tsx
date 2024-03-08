@@ -67,7 +67,7 @@ const HeroBanner = () => {
   return (
     <div
       id="hero-banner"
-      className="py-24 h-screen flex items-center justify-center overflow-hidden"
+      className="py-24 h-screen flex items-center justify-center overflow-hidden relative"
     >
       <div className="container text-center relative">
         <figure className="table mx-auto my-10">
@@ -88,7 +88,7 @@ const HeroBanner = () => {
           <Link href={content.contact.url}>{content.contact.content}</Link>
         </Button>
       </div>
-      <div ref={counterRef} className="p-4 absolute bottom-0">
+      <div ref={counterRef} className="p-4 absolute bottom-4">
         <div>
           <div className="flex relative" style={{ left: `-${counter}px` }}>
             {projects &&

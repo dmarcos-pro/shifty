@@ -4,27 +4,13 @@
 
 @layer base {
   :root {
-    --color-cyan: rgb(139, 179, 255);
-    --color-blue: rgb(35, 79, 161);
-    --color-darkblue: rgb(14, 17, 26);
-    --color-darkblue2: rgb(20, 24, 36);
+    --color-blue: rgb(54, 105, 232);
+    --color-bluelight: rgb(147, 178, 234);
+    --color-deepblue: rgb(43, 50, 60);
+    --color-deepbluelight: rgb(60, 66, 84);
     --color-black: rgb(11, 11, 11);
-    --color-red: rgb(189, 20, 20);
-    --color-grey: rgb(170, 170, 170);
-    --color-offWhite: rgb(244, 244, 244);
-    --color-beige: rgb(226, 226, 233);
-    --color-white: rgb(255, 255, 255);
-    --color-salmon: rgb(230, 113, 113);
-    --color-darkgrey: rgb(27, 27, 27);
-    --color-lightgrey: rgb(230, 230, 230);
-    --color-pink: rgb(247, 209, 235);
-    --color-yellow: rgb(253, 201, 104);
-
-    --color-fg: var(--color-black);
-    --color-bg: var(--color-lightgrey);
-    --color-bg-header: rgba(245, 245, 245, 0.1);
-    --color-bg-nav: var(--color-beige);
-    --color-bg-footer: var(--color-black);
+    --color-mint: rgb(226, 252, 243);
+    --color-green: rgb(43, 139, 105);
 
     --gutter: 2rem;
     --gutter-xs: calc(var(--gutter) / 2);

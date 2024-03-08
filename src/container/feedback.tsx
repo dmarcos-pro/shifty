@@ -26,12 +26,12 @@ const Feedback = () => {
     <section className="py-48">
       <div className="text-center">
         <animated.div ref={animate} style={fadeIn}>
-          <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
+          <span className="mb-3 block text-sm uppercase text-gray-300 dark:text-gray-500">
             {content.feedback.title}
           </span>
         </animated.div>
       </div>
-      <div className="container pt-10">
+      <div className="container mt-8">
         {feedback && (
           <Carousel className="mx-auto w-2/3 px-12">
             <CarouselContent>
@@ -39,7 +39,7 @@ const Feedback = () => {
                 return (
                   <CarouselItem key={index} className="text-center">
                     <div
-                      className="mb-4 text-xl leading-8"
+                      className="mb-4 text-lg leading-8"
                       dangerouslySetInnerHTML={{
                         __html: feedback.text,
                       }}

@@ -12,19 +12,21 @@ const Heading = ({ tag, content }: HeadingProps) => {
     <>
       {tag === "h1" && (
         <h1
-          className={cn(`text-h1`, fontTitle.className)}
+          className={cn(
+            "font-extrabold text-lg sm:text-3xl md:text-6xl lg:text-h1",
+          )}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )}
       {tag === "h2" && (
         <h2
-          className={cn("text-h2", fontTitle.className)}
+          className={cn("text-h2 font-bold")}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )}
       {tag === "h3" && (
         <h3
-          className={cn("text-h3")}
+          className={cn("text-h3", fontTitle.className)}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )}

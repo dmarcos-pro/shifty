@@ -25,31 +25,52 @@
     "title": "Découvrez notre offre",
     "subtitle": "Nos offres",
     "tag": "Penser. Proposer. Réaliser.",
-    "service": {
-      "digital": [
-        { "title": "Création de wireframe et de maquette" },
-        {
-          "title": "Développement de site e-commerce ou vitrine"
-        },
-        { "title": "Développement de landing page" },
-        { "title": "Marketing de contenu" },
-        { "title": "Optimisation des conversions" },
-        { "title": "Amélioration du référencement" }
-      ],
-      "branding": [
-        { "title": "Création de logo et de charte graphique" },
-        { "title": "Conception de l'identité visuelle" },
-        { "title": "Réalisation de supports de communication" },
-        { "title": "Mise en place de stratégie de marque" },
-        { "title": "Marketing d'influence" }
-      ],
-      "motion": [
-        { "title": "Réalisation de vidéos promotionnelles" },
-        { "title": "Rédaction de posts" },
-        { "title": "Production de film d'entreprise" },
-        { "title": "Réalisation de shooting photo" },
-        { "title": "Marketing d'influence" }
-      ]
+    "offer": {
+      "service": {
+        "digital": [
+          { "title": "Création de wireframe et de maquette" },
+          {
+            "title": "Développement de site e-commerce ou vitrine"
+          },
+          { "title": "Développement de landing page" },
+          { "title": "Marketing de contenu" },
+          { "title": "Optimisation des conversions" },
+          { "title": "Amélioration du référencement" }
+        ],
+        "branding": [
+          { "title": "Création de logo et de charte graphique" },
+          { "title": "Conception de l'identité visuelle" },
+          { "title": "Réalisation de supports de communication" },
+          { "title": "Mise en place de stratégie de marque" },
+          { "title": "Marketing d'influence" }
+        ],
+        "motion": [
+          { "title": "Réalisation de vidéos promotionnelles" },
+          { "title": "Rédaction de posts" },
+          { "title": "Production de film d'entreprise" },
+          { "title": "Réalisation de shooting photo" },
+          { "title": "Marketing d'influence" }
+        ]
+      },
+      "operation": {
+        "digital": [
+          { "title": "Intéractions illimitées" },
+          { "title": "1 call par semaine" }
+        ],
+        "branding": [
+          { "title": "Intéractions illimitées" },
+          { "title": "Branding et graphisme illimités" }
+        ],
+        "motion": [
+          { "title": "Intéractions illimitées" },
+          { "title": "Mise à disposition d'un studio" }
+        ]
+      },
+      "availability": {
+        "digital": 2,
+        "branding": 1,
+        "motion": 0
+      }
     }
   },
   "projects": {

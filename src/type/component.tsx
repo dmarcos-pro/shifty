@@ -31,7 +31,10 @@ export type ServicesProps = {
   index: number
   category: string
   title: string
-  name: string
+  name?: string
+  price: string
+  promotion: string
+  availability: number
 }
 
 export type ServiceAnim = {

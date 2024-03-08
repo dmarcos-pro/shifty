@@ -1,6 +1,7 @@
 "use client"
 
 import { fetchNav } from "@/api"
+import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
 import { HeaderNav } from "@/type/component"
 import {
   DropdownMenu,
@@ -11,29 +12,37 @@ import { useTheme } from "next-themes"
 import Link from "next/link"
 import React from "react"
 import { useQuery } from "react-query"
+import { animated } from "react-spring"
 
 const Header = () => {
   const { data: nav } = useQuery("nav", () => fetchNav())
   const { setTheme } = useTheme()
+  const { ref: animate, fade } = UseFadeInAnimation("fadeDown")
 
   return (
     <>
       <header className="fixed z-10 w-full top-0 flex items-center justify-center py-3 backdrop-blur-sm">
-        <nav className="flex rounded-50 p-1 bg-blue dark:bg-gray-800 text-sm font-bold">
-          {nav &&
-            nav.map((item: HeaderNav, index: number) => {
-              return (
-                <React.Fragment key={`navHeader-${index}`}>
-                  <Link
-                    href={`${item.link}`}
-                    className={`block py-2 px-2 md:px-4 rounded-50 uppercase text-xs font-extrabold tracking-wide hover:bg-deepblue hover:text-gray-50 text-white`}
-                  >
-                    {item.name}
-                  </Link>
-                </React.Fragment>
-              )
-            })}
-        </nav>
+        <animated.div
+          ref={animate}
+          style={fade}
+          className={`transition delay-12`}
+        >
+          <nav className="flex rounded-50 p-1 bg-gray-100 dark:bg-gray-800 text-sm font-bold">
+            {nav &&
+              nav.map((item: HeaderNav, index: number) => {
+                return (
+                  <React.Fragment key={`navHeader-${index}`}>
+                    <Link
+                      href={`${item.link}`}
+                      className={`block py-2 px-2 md:px-4 rounded-50 uppercase text-xs font-extrabold tracking-wide hover:bg-blue hover:text-gray-50 text-gray-400`}
+                    >
+                      {item.name}
+                    </Link>
+                  </React.Fragment>
+                )
+              })}
+          </nav>
+        </animated.div>
         <div className="absolute right-md md:right-lg top-xs">
           <DropdownMenu>
             <DropdownMenuTrigger>

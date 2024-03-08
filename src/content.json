@@ -5,7 +5,7 @@
   "baseline": "Shifty, le studio  spécialisé en stratégie de marque, identité visuelle et projets&nbsp;digitaux.",
   "contact": {
     "content": "Nous contacter",
-    "url": "/nous-contacter"
+    "url": "mailto:davidmarcos.pro@gmail.com"
   },
   "about": {
     "tag": "Pourquoi nous choisir&nbsp;?",
@@ -41,12 +41,10 @@
           { "title": "Création de logo et de charte graphique" },
           { "title": "Conception de l'identité visuelle" },
           { "title": "Réalisation de supports de communication" },
-          { "title": "Mise en place de stratégie de marque" },
-          { "title": "Marketing d'influence" }
+          { "title": "Mise en place de stratégie de marque" }
         ],
         "motion": [
           { "title": "Réalisation de vidéos promotionnelles" },
-          { "title": "Rédaction de posts" },
           { "title": "Production de film d'entreprise" },
           { "title": "Réalisation de shooting photo" },
           { "title": "Marketing d'influence" }
@@ -54,22 +52,23 @@
       },
       "operation": {
         "digital": [
+          { "title": "Équipe dédiée votre projet" },
+          { "title": "Suivi par un(e) chef(fe) de projet" },
           { "title": "Intéractions illimitées" },
-          { "title": "1 call par semaine" }
+          { "title": "3 retours" }
         ],
         "branding": [
+          { "title": "Équipe dédiée à votre projet" },
+          { "title": "Choix du format des livrables" },
           { "title": "Intéractions illimitées" },
-          { "title": "Branding et graphisme illimités" }
+          { "title": "2 retours" }
         ],
         "motion": [
+          { "title": "Shooting en intérieur et extérieur" },
+          { "title": "Post production" },
           { "title": "Intéractions illimitées" },
-          { "title": "Mise à disposition d'un studio" }
+          { "title": "2 retours" }
         ]
-      },
-      "availability": {
-        "digital": 2,
-        "branding": 1,
-        "motion": 0
       }
     }
   },

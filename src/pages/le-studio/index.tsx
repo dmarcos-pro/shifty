@@ -1,6 +1,6 @@
 import Head from "../head"
 
-import HeroBanner from "../../container/heroBanner/homepage"
+import HeroBanner from "../../container/heroBanner"
 import Services from "../../container/services"
 import Studio from "../../container/studio"
 

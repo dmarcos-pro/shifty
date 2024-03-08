@@ -6,12 +6,14 @@ import Image from "next/image"
 
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/lib/components/ui/dialog"
+import { X } from "lucide-react"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -31,13 +33,18 @@ const Footer = () => {
             <p className="text-xs">© 2023 - {currentYear}</p>
           </div>
           <Dialog>
-            <DialogTrigger>Mentions légales</DialogTrigger>
-            <DialogContent>
+            <DialogTrigger>
+              <p className="text-xs">Mentions légales</p>
+            </DialogTrigger>
+            <DialogContent className="bg-white py-12 px-10 max-w-2xl">
               <DialogHeader>
-                <DialogTitle className="font-title leading-8 text-white">
+                <DialogTitle className="font-title leading-8 dark:text-deepblue">
                   Mentions légales
                 </DialogTitle>
-                <DialogDescription className="font-title leading-5 text-white">
+                <DialogClose asChild>
+                  <X className="text-primary absolute top-[6px] z-10 right-3 cursor-pointer" />
+                </DialogClose>
+                <DialogDescription className="font-title leading-5 dark:text-deepblue">
                   <p>
                     Le présent site est édité par David Marcos :
                     Auto-entrepreneur, immatriculé à l’URSSAF sous le numéro 520

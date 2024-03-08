@@ -20,43 +20,43 @@ const Feedback = () => {
     isLoading,
     isError,
   } = useQuery("feedback", () => fetchFeedback())
-  const { ref: animate, fadeIn } = UseFadeInAnimation()
+  const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
 
   return (
     <section className="py-48">
-      <div className="text-center">
-        <animated.div ref={animate} style={fadeIn}>
+      <animated.div ref={animate} style={fade}>
+        <div className="text-center">
           <span className="mb-3 block text-sm uppercase text-gray-300 dark:text-gray-500">
             {content.feedback.title}
           </span>
-        </animated.div>
-      </div>
-      <div className="container mt-8">
-        {feedback && (
-          <Carousel className="mx-auto w-2/3 px-12">
-            <CarouselContent>
-              {feedback.map((feedback: FeedbackContainer, index: number) => {
-                return (
-                  <CarouselItem key={index} className="text-center">
-                    <div
-                      className="mb-4 text-lg leading-8"
-                      dangerouslySetInnerHTML={{
-                        __html: feedback.text,
-                      }}
-                    />
-                    <p className="text-sm">{feedback.who}</p>
-                    <p className="text-sm mt-1 text-gray-500">
-                      {feedback.job} - {feedback.brand}
-                    </p>
-                  </CarouselItem>
-                )
-              })}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        )}
-      </div>
+        </div>
+        <div className="container mt-8">
+          {feedback && (
+            <Carousel className="mx-auto w-2/3 px-12">
+              <CarouselContent>
+                {feedback.map((feedback: FeedbackContainer, index: number) => {
+                  return (
+                    <CarouselItem key={index} className="text-center">
+                      <div
+                        className="mb-4 text-lg leading-8"
+                        dangerouslySetInnerHTML={{
+                          __html: feedback.text,
+                        }}
+                      />
+                      <p className="text-sm">{feedback.who}</p>
+                      <p className="text-sm mt-1 text-gray-500">
+                        {feedback.job} - {feedback.brand}
+                      </p>
+                    </CarouselItem>
+                  )
+                })}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          )}
+        </div>
+      </animated.div>
     </section>
   )
 }

@@ -1,6 +1,7 @@
 "use client"
 import Heading from "@/lib/components/heading"
 import { Button } from "@/lib/components/ui/button"
+import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
 import { fetchProjects } from "@api"
 import content from "@contentJson"
 import logo from "@images/logo.png"
@@ -9,6 +10,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { useQuery } from "react-query"
+import { animated } from "react-spring"
 
 const name = process.env.NAME as string
 
@@ -19,6 +21,8 @@ const HeroBanner = () => {
   const marginRef = 20
   const [increment, setIncrement] = useState<boolean>(true)
   const [mobile, setMobile] = useState<boolean>(false)
+
+  const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
 
   const {
     data: projects,
@@ -47,14 +51,7 @@ const HeroBanner = () => {
         }
       }, 30)
 
-      const updateDevice = () => {
-        setMobile(window.innerWidth <= 768 ? true : false)
-      }
-      updateDevice()
-      window.addEventListener("resize", updateDevice)
-
       return () => {
-        window.removeEventListener("resize", updateDevice)
         clearInterval(interval)
       }
     }
@@ -70,23 +67,25 @@ const HeroBanner = () => {
       className="py-24 h-screen flex items-center justify-center overflow-hidden relative"
     >
       <div className="container text-center relative">
-        <figure className="table mx-auto my-10">
-          <Image
-            width={120}
-            height={80}
-            style={{ width: "120px", height: "auto" }}
-            src={logo.src}
-            alt={`Logo ${name}`}
+        <animated.div ref={animate} style={fade} className="transition delay-3">
+          <figure className="table mx-auto my-10">
+            <Image
+              width={120}
+              height={80}
+              style={{ width: "120px", height: "auto" }}
+              src={logo.src}
+              alt={`Logo ${name}`}
+            />
+          </figure>
+          <Heading tag="h1" content={content.catch_phrase} />
+          <p
+            className="mt-4"
+            dangerouslySetInnerHTML={{ __html: content.baseline }}
           />
-        </figure>
-        <Heading tag="h1" content={content.catch_phrase} />
-        <p
-          className="mt-4"
-          dangerouslySetInnerHTML={{ __html: content.baseline }}
-        />
-        <Button asChild className="my-10">
-          <Link href={content.contact.url}>{content.contact.content}</Link>
-        </Button>
+          <Button asChild className="my-10">
+            <Link href={content.contact.url}>{content.contact.content}</Link>
+          </Button>
+        </animated.div>
       </div>
       <div ref={counterRef} className="p-4 absolute bottom-4">
         <div>

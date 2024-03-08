@@ -6,12 +6,12 @@ import content from "@contentJson"
 import { animated } from "react-spring"
 
 const Presentation = () => {
-  const { ref: animate, fadeIn } = UseFadeInAnimation()
+  const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
   return (
     <section id="studio" className="pt-48">
       <div className="container">
         <div className="text-center">
-          <animated.div ref={animate} style={fadeIn}>
+          <animated.div ref={animate} style={fade}>
             <div>
               <span
                 className="mb-3 block text-sm uppercase text-gray-300 dark:text-gray-500"

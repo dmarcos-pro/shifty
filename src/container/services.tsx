@@ -16,7 +16,7 @@ const Services = () => {
       <div className="container">
         <div className="text-center">
           <animated.div ref={animate} style={fade}>
-            <span className="mb-3 block text-sm uppercase text-gray-300 dark:text-gray-500">
+            <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
               {content.services.tag}
             </span>
             <Heading tag="h2" content={content.services.title} />

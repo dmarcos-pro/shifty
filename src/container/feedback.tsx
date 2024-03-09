@@ -1,5 +1,6 @@
 "use client"
 
+import Heading from "@/lib/components/heading"
 import {
   Carousel,
   CarouselContent,
@@ -26,9 +27,10 @@ const Feedback = () => {
     <section className="py-48">
       <animated.div ref={animate} style={fade}>
         <div className="text-center">
-          <span className="mb-3 block text-sm uppercase text-gray-300 dark:text-gray-500">
-            {content.feedback.title}
+          <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
+            {content.feedback.tag}
           </span>
+          <Heading tag="h2" content={content.feedback.title} />
         </div>
         <div className="container mt-8">
           {feedback && (

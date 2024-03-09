@@ -26,7 +26,7 @@ const Projects = () => {
       <div className="text-center">
         <animated.div ref={animate} style={fade}>
           <span
-            className="mb-3 block text-sm uppercase text-gray-300 dark:text-gray-500"
+            className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500"
             dangerouslySetInnerHTML={{ __html: content.projects.tag }}
           />
           <Heading tag="h2" content={content.projects.title} />

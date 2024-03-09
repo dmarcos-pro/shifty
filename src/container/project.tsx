@@ -29,8 +29,8 @@ const Project = ({ project }: projectProps) => {
   const imgProject = `/images/project/mini/${project.id}.jpg`
   const tags = JSON.parse(project.tag)
   return (
-    <animated.div ref={animate} style={fade}>
-      <Card className="flex flex-col rounded-lg">
+    <animated.div ref={animate} style={fade} className="flex">
+      <Card className="flex flex-col flex-1 rounded-lg">
         <CardHeader>
           <div className="flex justify-between items-center">
             <CardTitle className="text-md">{project.brand}</CardTitle>
@@ -71,7 +71,7 @@ const Project = ({ project }: projectProps) => {
           <Link
             href={project.url}
             target="_blank"
-            className="flex justify-end mt-4 text-blue-light hover:text-white"
+            className="flex justify-end mt-4 text-blue-light hover:text-blue"
           >
             <ExternalLink className="w-6 ml-1 -mt-0.5" />
           </Link>

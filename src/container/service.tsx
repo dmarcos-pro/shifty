@@ -35,7 +35,6 @@ const Service = ({
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
   const services = (content.services.offer.service as ServiceContent)[id]
   const operation = (content.services.offer.operation as ServiceContent)[id]
-  console.log("🚀 ~ Service ~ availability:", promotion)
   return (
     <animated.div
       ref={animate}
@@ -47,7 +46,7 @@ const Service = ({
           <div className="flex flex-row items-center justify-between mb-2">
             <CardTitle>{category}</CardTitle>
             {promotion && (
-              <span className="text-xs inline-block font-bold tracking-wide leading-loose px-3 bg-primary rounded-lg text-white">
+              <span className="text-xs inline-block font-bold tracking-wide leading-loose px-3 py-1 bg-primary rounded-full text-white">
                 Offre limitée
               </span>
             )}

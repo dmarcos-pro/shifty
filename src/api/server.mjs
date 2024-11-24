@@ -35,31 +35,43 @@ app.get("/", (req, res) => {
 
 app.get("/projects", (req, res) => {
   connection.query("SELECT * FROM projects", (err, results) => {
-    if (err) throw err
-    res.json(results)
-  })
-})
+    if (err) {
+      console.error("Erreur lors de la récupération des projets :", err);
+      return res.status(500).json({ error: "Erreur lors de la récupération des projets" });
+    }
+    res.json(results);
+  });
+});
 
 app.get("/services", (req, res) => {
   connection.query("SELECT * FROM services", (err, results) => {
-    if (err) throw err
-    res.json(results)
-  })
-})
+    if (err) {
+      console.error("Erreur lors de la récupération des services :", err);
+      return res.status(500).json({ error: "Erreur lors de la récupération des services" });
+    }
+    res.json(results);
+  });
+});
 
 app.get("/feedback", (req, res) => {
   connection.query("SELECT * FROM feedback", (err, results) => {
-    if (err) throw err
-    res.json(results)
-  })
-})
+    if (err) {
+      console.error("Erreur lors de la récupération des feedback :", err);
+      return res.status(500).json({ error: "Erreur lors de la récupération des feedback" });
+    }
+    res.json(results);
+  });
+});
 
 app.get("/navigation", (req, res) => {
   connection.query("SELECT * FROM navigation", (err, results) => {
-    if (err) throw err
-    res.json(results)
-  })
-})
+    if (err) {
+      console.error("Erreur lors de la récupération des navigation :", err);
+      return res.status(500).json({ error: "Erreur lors de la récupération des navigation" });
+    }
+    res.json(results);
+  });
+});
 
 // Démarrer le serveur
 app.listen(port, () => {

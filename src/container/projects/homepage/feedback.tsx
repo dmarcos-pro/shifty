@@ -24,7 +24,7 @@ const Feedback = () => {
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
 
   return (
-    <section className="py-48">
+    <section className="pb-24">
       <animated.div ref={animate} style={fade}>
         <div className="text-center">
           <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">

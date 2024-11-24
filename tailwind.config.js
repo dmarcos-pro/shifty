@@ -10,6 +10,7 @@ module.exports = {
   darkMode: ["class"],
   content: ["./src/**/*.{js,ts,tsx}"],
   prefix: "",
+  purge: false,
   theme: {
     container: {
       center: true,
@@ -31,6 +32,10 @@ module.exports = {
         green: {
           DEFAULT: "var(--color-green)",
           mint: "var(--color-mint)",
+        },
+        orange: {
+          DEFAULT: "var(--color-orange)",
+          light: "var(--color-orangelight)",
         },
         primary: {
           DEFAULT: "var(--color-blue)",
@@ -58,15 +63,16 @@ module.exports = {
         title: ["Sora", "sans-serif"],
       },
       fontSize: {
-        h1: ["6rem", "7rem"],
-        h2: ["1.6rem", "2rem"],
-        h3: ["1.2rem", "1.5rem"],
+        'h1': ["6rem", "7rem"],
+        'h3': ["1.2rem", "1.5rem"],
         base: ["1rem", "1.2rem"],
         xs: [".6rem", ".8rem"],
         sm: [".8rem", "1rem"],
         md: ["1.2rem", "1.5rem"],
         lg: ["1.5rem", "2rem"],
         xl: ["2rem", "2.5rem"],
+        xxl: ["3rem", "3.5rem"]
+
       },
       borderRadius: {
         DEFAULT: "var(--radius)",

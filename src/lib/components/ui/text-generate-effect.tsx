@@ -5,10 +5,18 @@ import { useInView } from "react-intersection-observer"
 
 export const TextGenerateEffect = ({
   words,
-  className,
+  className = '',
+  fontSize = 'text-lg md:text-xxl',
+  bold = false,
+  fontTitle = true,
+  leading = 'md:leading-[4rem]',
 }: {
   words: string
   className?: string
+  fontSize?: string
+  bold?: boolean
+  fontTitle?: boolean
+  leading?: string
 }) => {
   const { ref, inView } = useInView()
   const [scope, animate] = useAnimate()
@@ -37,7 +45,7 @@ export const TextGenerateEffect = ({
             return (
               <motion.span
                 key={word + idx}
-                className="font-extrabold font-title text-lg md:text-[3.2rem] md:leading-[4rem] opacity-0"
+                className={`${bold ? 'font-extrabold' : ''} ${fontTitle ? 'font-title' : ''} ${fontSize} ${leading} opacity-0 ${className}`}
               >
                 {word}{" "}
               </motion.span>
@@ -51,7 +59,7 @@ export const TextGenerateEffect = ({
   return (
     <div>
       <div className="mt-4">
-        <div className="text-2xl leading-snug tracking-wide">
+        <div className={`${fontSize} ${className}`}>
           {renderWords()}
         </div>
       </div>

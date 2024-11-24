@@ -30,10 +30,11 @@ export type ServicesProps = {
   id: string
   index: number
   category: string
-  title: string
+  url: string
   name?: string
-  price: string
+  price?: string
   promotion: string
+  isNew: string
   availability: number
 }
 
@@ -44,6 +45,7 @@ export type ServiceAnim = {
 export type HeadingProps = {
   tag: string
   content: string
+  className?: string
 }
 export type HeaderSubMenuItem = {
   name: string

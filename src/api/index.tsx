@@ -1,73 +1,53 @@
 const baseUrlServer = process.env.SERVER_URL as string
 
+// Helper function for making API requests
+const fetchData = async (endpoint: string) => {
+  try {
+    const response = await fetch(`${baseUrlServer}${endpoint}`)
+    if (!response.ok) {
+      throw new Error(`Network response was not ok: ${endpoint}`)
+    }
+    return response.json()
+  } catch (error) {
+    console.error(`Erreur lors du fetch ${endpoint}:`, error)
+    throw error
+  }
+}
+
+// Fetch all projects
 export const fetchProjects = async () => {
-  try {
-    const response = await fetch(`${baseUrlServer}/projects`)
-    if (!response.ok) {
-      throw new Error("Network response was not ok")
-    }
-    return response.json()
-  } catch (error) {
-    console.error("Erreur lors du fetch /projects :", error)
-    throw error
-  }
+  return fetchData('/projects')
 }
 
+// Fetch all services
 export const fetchServices = async () => {
-  try {
-    const response = await fetch(`${baseUrlServer}/services`)
-    if (!response.ok) {
-      throw new Error("Network response was not ok")
-    }
-    return response.json()
-  } catch (error) {
-    console.error("Erreur lors du fetch /services :", error)
-    throw error
-  }
+  return fetchData('/services')
 }
 
+// Fetch all feedback
 export const fetchFeedback = async () => {
-  try {
-    const response = await fetch(`${baseUrlServer}/feedback`)
-    if (!response.ok) {
-      throw new Error("Network response was not ok")
-    }
-    return response.json()
-  } catch (error) {
-    console.error("Erreur lors du fetch /feedback :", error)
-    throw error
-  }
+  return fetchData('/feedback')
 }
 
+// Fetch navigation data
 export const fetchNav = async () => {
-  try {
-    const response = await fetch(`${baseUrlServer}/navigation`)
-    if (!response.ok) {
-      throw new Error(
-        "Erreur lors de la récupération des données de navigation",
-      )
-    }
-    return response.json()
-  } catch (error) {
-    console.error("Erreur lors du fetch /navigation :", error)
-    throw error // Re-lancez l'erreur pour que React Query puisse la gérer
-  }
+  return fetchData('/navigation')
 }
 
 type Service = {
   id: string
 }
+// Fetch a specific service by ID
 export const fetchService = async (name: string) => {
   try {
-    const response = await fetch(`${baseUrlServer}/services`)
-    if (!response.ok) {
-      throw new Error("Erreur lors de la récupération des données des services")
+    const services = await fetchServices() // Reusing fetchServices here
+    const service = services.find((item: Service) => item.id === name)
+    if (!service) {
+      throw new Error(`Service with id "${name}" not found`)
     }
-    const data = await response.json()
-    const service = data.find((item: Service) => item.id === name)
     return service
   } catch (error) {
     console.error("Erreur lors du fetch /services :", error)
-    throw error // Re-lancez l'erreur pour que React Query puisse la gérer
+    throw error
   }
 }

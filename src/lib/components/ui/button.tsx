@@ -13,12 +13,12 @@ const buttonVariants = cva(
         outline:
           "border text-gray-400 border-gray-400 hover:text-white hover:border-white transition",
         small:
-          "font-bold border-none rounded-md w-full bg-green-mint text-green",
+          "font-bold border-none bg-green-mint text-green",
       },
       size: {
         default: "px-6 py-4 border-4",
-        sm: "p-3",
-        lg: "rounded-md px-8",
+        sm: "py-3 px-6",
+        lg: "rounded-md px-8 py-3",
         icon: "h-10 w-10",
       },
     },
@@ -39,13 +39,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
     const Comp = asChild ? Slot : "button"
     return (
-      <div>
+      <>
         <Comp
           className={cn(buttonVariants({ variant, size, className }))}
           ref={ref}
           {...props}
         />
-      </div>
+      </>
     )
   },
 )

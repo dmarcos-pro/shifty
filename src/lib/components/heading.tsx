@@ -7,24 +7,24 @@ export const fontTitle = FontTitle({
   weight: "400",
 })
 
-const Heading = ({ tag, content }: HeadingProps) => {
+const Heading = ({ tag, content, className }: HeadingProps) => {
   return (
     <>
       {tag === "h1" && (
         <h1
-          className={cn("font-extrabold text-3xl md:text-6xl lg:text-h1")}
+          className={cn("font-extrabold text-3xl md:text-6xl lg:text-h1", fontTitle.className, `${className}`)}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )}
       {tag === "h2" && (
         <h2
-          className={cn("text-h2 font-bold")}
+        className={cn(`text-xl font-bold`, fontTitle.className, `${className}`)}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )}
       {tag === "h3" && (
         <h3
-          className={cn("text-h3", fontTitle.className)}
+          className={cn("text-md", fontTitle.className)}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )}

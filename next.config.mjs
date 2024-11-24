@@ -18,6 +18,9 @@ const nextConfig = {
     // Retourner la configuration webpack modifiée
     return config
   },
+  images: {
+    domains: ['zupimages.net'],
+  },
 }
 
 export default nextConfig

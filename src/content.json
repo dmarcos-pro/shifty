@@ -1,20 +1,20 @@
 {
   "short_name": "Shifty",
   "name": "Studio Shifty",
-  "catch_phrase": "Optimisez le potentiel de&nbsp;votre&nbsp;marque&nbsp;!",
-  "baseline": "Shifty, le studio  spécialisé en stratégie de marque, identité visuelle et projets&nbsp;digitaux.",
+  "catch_phrase": "Optimise le potentiel de&nbsp;ta&nbsp;marque&nbsp;!",
+  "baseline": "Shifty, le studio spécialisé en stratégie de marque, identité visuelle et projets&nbsp;digitaux.",
   "contact": {
     "content": "Nous contacter",
-    "url": "mailto:davidmarcos.pro@gmail.com"
+    "url": "davidmarcos.pro@gmail.com"
   },
   "about": {
     "tag": "Pourquoi nous choisir&nbsp;?",
-    "welcome": "Découvrez le studio Shifty",
-    "desc": "Le studio Shifty vous apporte son expertise dans la transformation digitale de votre marque. Grâce à notre collaboration, vous bénéficiez d'un accompagnement personnalisé pour atteindre efficacement vos objectifs de croissance et de fidélisation",
+    "welcome": "Découvre le studio Shifty",
+    "desc": "Le studio Shifty t'apporte son expertise dans la transformation digitale de ta marque. Grâce à notre collaboration, tu bénéficies d'un accompagnement personnalisé pour atteindre efficacement tes objectifs de croissance et de fidélisation",
     "cta": "Découvrir le studio",
     "story": {
       "title": "Le studio",
-      "content": "<p>Shifty est fondé en 2023 à l'initiative de David Marcos en réponse à une demande croissante de clients cherchant à externaliser la communication de leur entreprise.</p><p>Fort de plusieurs années d’expériences en freelance en tant que graphiste et développeur web et face à cette demande exigeante, David réalise que répondre de manière optimale nécessite du temps mais surtout de l’expertise dans chacun des domaines.</p><p>Il décide alors de créer le studio Shifty et de s’entourer d’autres experts de la communication tels que des graphistes, développeurs, monteurs, vidéastes, photographes, rédacteurs, ...</p><p>Cette collaboration permet une meilleure réactivité vis à vis des clients, une palette de services plus large mais surtout des prestations de meilleure qualité.</p>"
+      "content": "Shifty est fondé en 2023 à l'initiative de David Marcos en réponse à une demande croissante de clients cherchant à externaliser la communication de leur entreprise. Fort de plusieurs années d’expériences en freelance en tant que graphiste et développeur web et face à cette demande exigeante, David réalise que répondre de manière optimale nécessite du temps mais surtout de l’expertise dans chacun des domaines. Il décide alors de créer le studio Shifty et de s’entourer d’autres experts de la communication tels que des graphistes, développeurs, monteurs, vidéastes, photographes, rédacteurs, ... Cette collaboration permet une meilleure réactivité vis à vis des clients, une palette de services plus large mais surtout des prestations de meilleure qualité."
     },
     "vision": {
       "title": "Les valeurs Shifty",
@@ -22,59 +22,144 @@
     }
   },
   "services": {
-    "title": "Découvrez notre offre",
-    "subtitle": "Nos offres",
-    "tag": "Penser. Proposer. Réaliser.",
+    "homepage": {
+      "title": "Choisis l'offre qui te convient",
+      "subtitle": "Penser. Proposer. Réaliser."
+    },
     "offer": {
       "service": {
         "digital": [
-          { "title": "Création de wireframe et de maquette" },
           {
-            "title": "Développement de site e-commerce ou vitrine"
-          },
-          { "title": "Développement de landing page" },
-          { "title": "Marketing de contenu" },
-          { "title": "Optimisation des conversions" },
-          { "title": "Amélioration du référencement" }
+            "title": "Booste ta visibilité avec un site performant",
+            "desc": [
+              { "title": "Conception de wireframes et maquettes personnalisées" },
+              { "title": "Développement de sites e-commerce ou vitrines sur mesure" },
+              { "title": "Création de landing pages optimisées pour la conversion" },
+              { "title": "Stratégie de marketing de contenu pour attirer et engager ton audience" },
+              { "title": "Optimisation des conversions pour maximiser tes résultats" },
+              { "title": "Amélioration du référencement pour un meilleur positionnement sur les moteurs de recherche" }
+            ]
+          }
         ],
         "branding": [
-          { "title": "Création de logo et de charte graphique" },
-          { "title": "Conception de l'identité visuelle" },
-          { "title": "Réalisation de supports de communication" },
-          { "title": "Mise en place de stratégie de marque" }
+          {
+            "title": "Crée une identité visuelle impactante pour renforcer ton image de marque",
+            "desc": [
+              { "title": "Création de logo et charte graphique personnalisée" },
+              { "title": "Conception complète de ton identité visuelle" },
+              { "title": "Réalisation de supports de communication percutants" },
+              { "title": "Élaboration et mise en place d’une stratégie de marque sur mesure" }
+            ]
+          }
         ],
         "motion": [
-          { "title": "Réalisation de vidéos promotionnelles" },
-          { "title": "Production de film d'entreprise" },
-          { "title": "Réalisation de shooting photo" },
-          { "title": "Marketing d'influence" }
+          {
+            "title": "Communique efficacement avec ta communauté",
+            "desc": [
+              { "title": "Création de vidéos promotionnelles captivantes" },
+              { "title": "Production de films d'entreprise professionnels" },
+              { "title": "Réalisation de séances photo de haute qualité" },
+              { "title": "Développement de stratégies de marketing d'influence pour élargir ton impact" },
+              { "title": "Couverture d'évènements sportifs" }
+            ]
+          }
         ]
       },
       "operation": {
         "digital": [
-          { "title": "Équipe dédiée votre projet" },
-          { "title": "Suivi par un(e) chef(fe) de projet" },
-          { "title": "Intéractions illimitées" },
-          { "title": "3 retours" }
+          { "title": "Une équipe dédiée à ton projet, pour une prise en charge complète" },
+          { "title": "Interactions illimitées pour ajuster et perfectionner le projet et garantir que chaque aspect de ton site réponde à tes attentes" },
+          { "title": "Livraison dans les délais convenus" }
         ],
         "branding": [
-          { "title": "Équipe dédiée à votre projet" },
-          { "title": "Choix du format des livrables" },
-          { "title": "Intéractions illimitées" },
-          { "title": "2 retours" }
+          { "title": "Une équipe dédiée qui t'accompagne à chaque étape de ton projet" },
+          { "title": "Formats de livrables adaptés à tes besoins spécifiques" },
+          { "title": "Intéractions illimitées pour ajuster chaque détail et garantir ta satisfaction" }
         ],
         "motion": [
-          { "title": "Shooting en intérieur et extérieur" },
-          { "title": "Post production" },
-          { "title": "Intéractions illimitées" },
-          { "title": "2 retours" }
+          { "title": "Shooting en intérieur et/ou en extérieur pour une variété de contenus" },
+          { "title": "Post-production soignée pour un rendu final impeccable" },
+          { "title": "Interactions illimitées pour s'assurer que ta vision soit pleinement réalisée" }
         ]
       }
+    },
+    "title": "Quels sont nos services&nbsp;?",
+    "content": {
+      "introduction": {
+        "title": "Introduction",
+        "text": "Dans un environnement numérique en constante évolution, il est essentiel pour les entreprises de se doter d'une stratégie de communication globale, alignée avec les attentes de leurs audiences et les nouvelles tendances digitales. Que ce soit pour établir une présence en ligne efficace, renforcer l'identité visuelle de votre marque, ou créer des contenus engageants, notre agence de communication vous accompagne à chaque étape de votre développement. Nous proposons une gamme complète de services, adaptés à vos besoins spécifiques, pour vous aider à vous démarquer dans un marché compétitif. Nos solutions, organisées autour de trois pôles principaux — Digital, Branding, et Motion —, sont conçues pour vous offrir des résultats concrets et mesurables. Nous mettons notre expertise à votre service pour concevoir des expériences uniques, créer une identité forte, et transformer votre audience en clients fidèles."
+      },
+      "digital": [
+        {
+          "title": "Conception de wireframes et maquettes personnalisées",
+          "text": "La conception de wireframes et maquettes personnalisées est une étape clé dans le processus de création d’un site web ou d’une application. Cette approche permet de planifier et de visualiser l’architecture du site avant de passer à l’étape de développement. Les wireframes offrent une vue simplifiée et fonctionnelle des pages, tandis que les maquettes apportent les éléments graphiques définitifs. Chaque projet étant unique, l’équipe de conception adapte les wireframes et les maquettes aux besoins spécifiques de votre marque et de votre audience cible."
+        },
+        {
+          "title": "Développement de sites e-commerce ou vitrines sur mesure",
+          "text": "Que vous souhaitiez vendre des produits en ligne ou présenter votre activité, la création de sites e-commerce ou vitrines sur mesure répond à vos besoins. Un site e-commerce sur mesure permet de créer une expérience utilisateur fluide et optimisée pour maximiser les conversions, tandis qu’un site vitrine met en avant vos services et vos atouts de manière élégante et professionnelle. Le tout est conçu pour refléter fidèlement l’identité de votre marque et répondre aux attentes spécifiques de votre secteur."
+        },
+        {
+          "title": "Création de landing pages optimisées pour la conversion",
+          "text": "Une landing page bien conçue est cruciale pour convertir vos visiteurs en clients. Nos équipes créent des pages d'atterrissage sur mesure, optimisées pour la conversion grâce à une structure claire, des appels à l’action efficaces et un design captivant. Chaque élément est pensé pour inciter l’utilisateur à passer à l’action, qu'il s’agisse de s’inscrire, d’effectuer un achat ou de demander une démonstration. L'optimisation des performances de ces pages fait partie intégrante de la stratégie pour maximiser vos résultats."
+        },
+        {
+          "title": "Stratégie de marketing de contenu pour attirer et engager votre audience",
+          "text": "Le marketing de contenu consiste à créer et partager des contenus pertinents et de qualité pour attirer et engager une audience ciblée. Il ne s'agit pas seulement de publier des articles de blog ou des vidéos, mais de mettre en place une stratégie cohérente qui accompagne chaque étape du parcours client. Nous vous aidons à définir une stratégie de contenu adaptée à votre secteur, capable de renforcer la notoriété de votre marque, d'améliorer votre SEO et d'établir une relation de confiance avec votre audience."
+        },
+        {
+          "title": "Optimisation des conversions pour maximiser vos résultats",
+          "text": "L’optimisation des conversions (CRO) est un processus visant à améliorer les performances de votre site web en augmentant le taux de conversion. Nous analysons les comportements des utilisateurs, identifions les points de blocage et mettons en œuvre des ajustements pour maximiser les résultats. Cela peut inclure la révision des appels à l'action, l'amélioration du design, et la création de nouvelles stratégies pour capter l’attention des utilisateurs tout au long de leur parcours sur votre site."
+        },
+        {
+          "title": "Amélioration du référencement pour un meilleur positionnement sur les moteurs de recherche",
+          "text": "Un bon référencement est indispensable pour assurer la visibilité de votre site sur les moteurs de recherche. Nous optimisons le SEO de votre site en travaillant sur les mots-clés pertinents, l’architecture des pages, la qualité des contenus, et les aspects techniques (vitesse, mobile, etc.). L’objectif est d'améliorer votre classement dans les résultats de recherche, ce qui génère plus de trafic qualifié et contribue à la croissance de votre entreprise à long terme."
+        }
+      ],
+      "branding": [
+        {
+          "title": "Création de logo et charte graphique personnalisée",
+          "text": "Le logo et la charte graphique sont les fondements de votre identité visuelle. Ils doivent représenter les valeurs de votre marque et être facilement reconnaissables. Notre équipe de designers conçoit des logos sur mesure, accompagnés d'une charte graphique qui définit les couleurs, typographies et autres éléments visuels à utiliser de manière cohérente sur tous vos supports de communication. Cela assure une image de marque forte et homogène."
+        },
+        {
+          "title": "Conception complète de votre identité visuelle",
+          "text": "L’identité visuelle est bien plus qu’un simple logo. Elle englobe l’ensemble des éléments graphiques qui définissent l’image de votre marque et la façon dont elle est perçue par votre audience. Nous élaborons une identité visuelle complète, comprenant les codes couleurs, typographies, icônes, et tout autre élément graphique nécessaire pour créer une image de marque unique et cohérente à travers tous vos supports."
+        },
+        {
+          "title": "Réalisation de supports de communication percutants",
+          "text": "Les supports de communication (brochures, affiches, cartes de visite, etc.) sont des outils essentiels pour transmettre les messages de votre marque. Nous créons des supports visuellement percutants et alignés avec votre identité de marque. Chaque création est pensée pour capter l’attention de votre audience, véhiculer vos valeurs, et renforcer votre positionnement sur le marché."
+        },
+        {
+          "title": "Élaboration et mise en place d’une stratégie de marque sur mesure",
+          "text": "La stratégie de marque est un processus global qui permet de définir comment vous souhaitez être perçu par vos clients. Nous travaillons avec vous pour élaborer une stratégie qui guide toutes vos actions de communication, en définissant un positionnement clair, un ton de communication adapté, et des valeurs fortes. Cela vous permet de bâtir une marque cohérente et authentique qui saura se démarquer de la concurrence."
+        }
+      ],
+      "motion": [
+        {
+          "title": "Création de vidéos promotionnelles captivantes",
+          "text": "Les vidéos promotionnelles sont un excellent moyen de capter l'attention de votre audience et de transmettre un message de manière engageante. Nous créons des vidéos professionnelles, dynamiques et captivantes, adaptées à vos objectifs marketing. Ces vidéos peuvent être utilisées sur vos réseaux sociaux, sites web, ou dans vos campagnes publicitaires pour améliorer la visibilité et l’impact de votre marque."
+        },
+        {
+          "title": "Production de films d'entreprise professionnels",
+          "text": "Un film d'entreprise est un outil puissant pour renforcer l’image de votre marque auprès de vos clients, partenaires ou employés. Nous réalisons des films professionnels qui mettent en avant votre histoire, vos valeurs, vos produits et vos services. Que ce soit pour présenter votre entreprise ou documenter un événement, chaque film est conçu avec soin pour refléter l’essence de votre marque."
+        },
+        {
+          "title": "Réalisation de séances photo de haute qualité",
+          "text": "Une bonne image vaut souvent mieux qu’un long discours. Nous organisons des séances photo de haute qualité, adaptées à vos besoins, qu'il s'agisse de portraits, de photos de produits ou de clichés d’ambiance. Ces visuels sont essentiels pour enrichir vos supports de communication et améliorer l'attrait visuel de votre marque."
+        },
+        {
+          "title": "Développement de stratégies de marketing d'influence pour élargir votre portée",
+          "text": "Le marketing d'influence est une méthode efficace pour élargir la portée de votre marque en s’associant avec des influenceurs pertinents. Nous développons des stratégies de collaboration avec des influenceurs, en choisissant ceux qui correspondent à votre image et qui peuvent toucher votre audience cible. Cela vous permet d’étendre votre visibilité tout en renforçant la crédibilité de votre marque."
+        },
+        {
+          "title": "Couverture d'évènements sportifs",
+          "text": "La couverture d'évènements sportifs offre une excellente opportunité pour mettre en avant votre marque dans un contexte dynamique et captivant. Nous proposons des services de production vidéo et photo pour capturer les moments forts de ces événements et les transformer en contenus engageants pour vos réseaux sociaux ou votre site web. Ces contenus permettent de créer un lien authentique et émotionnel avec votre audience."
+        }
+      ]
     }
   },
   "projects": {
-    "title": "Découvrez nos dernières collaborations",
-    "tag": "Et si vous étiez le prochain&nbsp;?"
+    "title": "Découvre nos dernières collaborations",
+    "tag": "Et si tu étais le prochain&nbsp;?"
   },
   "feedback": {
     "tag": "À propos du studio",
@@ -82,7 +167,115 @@
   },
   "simulator": {
     "tag": "Estimer votre projet",
-    "title": "Découvrez notre simulateur",
-    "content": "<p>Shifty met à votre disposition un simulateur de prestation de services en ligne pour vous aider à estimer les coûts associés à votre besoin.</p><p>Le prix indiqué est une estimation, il peut varier en fonction de la complexité et des exigences de votre projet.</p><p>Contactez-nous pour une évaluation précise et personnalisée de vos besoins.</p>"
+    "title": "Découvre notre simulateur",
+    "content": "Le studio met à ta disposition un simulateur de prestation de services en ligne pour t'aider à estimer les coûts associés à tes besoins.",
+    "info": "Le montant total indiqué est une estimation, il peut varier en fonction de la complexité et des exigences de ton projet. Contacte-nous pour une évaluation précise et personnalisée.",
+    "tasks": [
+      {
+        "name": "Wireframe / Maquette",
+        "id": "wireframe_maquette",
+        "category": "Digital",
+        "image": "https://zupimages.net/up/23/15/2mpy.png",
+        "price": 1000
+      },
+      {
+        "name": "Site vitrine",
+        "id": "site_vitrine",
+        "category": "Digital",
+        "image": "https://zupimages.net/up/23/15/pvzk.png",
+        "price": 2000
+      },
+      {
+        "name": "Site e-commerce",
+        "id": "site_e_commerce",
+        "category": "Digital",
+        "image": "https://zupimages.net/up/23/15/flw9.png",
+        "price": 3000
+      },
+      {
+        "name": "Charte graphique",
+        "id": "charte_graphique",
+        "category": "Branding",
+        "image": "https://zupimages.net/up/23/15/kkz7.png",
+        "price": 300
+      },
+      {
+        "name": "Flyer",
+        "id": "flyer",
+        "category": "Branding",
+        "image": "https://zupimages.net/up/23/15/r11c.png",
+        "price": 200
+      },
+      {
+        "name": "Carte de visite",
+        "id": "carte_de_visite",
+        "category": "Branding",
+        "image": "https://zupimages.net/up/23/15/jop7.png",
+        "price": 200
+      },
+      {
+        "name": "Nom de marque",
+        "id": "nom_de_marque",
+        "category": "Branding",
+        "image": "https://zupimages.net/up/23/15/fy77.png",
+        "price": 1000
+      },
+      {
+        "name": "Logo",
+        "id": "logo",
+        "category": "Branding",
+        "image": "https://zupimages.net/up/23/15/dtoe.png",
+        "price": 400
+      },
+      {
+        "name": "Vidéos",
+        "id": "video",
+        "category": "Social Media",
+        "image": "https://zupimages.net/up/23/15/x76e.png",
+        "price": 1000
+      },
+      {
+        "name": "Photo",
+        "id": "photo",
+        "category": "Social Media",
+        "image": "https://zupimages.net/up/23/15/x76e.png",
+        "price": 600
+      },
+      {
+        "name": "Copywriting",
+        "id": "copywriting",
+        "category": "Social Media",
+        "image": "https://zupimages.net/up/23/15/qymd.png",
+        "price": 500
+      },
+      {
+        "name": "Affiche publicitaire",
+        "id": "affiche_publicitaire",
+        "category": "Branding",
+        "image": "https://zupimages.net/up/23/15/q9t8.png",
+        "price": 1500
+      },
+      {
+        "name": "Kakémono",
+        "id": "kakemono",
+        "category": "Branding",
+        "image": "https://zupimages.net/up/23/15/q9t8.png",
+        "price": 500
+      },
+      {
+        "name": "Plaquette commerciale",
+        "id": "plaquette_commerciale",
+        "category": "Branding",
+        "image": "https://zupimages.net/up/23/15/epqp.png",
+        "price": 800
+      },
+      {
+        "name": "Catalogue commercial",
+        "id": "catalogue_commercial",
+        "category": "Branding",
+        "image": "https://zupimages.net/up/23/15/qjvh.png",
+        "price": 1500
+      }
+    ]
   }
 }

@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed z-10 w-full top-0 flex items-center justify-center py-3 backdrop-blur-sm">
-        <animated.div
+        {/* <animated.div
           ref={animate}
           style={fade}
           className={`transition delay-8`}
@@ -44,7 +44,7 @@ const Header = () => {
                 )
               })}
           </nav>
-        </animated.div>
+        </animated.div> */}
         <div className="absolute right-md md:right-lg top-xs">
           <DropdownMenu>
             <DropdownMenuTrigger>

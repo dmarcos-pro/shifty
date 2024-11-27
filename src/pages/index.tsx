@@ -16,9 +16,9 @@ const Page = () => {
       <Head>{name}</Head>
       <HeroBanner />
       <main>
+        <Presentation />
         <Services />
         <Simulator />
-        <Presentation />
         <Projects />
         <Feedback />
       </main>

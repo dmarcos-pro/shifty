@@ -13,7 +13,7 @@ const buttonVariants = cva(
         outline:
           "border text-gray-400 border-gray-400 hover:text-white hover:border-white transition",
         small:
-          "font-bold border-none bg-green-mint text-green",
+          "font-bold border-green-mint bg-green-mint text-green hover:bg-white hover:text-green-mint",
       },
       size: {
         default: "px-6 py-4 border-4",

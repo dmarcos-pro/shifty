@@ -48,6 +48,7 @@
 @layer base {
   * {
     scroll-behavior: smooth;
+    line-height: 1.4;
   }
   /*ul {
     margin-top: 8px;

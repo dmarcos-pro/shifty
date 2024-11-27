@@ -14,7 +14,7 @@
     "cta": "Découvrir le studio",
     "story": {
       "title": "Le studio",
-      "content": "Shifty est fondé en 2023 à l'initiative de David Marcos en réponse à une demande croissante de clients cherchant à externaliser la communication de leur entreprise. Fort de plusieurs années d’expériences en freelance en tant que graphiste et développeur web et face à cette demande exigeante, David réalise que répondre de manière optimale nécessite du temps mais surtout de l’expertise dans chacun des domaines. Il décide alors de créer le studio Shifty et de s’entourer d’autres experts de la communication tels que des graphistes, développeurs, monteurs, vidéastes, photographes, rédacteurs, ... Cette collaboration permet une meilleure réactivité vis à vis des clients, une palette de services plus large mais surtout des prestations de meilleure qualité."
+      "content": "<p>Shifty est fondé en 2023 à l'initiative de David Marcos en réponse à une demande croissante de clients cherchant à externaliser la communication de leur entreprise.</p><p>Fort de plusieurs années d’expériences en freelance en tant que graphiste et développeur web et face à cette demande exigeante, David réalise que répondre de manière optimale nécessite du temps mais surtout de l’expertise dans chacun des domaines.</p><p>Il décide alors de créer le studio Shifty et de s’entourer d’autres experts de la communication tels que des graphistes, développeurs, monteurs, vidéastes, photographes et rédacteurs. Cette collaboration permet une meilleure réactivité vis à vis des clients, une palette de services plus large mais surtout des prestations de meilleure qualité.</p>"
     },
     "vision": {
       "title": "Les valeurs Shifty",
@@ -166,13 +166,13 @@
     "title": "Ils nous ont fait confiance"
   },
   "simulator": {
-    "tag": "Estimer votre projet",
+    "tag": "Estime ton projet",
     "title": "Découvre notre simulateur",
-    "content": "Le studio met à ta disposition un simulateur de prestation de services en ligne pour t'aider à estimer les coûts associés à tes besoins.",
+    "content": "Le studio met à ta disposition un simulateur pour t'aider à estimer les coûts associés à tes besoins.",
     "info": "Le montant total indiqué est une estimation, il peut varier en fonction de la complexité et des exigences de ton projet. Contacte-nous pour une évaluation précise et personnalisée.",
     "tasks": [
       {
-        "name": "Wireframe &amp; Maquette",
+        "name": "Wireframe / Maquette",
         "id": "wireframe_maquette",
         "category": "Digital",
         "image": "https://zupimages.net/up/23/15/2mpy.png",

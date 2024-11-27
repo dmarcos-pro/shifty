@@ -22,7 +22,7 @@ const Task = ({
   return (
     <div 
       id={'task-' + id} 
-      className={`${disabled ? '' : 'hidden'} p-4 rounded border border-gray-300 dark:border-gray-700 ${selected ? "bg-blue text-white" : ""}`} 
+      className={`p-4 rounded shadow-lg ${disabled ? '' : 'hidden'} ${selected ? "bg-blue-100" : "hover:bg-gray-100"}`} 
       onClick={() => toggleActiveTask(id, name, price)}
     >
       <figure className='table mx-auto'>

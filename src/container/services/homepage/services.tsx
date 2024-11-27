@@ -12,7 +12,7 @@ const Services = () => {
   const { data: services } = useQuery("services", () => fetchServices())
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
   return (
-    <section id="services" className="pt-48">
+    <section id="services" className="pb-48">
       <div className="container">
         <div className="text-center">
           <animated.div ref={animate} style={fade}>

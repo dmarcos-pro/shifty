@@ -6,7 +6,9 @@ const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElemen
   <div
     ref={ref}
     className={cn(
-      "rounded-lg p-6 border-4 border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:dark:border-blue-400",
+      // "rounded-lg p-6 border-4 border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:dark:border-blue-400",
+      // "rounded p-6 border border-2 border-white dark:border-deepblue hover:border-blue-400 hover:dark:border-blue-400 shadow-xl",
+      "rounded p-6 border border-2 border-white dark:border-deepblue shadow-xl",
       className,
     )}
     {...props}
@@ -32,7 +34,7 @@ const CardTag = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTML
   <div
     ref={ref}
     className={cn(
-      "p-4 rounded bg-gray-200 dark:bg-gray-700",
+      "p-6 bg-gray-100 dark:bg-gray-700",
       className,
     )}
     {...props}

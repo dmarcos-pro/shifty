@@ -42,7 +42,7 @@ const Service = ({
       style={fade}
       className={`transition ${delayClass}`}
     >
-      <Link href={url}>
+      
         <Card>
           <CardHeader>
             <div className="flex flex-row items-end justify-between">
@@ -61,7 +61,7 @@ const Service = ({
             {services[0].desc?.map((cat, index: number) => {
               return (
                 <p key={index} className="flex py-1">
-                  <span className="translate-y-1 h-2 w-2 mr-3 rounded-full bg-blue" />
+                  <span className="translate-y-2 h-2 w-2 mr-3 rounded-full bg-blue" />
                   <span className="flex-1">{cat.title}</span>
                 </p>
               )
@@ -71,7 +71,7 @@ const Service = ({
               {operation.map((cat, index: number) => {
                 return (
                   <p key={index} className="flex py-1">
-                    <span className="translate-y-[6px] h-1 w-1 mr-2 rounded-full bg-blue" />
+                    <span className="translate-y-2 h-1 w-1 mr-2 rounded-full bg-blue" />
                     <span className="flex-1">{cat.title}</span>
                   </p>
                 )
@@ -96,12 +96,20 @@ const Service = ({
               <Link href={`${content.contact.url}?Subject=Demande de renseignement - ${category}`}>
                 {availability === 0 ? "Bientôt disponible" : 'Contactez-nous'}
               </Link>
-              En savoir plus
             </Button> */}
+            <Button
+              // variant="outline"
+              // size="sm"
+              className={`mt-6 table mx-auto`}
+            >
+              <Link href={`mailto:${content.contact.url}?Subject=Demande de renseignement - ${category}`}>
+                Je choisis ce service
+              </Link>
+            </Button>
             
           </CardContent>
         </Card>
-      </Link>
+      
     </animated.div>
   )
 }

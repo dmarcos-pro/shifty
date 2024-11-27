@@ -30,17 +30,17 @@ const Project = ({ project }: projectProps) => {
   const tags = JSON.parse(project.tag)
   return (
     <animated.div ref={animate} style={fade}>
-      <Link href="/projects">
-        <Card className="flex flex-col flex-1 rounded-lg">
+      <Link href={project.url} target="_blank" className=''>
+        <Card className="flex flex-col flex-1 rounded-lg border border-2 border-white hover:border-blue-light hover:dark:border-blue-light">
           <CardHeader>
             <div className="flex justify-between items-center">
               <CardTitle className="text-sm">{project.brand}</CardTitle>
-              <Link
+              {/* <Link
               href={project.url}
               target="_blank"
-              >
+              > */}
                 <Image src={imgMini} width="80" height="80" alt="" />
-              </Link>
+              {/* </Link> */}
             </div>
           </CardHeader>
           <CardContent className="flex-1 mt-md">
@@ -63,9 +63,9 @@ const Project = ({ project }: projectProps) => {
                 })}
               </div>
             </div>
-            {/* <CardDescription className="mt-8 text-center">
+            <CardDescription className="mt-8">
               {project.title}
-            </CardDescription> */}
+            </CardDescription>
             {/* <p
               dangerouslySetInnerHTML={{
                 __html: project.content,

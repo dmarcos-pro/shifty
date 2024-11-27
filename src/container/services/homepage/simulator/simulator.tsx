@@ -52,7 +52,7 @@ const Simulator = () => {
   };
 
   return (
-    <section id="simulator" className="pt-32 pb-48">
+    <section id="simulator" className="pb-48">
       <div className="container">
         <div className="text-center">
             <animated.div ref={animate} style={fade}>
@@ -71,7 +71,7 @@ const Simulator = () => {
               <p className='mb-4'>Filtrer par catégorie</p>
               <div>
                   <div
-                      className={`p-2 ${category === "Tout" ? "bg-blue text-white" : ""}`}
+                      className={`p-2 border-l-4 ${category === "Tout" ? "border-blue font-bold" : "border-white"}`}
                       onClick={(e) => { showFilter("Tout"); }}
                   >
                       Tous les services
@@ -80,7 +80,7 @@ const Simulator = () => {
                       <div
                           key={index}
                           onClick={(e) => { showFilter(item); }}
-                          className={`p-2 ${item === category ? "bg-blue text-white" : ""}`}
+                          className={`p-2 border-l-4 ${item === category ? "border-blue font-bold" : "border-white"}`}
                       >
                           {item}
                       </div>
@@ -106,7 +106,7 @@ const Simulator = () => {
           <div className='flex-[3] ml-8'>
             <p className='mb-8 text-md font-bold'>Récapitulatif {activeTask.length > 0 && `• ${activeTask.length} service${activeTask.length > 1 ? 's' : ''} `}</p>
             {activeTask.length === 0 && <>
-              <p className="mb-8">Tu n&apos;as rien sélectionné ! Dépêche-toi !</p>
+              <p className="mb-8">Tu n&apos;as encore rien sélectionné !</p>
             </>}
             {activeTask.map((item) => (
               <div 
@@ -129,14 +129,14 @@ const Simulator = () => {
                   <span>Total TTC</span>{price + (price * .2)}€
                 </p>
               </div>
+              <hr className="border-gray-300" />
+              <p className='mt-8 font-bold'>Informations :</p>
+              <p className='mt-2'>{content.simulator.info}</p>
+              <Button asChild className="mt-8">
+                <Link href={`mailto:${content.contact.url}`}>Demande de devis personnalisé</Link>
+              </Button>
             </>
             }
-            <hr className="border-gray-300" />
-            <p className='mt-8 font-bold'>Informations :</p>
-            <p className='mt-2'>{content.simulator.info}</p>
-            <Button asChild className="mt-8">
-              <Link href={`mailto:${content.contact.url}`}>Demande de devis personnalisé</Link>
-            </Button>
           </div>
         </div>
       </div>

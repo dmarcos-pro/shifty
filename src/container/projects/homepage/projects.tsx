@@ -44,11 +44,11 @@ const Projects = () => {
               })
           }
         </div>
-          <div className='text-center'>
-            <Button asChild className="mt-12">
-              <Link href="/projects">Découvrir tous les projets</Link>
-            </Button>
-          </div>
+        {/* <div className='text-center'>
+          <Button asChild className="mt-12">
+            <Link href="/projects">Découvrir tous les projets</Link>
+          </Button>
+        </div> */}
       </div>
     </section>
   )

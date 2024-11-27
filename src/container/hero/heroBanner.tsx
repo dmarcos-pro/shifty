@@ -64,7 +64,7 @@ const HeroBanner = () => {
   return (
     <div
       id="hero-banner"
-      className="py-24 bg-blue h-screen flex items-center justify-center overflow-hidden relative"
+      className="py-24 bg-blue dark:bg-gray-800 h-screen flex items-center justify-center overflow-hidden relative"
     >
       <div className="container text-center relative">
         <animated.div ref={animate} style={fade} className="transition delay-3">

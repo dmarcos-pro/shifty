@@ -4,22 +4,26 @@ import { cva, type VariantProps } from "class-variance-authority"
 import * as React from "react"
 
 const buttonVariants = cva(
-  "rounded-full border cursor-pointer inline-flex items-center justify-center whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "rounded-full border border-4 border-blue cursor-pointer text-sm inline-flex items-center justify-center whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-20",
   {
     variants: {
       variant: {
         default:
-          "bg-blue border-blue text-white hover:bg-transparent hover:text-deepblue hover:dark:text-white",
+          "bg-blue text-white hover:bg-transparent hover:text-deepblue hover:dark:text-white",
         outline:
-          "border text-gray-400 border-gray-400 hover:text-white hover:border-white transition",
-        small:
-          "font-bold border-green-mint bg-green-mint text-green hover:bg-white hover:text-green-mint",
+          "hover:text-white hover:bg-blue transition",
+        outlineDark:
+          "border-white text-white transition hover:bg-white hover:text-blue-950",
+        outlineLight:
+          "border-gray-300 dark:border-gray-400 text-gray-400 transition hover:border-blue hover:text-blue hover:dark:text-white hover:dark:border-white",
+        green:
+          "border-green text-green-800 hover:bg-green hover:text-white dark:text-green-400 dark:border-green-400 hover:dark:bg-green-400 hover:dark:text-green",
       },
       size: {
-        default: "px-6 py-4 border-4",
-        sm: "py-3 px-6",
-        lg: "rounded-md px-8 py-3",
-        icon: "h-10 w-10",
+        default: "py-3 px-5",
+        sm: "py-2 px-3 border-2",
+        lg: "py-4 px-8",
+        icon: "h-10 w-10 border-2",
       },
     },
     defaultVariants: {

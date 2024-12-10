@@ -12,6 +12,7 @@ import { ServicesProps } from "@/type/component"
 import content from "@contentJson"
 import Link from "next/link"
 import { animated } from "react-spring"
+import { Check, ChevronRight } from "lucide-react"
 
 const delays = ["delay-3", "delay-6", "delay-9", "delay-12"]
 
@@ -26,15 +27,14 @@ const Service = ({
   id,
   category,
   index,
-  url,
-  // price,
-  promotion,
   isNew,
+  availability,
+  price,
+  monthly
 }: ServicesProps) => {
   const delayClass = index < delays.length ? delays[index] : ""
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
   const services = (content.services.offer.service as ServiceContent)[id]
-  const operation = (content.services.offer.operation as ServiceContent)[id]
   
   return (
     <animated.div
@@ -42,74 +42,72 @@ const Service = ({
       style={fade}
       className={`transition ${delayClass}`}
     >
-      
-        <Card>
+      <Link href="/about" passHref>
+        <Card className={!!isNew ? 'border-orange-500 dark:border-orange-500' : ''}>
+          {!!isNew && (
+            <span className={`text-xs uppercase font-bold tracking-wide px-4 py-2 bg-orange-600 rounded-full text-white absolute -translate-y-1/2 -translate-x-1/2 top-0 left-1/2`}>
+              Nouveau
+            </span>
+          )}
           <CardHeader>
             <div className="flex flex-row items-end justify-between">
-              <CardTitle>{category}</CardTitle>
-              {(promotion || !!isNew) && (
-                <span className={`text-sm leading-loose px-3 ${promotion ? 'bg-orange-light' : ''} ${isNew ? 'bg-green' : ''} rounded-full text-white`}>
-                  {promotion && 'Offre limitée'}
-                  {!!isNew && 'Nouveauté'}
-                </span>
-              )}
+              <CardTitle className={`${!!isNew ? 'text-orange' : ''}`}>{category}</CardTitle>
             </div>
-            <CardDescription>{services[0].title}</CardDescription>
+            <CardDescription className='text-gray-500 dark:text-gray-300 text-center text-sm'>{services[0].title}</CardDescription>
           </CardHeader>
-          <hr className="my-md border-gray-300" />
-          <CardContent>
-            {services[0].desc?.map((cat, index: number) => {
-              return (
-                <p key={index} className="flex py-1">
-                  <span className="translate-y-2 h-2 w-2 mr-3 rounded-full bg-blue" />
-                  <span className="flex-1">{cat.title}</span>
-                </p>
-              )
-            })}
-            <CardTag className="mt-4">
-              <p className="font-bold mb-2">Notre Processus</p>
-              {operation.map((cat, index: number) => {
-                return (
-                  <p key={index} className="flex py-1">
-                    <span className="translate-y-2 h-1 w-1 mr-2 rounded-full bg-blue" />
-                    <span className="flex-1">{cat.title}</span>
-                  </p>
-                )
-              })}
-            </CardTag>
-            {/* <div className="my-4 text-sm text-center flex flex-col justify-between items-center">
-              <p className='text-gray-400'>À partir de</p>
-              <p className="text-lg tracking-wide flex flex-col">
-                <span className={`${promotion ? "line-through text-gray-500 text-md" : "font-bold"}`}>
-                  {price}€
+          {price &&
+            <div className="mt-6 text-sm text-center flex flex-col justify-between items-center">
+              <p className="text-md tracking-wide flex flex-col">
+                <span className="">
+                  {monthly ? ( <>
+                    <span className='text-xl font-bold'>{price}€</span>
+                    <span className='mt-1 text-xs block uppercase'>/ mois</span> 
+                  </>) : ( <>
+                    <span className='mb-1 text-xs block uppercase'>À partir de</span> 
+                    <span className='text-xl font-bold'>{price}€</span>
+                  </>
+                  )}
                 </span>
-                {promotion && <span className='font-bold'>{promotion}€</span> }
               </p>
             </div>
-            <Button
-              variant="small"
-              size="sm"
-              // className={`mt-4 ${availability === 0 && "bg-gray-100 cursor-not-allowed text-gray-300"}`}
-              className={`mt-4 table mx-auto`}
-              // asChild
-            >
-              <Link href={`${content.contact.url}?Subject=Demande de renseignement - ${category}`}>
-                {availability === 0 ? "Bientôt disponible" : 'Contactez-nous'}
-              </Link>
-            </Button> */}
-            <Button
-              // variant="outline"
-              // size="sm"
-              className={`mt-6 table mx-auto`}
-            >
-              <Link href={`mailto:${content.contact.url}?Subject=Demande de renseignement - ${category}`}>
-                Je choisis ce service
-              </Link>
-            </Button>
+          }
+          <CardContent className='mt-6 text-sm'>
+            {services[0].desc?.map((cat, index: number) => (
+              <p key={index} className="flex py-1">
+                {monthly ? 
+                  <Check className="mr-2 text-green dark:text-green-300 relative -top-[3px]" width="20" />
+                  :
+                  <ChevronRight className="mr-1 relative -top-[4px]" width="16" />
+                }
+                <span className="flex-1">{cat.title}</span>
+              </p>
+            ))}      
+            <div className="grid items-center justify-center mt-8 gap-4">
+              <Button asChild variant={monthly && (availability === undefined || availability === null || availability <= 0) ? 'outline' : 'default'}>
+                <Link href={`mailto:${content.contact.url}?Subject=Demande de renseignement - ${category}`}>
+                {monthly ? 
+                  availability === undefined || availability === null || availability <= 0 ? "Me notifier de la disponibilité" : "Sélectionner cet abonnement"
+                : "Se renseigner sur cette offre"
+                }
+                </Link>
+              </Button>
+              {monthly ?
+                availability !== undefined && availability !== null && availability > 0 &&
+                  <p className='text-center'>Plus que {availability} place{availability > 1 ? 's' : ''} disponible{availability > 1 ? 's' : ''}</p>
+                ||
+                  <p className='text-gray-400 text-center'>Bientôt disponible</p>
+              : 
+                <Link className='text-gray-400 hover:text-blue-950 hover:dark:text-white flex justify-center items-center' href={`#simulator`}>
+                  <ChevronRight className="mr-1" width="20" /> 
+                  Estimation gratuite de ton projet
+                </Link>
+              }
+              
+            </div>
             
           </CardContent>
         </Card>
-      
+      </Link>
     </animated.div>
   )
 }

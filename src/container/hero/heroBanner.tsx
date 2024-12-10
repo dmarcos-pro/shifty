@@ -64,7 +64,7 @@ const HeroBanner = () => {
   return (
     <div
       id="hero-banner"
-      className="py-24 bg-blue dark:bg-gray-800 h-screen flex items-center justify-center overflow-hidden relative"
+      className="py-24 bg-blue dark:border-b dark:border-gray-700 h-screen flex items-center justify-center overflow-hidden relative"
     >
       <div className="container text-center relative">
         <animated.div ref={animate} style={fade} className="transition delay-3">
@@ -82,13 +82,18 @@ const HeroBanner = () => {
             className="mt-4 text-white"
             dangerouslySetInnerHTML={{ __html: content.baseline }}
           />
-          <Button asChild className="my-10 border-white hover:bg-white hover:dark:text-blue">
+          <Button 
+            asChild 
+            className="my-10"
+            variant="outlineDark"
+            size="lg"
+          >
             <Link href={`mailto:${content.contact.url}`}>{content.contact.content}</Link>
           </Button>
         </animated.div>
       </div>
-      <div ref={counterRef} className="p-4 absolute bottom-4">
-        <div>
+      <div ref={counterRef} className="p-4 absolute bottom-0 bg-white dark:bg-gray-800 w-full">
+        <div className='container'>
           <div className="flex relative" style={{ left: `-${counter}px` }}>
             {projects &&
               projects.map((project: HeroBannerProject, index: number) => {

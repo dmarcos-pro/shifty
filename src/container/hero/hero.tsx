@@ -17,11 +17,11 @@ const Hero = ({ name }: heroProps) => {
   return (
     <div
       id={`hero-${name}`}
-      className="py-48 flex items-center justify-center overflow-hidden relative bg-gray-900"
+      className="py-48 flex items-center justify-center overflow-hidden relative bg-blue"
     >
       <div className="container text-center relative">
         <animated.div ref={animate} style={fade} className="transition delay-3">
-          <Heading tag="h1" content={content.services.title} />
+          <Heading tag="h1" content={content.services.title} className='text-white' />
         </animated.div>
       </div>
     </div>

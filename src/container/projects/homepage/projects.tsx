@@ -2,10 +2,6 @@
 
 import Project from "@/container/projects/homepage/project"
 import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
-import { type Projects } from "@type/component"
-import { useQuery } from "react-query"
-
-import { fetchProjects } from "@/api"
 import Heading from "@/lib/components/heading"
 import content from "@contentJson"
 import { animated } from "react-spring"
@@ -14,14 +10,7 @@ import { Button } from "@/lib/components/ui/button"
 
 const Projects = () => {
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
-  const {
-    data: projects,
-    isLoading: projectsLoading,
-    error: projectsError,
-  } = useQuery("projectsData", () => fetchProjects())
-
-  if (projectsLoading) return <div>Loading...</div>
-  if (projectsError) return <div>Error fetching data...</div>
+  const projects = content.projects.project
 
   return (
     <section id="projects" className="pb-48">
@@ -38,17 +27,30 @@ const Projects = () => {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {projects &&
             projects
-              .filter((project: Projects) => !!project.main)
-              .map((project: Projects, index: number) => {
-                return <Project key={`project-${index}`} project={project} />
-              })
+              .filter((project) => !!project.main)
+              .map((project, index: number) => (
+                <Project 
+                  key={`project-${index}`} 
+                  id={project.id}
+                  brand={project.brand}
+                  category={project.category}
+                  main={project.main}
+                  desc={project.desc}
+                  url={project.url}
+                />
+              ))
           }
         </div>
-        {/* <div className='text-center'>
-          <Button asChild className="mt-12">
-            <Link href="/projects">Découvrir tous les projets</Link>
+        <animated.div ref={animate} style={fade} className={`transition delay-15 text-center`}>
+          <Button 
+            asChild 
+            className="my-10"
+            variant="outline"
+            size={'lg'}
+          >
+            <Link href={``}>Voir tous les projets</Link>
           </Button>
-        </div> */}
+        </animated.div>
       </div>
     </section>
   )

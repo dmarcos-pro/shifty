@@ -22,20 +22,20 @@ const Task = ({
   return (
     <div 
       id={'task-' + id} 
-      className={`p-4 rounded shadow-lg ${disabled ? '' : 'hidden'} ${selected ? "bg-blue-100" : "hover:bg-gray-100"}`} 
+      className={`py-8 px-4 rounded shadow-lg border-2  ${disabled ? '' : 'hidden'} ${selected ? "border-blue " : "border-gray-100 hover:border-blue-300 dark:bg-gray-800 dark:border-gray-700 hover:dark:border-blue-200"} cursor-pointer`} 
       onClick={() => toggleActiveTask(id, name, price)}
     >
-      <figure className='table mx-auto'>
+      {/* <figure className='table mx-auto'>
         <Image
-          width={60}
-          height={60}
+          width={40}
+          height={40}
           src={image}
           alt={name}
         />
-      </figure>
-      <div className="text-center mt-4">
+      </figure> */}
+      <div className="flex text-center justify-between items-center">
         <p className='font-bold'>{name}</p>
-        <p className='text-sm mt-2'>{price}&nbsp;€</p>
+        <p className='text-sm'>{price}&nbsp;€</p>
       </div>
     </div>
   );

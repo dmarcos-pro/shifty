@@ -18,9 +18,9 @@ const Page = () => {
       <main>
         <Presentation />
         <Services />
-        <Simulator />
-        <Projects />
         <Feedback />
+        <Projects />
+        <Simulator />
       </main>
     </>
   )

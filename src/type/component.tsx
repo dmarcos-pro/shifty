@@ -30,12 +30,12 @@ export type ServicesProps = {
   id: string
   index: number
   category: string
-  url: string
+  price?: string,
+  availability?: number,
   name?: string
-  price?: string
-  promotion: string
   isNew: string
-  availability: number
+  monthly?: string
+  order?: number
 }
 
 export type ServiceAnim = {
@@ -119,14 +119,16 @@ export type PresentationRefs = {
   cta: React.RefObject<HTMLDivElement>
 }
 
-export type Projects = {
-  id: string
+export type ProjectsProps = {
   brand: string
-  tag: string
-  title: string
+  id: string
+  category: string[]
   url: string
-  content: string
   main: boolean
+  desc: { 
+    title: string, 
+    result: {text: string}[]
+  }[]
 }
 
 export type ProjectsRefs = {

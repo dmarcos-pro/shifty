@@ -10,7 +10,7 @@
   "about": {
     "tag": "Pourquoi nous choisir&nbsp;?",
     "welcome": "Découvre le studio Shifty",
-    "desc": "Le studio Shifty t'apporte son expertise dans la transformation digitale de ta marque. Grâce à notre collaboration, tu bénéficies d'un accompagnement personnalisé pour atteindre efficacement tes objectifs de croissance et de fidélisation",
+    "desc": "Le studio Shifty met son expertise au service de la transformation digitale de ta marque. Grâce à notre collaboration, tu bénéficies d'un accompagnement sur-mesure pour atteindre efficacement tes objectifs de croissance et de fidélisation.",
     "cta": "Découvrir le studio",
     "story": {
       "title": "Le studio",
@@ -30,20 +30,18 @@
       "service": {
         "digital": [
           {
-            "title": "Booste ta visibilité avec un site performant",
+            "title": "Booste ta visibilité en ligne",
             "desc": [
               { "title": "Conception de wireframes et maquettes personnalisées" },
               { "title": "Développement de sites e-commerce ou vitrines sur mesure" },
               { "title": "Création de landing pages optimisées pour la conversion" },
-              { "title": "Stratégie de marketing de contenu pour attirer et engager ton audience" },
-              { "title": "Optimisation des conversions pour maximiser tes résultats" },
               { "title": "Amélioration du référencement pour un meilleur positionnement sur les moteurs de recherche" }
             ]
           }
         ],
         "branding": [
           {
-            "title": "Crée une identité visuelle impactante pour renforcer ton image de marque",
+            "title": "Améliore ton image de marque",
             "desc": [
               { "title": "Création de logo et charte graphique personnalisée" },
               { "title": "Conception complète de ton identité visuelle" },
@@ -54,7 +52,7 @@
         ],
         "motion": [
           {
-            "title": "Communique efficacement avec ta communauté",
+            "title": "Communique avec ta communauté",
             "desc": [
               { "title": "Création de vidéos promotionnelles captivantes" },
               { "title": "Production de films d'entreprise professionnels" },
@@ -63,11 +61,49 @@
               { "title": "Couverture d'évènements sportifs" }
             ]
           }
+        ],
+        "standard": [
+          {
+            "title": "Offre idéale pour les sites nécessitant une maintenance de base",
+            "desc": [
+              { "title": "Sauvegarde trimestrielle" },
+              { "title": "Mise à jour des logiciels et des plugins" },
+              { "title": "Vérification des liens cassés pour une navigation fluide" },
+              { "title": "Rapport de maintenance annuel" }
+            ]
+          }
+        ],
+        "premium": [
+          {
+            "title": "Offre idéale pour les sites nécessitant une maintenance régulière",
+            "desc": [
+              { "title": "Sauvegarde mensuelle" },
+              { "title": "Mise à jour des logiciels et des plugins" },
+              { "title": "Analyse et correction des vulnérabilités" },
+              { "title": "Optimisation des performances" },
+              { "title": "Rapport de maintenance trimestriel" },
+              { "title": "Support prioritaire par e-mail pour toute demande technique" }
+            ]
+          }
+        ],
+        "vip": [
+          {
+            "title": "Offre idéale pour les sites nécessitant une maintenance avancée",
+            "desc": [
+              { "title": "Sauvegarde hebdomadaire" },
+              { "title": "Mise à jour des logiciels et des plugins" },
+              { "title": "Analyse et correction des vulnérabilités" },
+              { "title": "Optimisation des performances" },
+              { "title": "Rapport de maintenance mensuel" },
+              { "title": "Support prioritaire par e-mail pour toute demande technique" },
+              { "title": "Heures de support technique dédiées chaque mois" }
+            ]
+          }
         ]
       },
       "operation": {
         "digital": [
-          { "title": "Une équipe dédiée à ton projet, pour une prise en charge complète" },
+          { "title": "Une équipe dédiée qui t'accompagne à chaque étape de ton projet" },
           { "title": "Interactions illimitées pour ajuster et perfectionner le projet et garantir que chaque aspect de ton site réponde à tes attentes" },
           { "title": "Livraison dans les délais convenus" }
         ],
@@ -77,9 +113,31 @@
           { "title": "Intéractions illimitées pour ajuster chaque détail et garantir ta satisfaction" }
         ],
         "motion": [
-          { "title": "Shooting en intérieur et/ou en extérieur pour une variété de contenus" },
+          { "title": "Une équipe dédiée qui t'accompagne à chaque étape de ton projet" },
           { "title": "Post-production soignée pour un rendu final impeccable" },
           { "title": "Interactions illimitées pour s'assurer que ta vision soit pleinement réalisée" }
+        ],
+        "standard": [
+          { "title": "Mises à jour trimestrielles" },
+          { "title": "Sécurité renforcée : réduction des risques liés aux vulnérabilités" },
+          { "title": "Expérience utilisateur optimale : liens fonctionnels et site performant" },
+          { "title": "Rapidité de résolution : intervention proactive en cas de besoin" }
+        ],
+        "premium": [
+          { "title": "Mises à jour mensuelles" },
+          { "title": "Sécurité renforcée : protection accrue avec une surveillance proactive des vulnérabilités" },
+          { "title": "Expérience utilisateur optimisée : temps de chargement amélioré grâce à une optimisation régulière des performances" },
+          { "title": "Rapidité de résolution : support prioritaire pour résoudre rapidement tes demandes" },
+          { "title": "Simplicité : gestion des licences premium pour éviter tout problème d’incompatibilité" }
+        ],
+        "vip": [
+          { "title": "Mises à jour hebdomadaires" },
+          { "title": "Sécurité maximale : monitoring 24/7 pour détecter et résoudre les problèmes" },
+          { "title": "Expérience utilisateur optimisée : temps de chargement amélioré grâce à une optimisation régulière des performances" },
+          { "title": "Rapidité de résolution : support prioritaire pour résoudre rapidement tes demandes" },
+          { "title": "Simplicité : gestion des licences premium pour éviter tout problème d’incompatibilité" },
+          { "title": "Analyse approfondie : rapport mensuel détaillé" },
+          { "title": "Personnalisation : heures de support technique dédiées pour des besoins spécifiques" }
         ]
       }
     },
@@ -159,7 +217,130 @@
   },
   "projects": {
     "title": "Découvre nos dernières collaborations",
-    "tag": "Et si tu étais le prochain&nbsp;?"
+    "tag": "Et si tu étais le prochain&nbsp;?",
+    "project": [
+      {
+        "id": "loreal-luxe",
+        "brand": "L'Oréal Luxe",
+        "category": ["Digital"],
+        "url": "https://zupimages.net/up/23/15/2mpy.png",
+        "main" : true,
+        "desc": [{ 
+          "title": "A/B Testing pour améliorer le taux de conversion",
+          "result": [
+            {"text": "Optimisation des temps de chargement des pages"},
+            {"text": "Suivi des KPI pour mesurer les performances de chaque variation"},
+            {"text": "Analyse statistique des résultats pour déterminer les gagnants"},
+            {"text": "Tests continus pour optimiser en permanence l'expérience utilisateur"}
+          ]
+        }, { 
+          "title": "Marques concernées",
+          "result": [
+            {"text": "Yves Saint Laurent, Lancôme, Kiehl’s, Mugler, Urban Decay, Biotherm"}
+            
+          ]
+        }
+        ]
+      },{
+        "id": "new-balance",
+        "brand": "New Balance",
+        "category": ["Digital"],
+        "url": "https://zupimages.net/up/23/15/2mpy.png",
+        "main" : true,
+        "desc": [{ 
+          "title": "A/B Testing pour améliorer le parcours utilisateur",
+          "result": [
+            {"text": "Analyse des données existantes pour identifier les points de friction"},
+            {"text": "Segmentations des utilisateurs pour des tests plus pertinents"},
+            {"text": "Tests continus pour optimiser en permanence l'expérience utilisateur"},
+            {"text": "Suivi des KPI pour mesurer les performances de chaque variation"},
+            {"text": "Analyse statistique des résultats "},
+            {"text": "Implémentation des changements validés"}
+          ]
+        }
+        ]
+      },{
+        "id": "tcv",
+        "brand": "Tennis Club Vendargues",
+        "category": ["Branding"],
+        "url": "https://zupimages.net/up/23/15/2mpy.png",
+        "main" : true,
+        "desc": [{ 
+          "title": "Création du logo",
+          "result": [
+            {"text": "Analyse des valeurs et de l'identité de marque"},
+            {"text": "Recherche et benchmarking des tendances du secteur"},
+            {"text": "Création de moodboards pour inspirer le design"},
+            {"text": "Choix de palettes de couleurs stratégiques et adaptées"},
+            {"text": "Simplification et optimisation pour une reconnaissance instantanée"},
+            {"text": "Tests de lisibilité et d'impact sur différents supports"},
+            {"text": "Fourniture des fichiers sources et des déclinaisons"}
+          ]
+        }
+        ]
+      },{
+        "id": "leyders-associates",
+        "brand": "Leyders Associates",
+        "category": ["Digital", "Branding"],
+        "url": "https://zupimages.net/up/23/15/2mpy.png",
+        "main" : true,
+        "desc": [{ 
+          "title": "Création de la charte graphique",
+          "result": [
+            {"text": "Définition d'une palette de couleurs cohérente et sélection de typographie"},
+            {"text": "Mise en place des règles de mise en page (grilles, marges, ...)"},
+            {"text": "Livraison d'un document de référence (brandbook)"}
+          ]
+        },
+        { 
+          "title": "Refonte du site vitrine",
+          "result": [
+            {"text": "Conception de wireframes et de maquettes pour structurer le site"},
+            {"text": "Mise en place d'un système de gestion de contenu (CMS)"},
+            {"text": "Développement responsive pour une compatibilité mobile et tablette"},
+            {"text": "Formation à l'administration et à la gestion du site"}
+          ]
+        }
+        ]
+      },{
+        "id": "yellow-korner",
+        "brand": "Yellow Korner",
+        "category": ["Digital"],
+        "url": "https://zupimages.net/up/23/15/2mpy.png",
+        "main" : true,
+        "desc": [{ 
+          "title": "Refonte du site e-commerce",
+          "result": [
+            {"text": "Modernisation du design UX/UI pour améliorer l'expérience utilisateur"},
+            {"text": "Mise en place d'un design responsive pour mobile, tablette et desktop"},
+            {"text": "Développement responsive pour une compatibilité mobile et tablette"},
+            {"text": "Optimisation des temps de chargement des pages"},
+            {"text": "Intégration d'une gestion avancée des filtres et des tris produits"},
+            {"text": "Mise en place d'un système de prévisualisation rapide des produits"}
+          ]
+        }
+        ]
+      },{
+        "id": "ooreka",
+        "brand": "Ooreka",
+        "category": ["Digital", "Branding"],
+        "url": "https://zupimages.net/up/23/15/2mpy.png",
+        "main" : true,
+        "desc": [{ 
+          "title": "Refonte du site",
+          "result": [
+            {"text": "Réalisation de wireframes et de maquettes pour une navigation fluide et intuitive" },
+            {"text": "Développement responsive pour une compatibilité mobile et tablette"},
+            {"text": "Création de newsletters" },
+            {"text": "Intégration de contenu multimédia enrichi (vidéos et infographies) pour diversifier l'expérience utilisateur" },
+            {"text": "Tests utilisateurs pour valider ou ajuster les parcours" },
+            {"text": "Amélioration continue du site à partir des retours et des données recueillies" }
+
+          ]
+        }
+        ]
+      }
+    ]
   },
   "feedback": {
     "tag": "À propos du studio",
@@ -169,112 +350,127 @@
     "tag": "Estime ton projet",
     "title": "Découvre notre simulateur",
     "content": "Le studio met à ta disposition un simulateur pour t'aider à estimer les coûts associés à tes besoins.",
-    "info": "Le montant total indiqué est une estimation, il peut varier en fonction de la complexité et des exigences de ton projet. Contacte-nous pour une évaluation précise et personnalisée.",
+    "info": "Le montant total indiqué est une estimation, il peut varier en fonction de la complexité et des exigences de ton projet.",
     "tasks": [
       {
         "name": "Wireframe / Maquette",
         "id": "wireframe_maquette",
         "category": "Digital",
         "image": "https://zupimages.net/up/23/15/2mpy.png",
-        "price": 1000
+        "price": 1000,
+        "enabled": true
       },
       {
         "name": "Site vitrine",
         "id": "site_vitrine",
         "category": "Digital",
         "image": "https://zupimages.net/up/23/15/pvzk.png",
-        "price": 2000
+        "price": 2000,
+        "enabled": true
       },
       {
         "name": "Site e-commerce",
         "id": "site_e_commerce",
         "category": "Digital",
         "image": "https://zupimages.net/up/23/15/flw9.png",
-        "price": 3000
+        "price": 3000,
+        "enabled": true
       },
       {
         "name": "Charte graphique",
         "id": "charte_graphique",
         "category": "Branding",
         "image": "https://zupimages.net/up/23/15/kkz7.png",
-        "price": 300
+        "price": 300,
+        "enabled": true
       },
       {
         "name": "Flyer",
         "id": "flyer",
         "category": "Branding",
         "image": "https://zupimages.net/up/23/15/r11c.png",
-        "price": 200
+        "price": 200,
+        "enabled": true
       },
       {
         "name": "Carte de visite",
         "id": "carte_de_visite",
         "category": "Branding",
         "image": "https://zupimages.net/up/23/15/jop7.png",
-        "price": 200
+        "price": 200,
+        "enabled": true
       },
       {
         "name": "Nom de marque",
         "id": "nom_de_marque",
         "category": "Branding",
         "image": "https://zupimages.net/up/23/15/fy77.png",
-        "price": 1000
+        "price": 1000,
+        "enabled": true
       },
       {
         "name": "Logo",
         "id": "logo",
         "category": "Branding",
         "image": "https://zupimages.net/up/23/15/dtoe.png",
-        "price": 400
+        "price": 400,
+        "enabled": true
       },
       {
         "name": "Vidéos",
         "id": "video",
         "category": "Social Media",
         "image": "https://zupimages.net/up/23/15/x76e.png",
-        "price": 1000
+        "price": 1000,
+        "enabled": true
       },
       {
         "name": "Photo",
         "id": "photo",
         "category": "Social Media",
         "image": "https://zupimages.net/up/23/15/x76e.png",
-        "price": 600
+        "price": 600,
+        "enabled": true
       },
       {
         "name": "Copywriting",
         "id": "copywriting",
         "category": "Social Media",
         "image": "https://zupimages.net/up/23/15/qymd.png",
-        "price": 500
+        "price": 500,
+        "enabled": true
       },
       {
         "name": "Affiche publicitaire",
         "id": "affiche_publicitaire",
         "category": "Branding",
         "image": "https://zupimages.net/up/23/15/q9t8.png",
-        "price": 1500
+        "price": 1500,
+        "enabled": true
       },
       {
         "name": "Kakémono",
         "id": "kakemono",
         "category": "Branding",
         "image": "https://zupimages.net/up/23/15/q9t8.png",
-        "price": 500
+        "price": 500,
+        "enabled": false
       },
       {
         "name": "Plaquette commerciale",
         "id": "plaquette_commerciale",
         "category": "Branding",
         "image": "https://zupimages.net/up/23/15/epqp.png",
-        "price": 800
+        "price": 800,
+        "enabled": false
       },
       {
         "name": "Catalogue commercial",
         "id": "catalogue_commercial",
         "category": "Branding",
         "image": "https://zupimages.net/up/23/15/qjvh.png",
-        "price": 1500
+        "price": 1500,
+        "enabled": false
       }
     ]
   }

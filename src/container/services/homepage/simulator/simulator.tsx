@@ -7,6 +7,7 @@ import Task from '@/container/services/homepage/simulator/task'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from '@/lib/components/ui/button'
+import { Send, MessageCircleMore, CornerDownRight } from "lucide-react"
 
 const Simulator = () => {
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
@@ -66,30 +67,31 @@ const Simulator = () => {
                 <p className='mt-4'>{content.simulator.content}</p>
             </animated.div>
         </div>
-        <div className='flex mt-12'>
-          <div className='flex-[2] mr-8'>
-              <p className='mb-4'>Filtrer par catégorie</p>
-              <div>
-                  <div
-                      className={`p-2 border-l-4 ${category === "Tout" ? "border-blue font-bold" : "border-white"}`}
-                      onClick={(e) => { showFilter("Tout"); }}
-                  >
-                      Tous les services
-                  </div>
-                  {categoryList.map((item, index) => (
-                      <div
-                          key={index}
-                          onClick={(e) => { showFilter(item); }}
-                          className={`p-2 border-l-4 ${item === category ? "border-blue font-bold" : "border-white"}`}
-                      >
-                          {item}
-                      </div>
-                  ))}
-              </div>
-          </div>
-          <div className='flex-[7]'>
+        <div className="flex gap-2 items-center justify-center my-8">
+          <Button
+            variant={category === "Tout" ? 'default' : 'outlineLight'}
+            size="sm"
+            className={`uppercase text-xs`}
+            onClick={(e) => { showFilter("Tout"); }}
+            >
+            Tous les services
+          </Button>
+          {categoryList.map((item, index) => (
+            <Button
+              key={index}
+              variant={item === category ? 'default' : "outlineLight"}
+              size="sm"
+              className={`uppercase text-xs`}
+              onClick={(e) => { showFilter(item); }}
+            >
+              {item}
+            </Button>
+          ))}
+        </div>
+        <div className='flex'>
+          <div className='flex-[9]'>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {tasks.map((item, index: number) => (
+              {tasks.filter((item) => item.enabled).map((item, index: number) => (
                 <Task
                   key={`task-` + index}
                   id={item.id}
@@ -103,38 +105,52 @@ const Simulator = () => {
               ))}
             </div>
           </div>
-          <div className='flex-[3] ml-8'>
-            <p className='mb-8 text-md font-bold'>Récapitulatif {activeTask.length > 0 && `• ${activeTask.length} service${activeTask.length > 1 ? 's' : ''} `}</p>
-            {activeTask.length === 0 && <>
-              <p className="mb-8">Tu n&apos;as encore rien sélectionné !</p>
-            </>}
-            {activeTask.map((item) => (
-              <div 
-                key={item.id} 
-                className='p-2 rounded border border-gray-600 mb-2 justify-between flex items-center'
+          <div className='flex-[3] ml-8 px-8'>
+            <p className='text-md font-bold mb-4'>Récapitulatif</p>
+            {activeTask.length === 0 ? 
+              <p className="text-sm">Tu n&apos;as encore rien sélectionné !</p>
+            : activeTask.map((item) => (
+              <div
+                key={item.id}
+                className='mt-2 text-sm justify-between flex items-center'
               >
-                <span>{item.name}</span>
-                <span className='text-sm'>{item.price}€</span>
-              </div>
+                <span className='flex'>
+                  <CornerDownRight size={16} className='mr-1' />
+                  <span>{item.name}</span>
+                </span>
+                <span className='text-sm'>{item.price} €</span>
+              </div>  
             ))}
+            {activeTask.length !== 0 && <hr className="border-gray-300 dark:border-gray-700 my-4" />}
             {price > 0 && <>
-              <div className='my-8 grid gap-4 text-sm'>
+              <div className='grid gap-2 text-sm'>
                 <p className='flex justify-between'>
-                  <span className='font-bold '>Total HT</span>{price}€
+                  <span className=''>Total HT</span>{price} €
                 </p>
                 <p className='flex justify-between'>
-                  <span className='font-bold'>TVA 20%</span>{price * .2}€
+                  <span className=''>TVA 20%</span>{price * .2} €
                 </p>
-                <p className='flex justify-between text-md font-bold'>
-                  <span>Total TTC</span>{price + (price * .2)}€
+                <p className='flex justify-between font-bold'>
+                  <span>Total TTC</span>{price + (price * .2)} €
                 </p>
               </div>
-              <hr className="border-gray-300" />
-              <p className='mt-8 font-bold'>Informations :</p>
-              <p className='mt-2'>{content.simulator.info}</p>
-              <Button asChild className="mt-8">
-                <Link href={`mailto:${content.contact.url}`}>Demande de devis personnalisé</Link>
-              </Button>
+              <hr className="border-gray-300 dark:border-gray-700 my-4" />
+              <p className='font-bold text-sm'>Informations :</p>
+              <p className='mt-2 text-sm '>{content.simulator.info}</p>
+              <div className="flex gap-2 mt-8">
+                <Button asChild size="sm">
+                  <Link href={`mailto:${content.contact.url}`}>
+                    <Send size={16} className='mr-1' />
+                    Mail
+                  </Link>
+                </Button>
+                <Button asChild size="sm" variant="green">
+                  <Link href={`mailto:${content.contact.url}`}>
+                    <MessageCircleMore size={18} className='mr-1' />
+                    Whatsapp
+                  </Link>
+                </Button>
+              </div>
             </>
             }
           </div>

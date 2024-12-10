@@ -6,9 +6,7 @@ const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElemen
   <div
     ref={ref}
     className={cn(
-      // "rounded-lg p-6 border-4 border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:dark:border-blue-400",
-      // "rounded p-6 border border-2 border-white dark:border-deepblue hover:border-blue-400 hover:dark:border-blue-400 shadow-xl",
-      "rounded p-6 border border-2 border-white dark:border-deepblue shadow-xl",
+      "rounded-lg p-10 border border-white bg-white hover:border-blue-500 dark:border-gray-700 dark:bg-gray-700 hover:dark:border-gray-300 shadow-xl",
       className,
     )}
     {...props}
@@ -26,7 +24,7 @@ const CardHeader = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDiv
 CardHeader.displayName = "CardHeader"
 
 const CardTitle = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLHeadingElement>>(({ className, ...props }, ref) => (
-  <h3 ref={ref} className={cn("text-md font-bold text-gray-800 dark:text-blue-300", className)} {...props} />
+  <h3 ref={ref} className={cn("table mx-auto font-bold text-blue-800 dark:text-blue-300", className)} {...props} />
 ))
 CardTitle.displayName = "CardTitle"
 
@@ -34,7 +32,7 @@ const CardTag = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTML
   <div
     ref={ref}
     className={cn(
-      "p-6 bg-gray-100 dark:bg-gray-700",
+      "p-6 rounded border border-blue-100 dark:bg-gray-700",
       className,
     )}
     {...props}
@@ -43,7 +41,7 @@ const CardTag = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTML
 CardTag.displayName = "CardTag"
 
 const CardDescription = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLParagraphElement>>(({ className, ...props }, ref) => (
-  <p ref={ref} className={cn("mt-2 font-bold", className)} {...props} />
+  <p ref={ref} className={cn("mt-2 px-5", className)} {...props} />
 ))
 CardDescription.displayName = "CardDescription"
 

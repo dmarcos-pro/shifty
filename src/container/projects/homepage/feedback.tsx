@@ -24,7 +24,7 @@ const Feedback = () => {
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
 
   return (
-    <section className="pb-24">
+    <section className="pb-48">
       <animated.div ref={animate} style={fade}>
         <div className="text-center">
           <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
@@ -38,15 +38,15 @@ const Feedback = () => {
               <CarouselContent>
                 {feedback.map((feedback: FeedbackContainer, index: number) => {
                   return (
-                    <CarouselItem key={index} className="text-center">
+                    <CarouselItem key={index} className="">
                       <div
-                        className="mb-4 text-lg leading-8"
+                        className="mb-4 text-md leading-7"
                         dangerouslySetInnerHTML={{
                           __html: feedback.text,
                         }}
                       />
-                      <p className="text-sm">{feedback.who}</p>
-                      <p className="text-sm mt-1 text-gray-500">
+                      <p className="text-sm text-center">{feedback.who}</p>
+                      <p className="text-sm mt-1 text-center text-gray-500">
                         {feedback.job} - {feedback.brand}
                       </p>
                     </CarouselItem>

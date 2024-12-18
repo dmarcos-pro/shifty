@@ -61,6 +61,7 @@ const Service = ({
       style={fade}
       className={`transition ${delayClass}`}
     >
+      
       <Link href={`/services?cat=${id}`} passHref>
         <Card className={!!isNew ? 'border-orange-500 dark:border-orange-500' : ''}>
           {!!isNew && (

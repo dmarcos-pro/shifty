@@ -61,13 +61,14 @@ const Service = ({
       style={fade}
       className={`transition ${delayClass}`}
     >
-      
+
       <Link href={`/services?cat=${id}`} passHref>
         <Card className={!!isNew ? 'border-orange-500 dark:border-orange-500' : ''}>
           {!!isNew && (
             <span className={`text-xs uppercase font-bold tracking-wide px-4 py-2 bg-orange-600 rounded-full text-white absolute -translate-y-1/2 -translate-x-1/2 top-0 left-1/2`}>
               Nouveau
             </span>
+            
           )}
           <CardHeader>
             <div className="flex flex-row items-end justify-between">

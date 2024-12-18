@@ -39,8 +39,8 @@ const Footer = () => {
               <p className='font-bold mb-2 text-base'>Nos services</p>
               <ul>
                 {services && services.filter((service: ServicesProps) => !service.monthly).map((service: ServicesProps, index: number) => (
-                  <li key={index} className='py-1'>
-                    {service.category}
+                  <li key={`footer-services-${index}`} className='py-1'>
+                    <Link href={`/services?cat=${service.id}`}>{service.category}</Link>
                   </li>
                 ))}
               </ul>
@@ -49,7 +49,7 @@ const Footer = () => {
               <p className='font-bold mb-2 text-base'>Nos abonnements</p>
               <ul>
                 {services && services.filter((service: ServicesProps) => service.monthly).map((service: ServicesProps, index: number) => (
-                  <li key={index} className='py-1'>
+                  <li key={`footer-abonnement-${index}`} className='py-1'>
                     {service.category}
                   </li>
                 ))}

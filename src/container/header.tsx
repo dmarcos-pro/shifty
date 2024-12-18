@@ -24,27 +24,22 @@ const Header = () => {
   return (
     <>
       <header className="fixed z-10 w-full top-0 flex items-center justify-center py-3 backdrop-blur-sm">
-        <animated.div
+        <animated.nav
           ref={animate}
           style={fade}
-          className={`transition delay-8`}
+          className={`transition delay-4 flex rounded-50 py-1 bg-gray-200 dark:bg-gray-800 text-sm font-bold`}
         >
-          <nav className="flex rounded-50 py-1 bg-gray-100 dark:bg-gray-800 text-sm font-bold">
-            {nav &&
-              nav.map((item: HeaderNav, index: number) => {
-                return (
-                  <React.Fragment key={`navHeader-${index}`}>
-                    <Link
-                      href={`${item.link}`}
-                      className={`${pathname === item.link ? 'bg-blue text-white hover:bg-blue' : 'hover:bg-gray-200'} block p-2 mx-1 md:px-4 rounded-50 uppercase text-xs font-extrabold tracking-wide hover:dark:bg-gray-700 text-gray-400`}
-                    >
-                      {item.name}
-                    </Link>
-                  </React.Fragment>
-                )
-              })}
-          </nav>
-        </animated.div>
+          {nav &&
+            nav.map((item: HeaderNav, index: number) => (
+              <Link
+                key={`navHeader-${index}`}
+                href={`${item.link}`}
+                className={`${pathname === item.link ? 'bg-blue text-white hover:bg-blue' : 'hover:bg-gray-100'} block p-2 mx-1 md:px-4 rounded-50 uppercase text-xs font-extrabold tracking-wide hover:dark:bg-gray-700 text-gray-400`}
+              >
+                {item.name}
+              </Link>
+            ))}
+        </animated.nav>
         <div className="absolute right-md md:right-lg top-xs">
           <DropdownMenu>
             <DropdownMenuTrigger>

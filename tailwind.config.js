@@ -60,17 +60,17 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        title: ["Sora", "sans-serif"],
+        title: ["var(--font-title)", ...fontFamily.sans]
       },
       fontSize: {
         'h1': ["6rem", "7rem"],
         'h3': ["1.2rem", "1.5rem"],
         base: ["1rem", "1.2rem"],
-        xs: [".6rem", ".8rem"],
-        sm: [".8rem", "1rem"],
-        md: ["1.2rem", "1.5rem"],
-        lg: ["1.5rem", "2rem"],
-        xl: ["2rem", "2.5rem"],
+        xs: [".7rem", ".9rem"],
+        sm: [".9rem", "1.1rem"],
+        md: ["1.1rem", "1.4rem"],
+        lg: ["1.4rem", "1.8rem"],
+        xl: ["2rem", "2.4rem"],
         xxl: ["3rem", "3.5rem"]
 
       },

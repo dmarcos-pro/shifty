@@ -27,7 +27,7 @@ export type ProgressBarProps = {
 }
 
 export type ServicesProps = {
-  id: string
+  id: 'branding' | 'digital' | 'motion'
   index: number
   category: string
   price?: string,

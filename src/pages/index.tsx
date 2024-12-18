@@ -2,11 +2,11 @@
 
 import Head from "./head"
 import HeroBanner from "@/container/hero/heroBanner"
-import Services from "@/container/services/homepage/services"
+import Services from "@/container/homepage/services/services"
 import Presentation from "@/container/studio/homepage/presentation"
-import Projects from "@/container/projects/homepage/projects"
-import Feedback from "@/container/projects/homepage/feedback"
-import Simulator from "@/container/services/homepage/simulator/simulator"
+import Projects from "@/container/homepage/projects/projects"
+import Feedback from "@/container/homepage/feedback/feedback"
+import Simulator from "@/container/homepage/simulator/simulator"
 
 const name = process.env.NAME as string
 
@@ -15,13 +15,11 @@ const Page = () => {
     <>
       <Head>{name}</Head>
       <HeroBanner />
-      <main>
-        <Presentation />
-        <Services />
-        <Feedback />
-        <Projects />
-        <Simulator />
-      </main>
+      <Presentation />
+      <Services />
+      <Feedback />
+      <Projects />
+      <Simulator />
     </>
   )
 }

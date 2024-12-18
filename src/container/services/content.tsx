@@ -1,47 +1,72 @@
-"use client"
-import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
 import content from "@contentJson"
-import Heading from "@lib/components/heading"
-import { animated } from "react-spring"
+import { Sparkles } from 'lucide-react'
 
-const ServicesContent = () => {
-  const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
+import { Button } from "@/lib/components/ui/button"
+import Link from 'next/link'
+import { Send, MessageCircleMore } from 'lucide-react'
+import Heading from "@/lib/components/heading"
+
+type ContentServicesProps = {
+  category: 'branding' | 'digital' | 'social_media';
+  serviceSelected: number;
+}
+
+const ContentServices = ({ 
+  category, 
+  serviceSelected
+}: ContentServicesProps) => {
   return (
-    <>
-      <section id="services-intro" className="py-48">
-        <div className="container">
-          <animated.div ref={animate} style={fade}>
-            <span className="mb-3 block text-sm uppercase text-center text-gray-400 dark:text-gray-500">
-              {content.services.content.introduction.title}
-            </span>
-            <p className="leading-6">
-              {content.services.content.introduction.text} 
-            </p> 
-          </animated.div>
+    <article>
+      <header>
+        <div className="flex gap-4 items-center">
+          <span className="p-2 rounded border bg-blue text-white">
+            <Sparkles size={30} />
+          </span>
+          <Heading tag='h2' content={content.services.items[category].content[serviceSelected].title} />
         </div>
-        <div className="container mt-24">
-          <Heading 
-            tag="h2" 
-            content={content.services.offer.service.digital[0].title}
-          />
-          <animated.div ref={animate} style={fade}>
-            {content.services.content.digital.map((digital, index: number) => {
-              return (
-                  <div key={`services-digital-${index}`}>
-                    <span className="mt-12 mb-3 block text-sm uppercase text-center text-gray-400 dark:text-gray-500">
-                      {digital.title}
-                    </span>
-                    <p className="leading-6">
-                      {digital.text}
-                    </p> 
-                  </div>
-              )
-            })}
-          </animated.div>
+        <p className='mt-4'>
+          {content.services.items[category].content[serviceSelected].resume}
+        </p>
+      </header>
+      <hr className='my-8 border-gray-200 dark:border-gray-600' />
+      {content.services.items[category].content[serviceSelected].list.map((item, index) => (
+        <div key={`service-selected-${index}`} className={`${index > 0 ? 'mt-8' : ''}`}>
+          <p className='text-md'>{index +1}. {item.title}</p> 
+          <ul>
+            {item.content.map((list, i) => (
+              <li key={`service-list-item-${i}`} className='flex items-start gap-2 mt-4'>
+                <Sparkles size={15} className='relative top-1 text-gray-400' />
+                <span dangerouslySetInnerHTML={{ __html: list }} className='flex-1' />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+      <hr className='my-8 border-gray-200 dark:border-gray-600' />
+      <footer className='flex items-end gap-8'>
+        {content.services.items[category].content[serviceSelected].footer.map((footer, index) => (
+          <div key={`service-footer-${index}`}>
+            {footer.title && <Heading tag='h3' content={footer.title} />}
+            <p key={index} className='mt-4'>{footer.content}</p>
           </div>
-      </section>
-    </>
+        ))}
+        <div className='gap-2 flex'>
+          <Button asChild size='sm'>
+            <Link href={`mailto:${content.contact.url}`}>
+              <Send size={16} className='mr-1' />
+              Mail
+            </Link>
+          </Button>
+          <Button asChild size='sm' variant="green">
+            <Link href={`mailto:${content.contact.url}`}>
+              <MessageCircleMore size={18} className='mr-1' />
+              Whatsapp
+            </Link>
+          </Button>
+        </div>
+      </footer>
+    </article>
   )
 }
 
-export default ServicesContent
+export default ContentServices

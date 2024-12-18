@@ -21,7 +21,7 @@ const Project = ({ id, brand, category, url, desc }: ProjectsProps) => {
       <Link href={url} target="_blank" passHref>
         <Card>
           <CardHeader>
-              <Image src={imgMini} width="80" height="80" alt={`Logo ${id}`} className='table mx-auto' />
+            <Image src={imgMini} width="80" height="80" alt={`Logo ${id}`} className='table mx-auto' />
           </CardHeader>
           <CardContent className="flex-1 mt-4">
             <div
@@ -32,7 +32,7 @@ const Project = ({ id, brand, category, url, desc }: ProjectsProps) => {
                 {category.map((item, index) => (
                   <span
                     className="uppercase inline-block text-xs bg-white mr-2 py-1 px-2 rounded-lg"
-                    key={index}
+                    key={`project-category-${index}`}
                   >
                     {item}
                   </span>
@@ -41,19 +41,21 @@ const Project = ({ id, brand, category, url, desc }: ProjectsProps) => {
             </div>
             <CardTitle className="mt-8 text-sm">{brand}</CardTitle>
             <CardContent className="text-sm">
-              {desc.map((desc, index) => ( <>
-                <CardDescription key={index} className='text-gray-500 dark:text-gray-400 text-sm mt-6 p-0'>
-                  {desc.title}
-                </CardDescription>
-                <div className="mt-2">
-                  {desc.result.map((item, i) => <>
-                    <span key={i} className='flex py-1'>
-                      <Check className="mr-2 text-green dark:text-green-300 relative -top-[3px]" width="20" />
-                      <span className='flex-1' dangerouslySetInnerHTML={{ __html: item.text}} />
-                    </span>
-                  </>)}
+              {desc.map((desc, index) => ( 
+                <div key={`project-content-${index}`}>
+                  <CardDescription key={`project-title-${index}`} className='text-gray-500 dark:text-gray-400 text-sm mt-6 p-0'>
+                    {desc.title}
+                  </CardDescription>
+                  <ul className="mt-2">
+                    {desc.result.map((item, i) =>
+                      <li key={`project-desc-${i}`} className='flex py-1'>
+                        <Check className="mr-2 text-green dark:text-green-300 relative -top-[3px]" width="20" />
+                        <span className='flex-1' dangerouslySetInnerHTML={{ __html: item.text}} />
+                      </li>
+                    )}
+                  </ul>
                 </div>
-              </>))}
+              ))}
             </CardContent>
           </CardContent>
         </Card>

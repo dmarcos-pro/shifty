@@ -19,7 +19,12 @@ const nextConfig = {
     return config
   },
   images: {
-    domains: ['zupimages.net'],
+    remotePatterns: [{
+      protocol: "https", // Obligatoire : "http" ou "https"
+      hostname: "zupimages.net", // Le domaine autorisé
+      port: "", // Facultatif
+      pathname: "/images/**", // Facultatif : chemin à autoriser
+    }],
   },
 }
 

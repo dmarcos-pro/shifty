@@ -6,6 +6,11 @@ export const UseFadeInAnimation = (effect: string) => {
   const [isVisible, setIsVisible] = useState(false)
   const { ref, inView } = useInView()
   let e = {}
+  if (effect === "fade" || effect === undefined) {
+    e = {
+      opacity: isVisible ? 1 : 0,
+    }
+  }
   if (effect === "fadeIn" || effect === undefined) {
     e = {
       opacity: isVisible ? 1 : 0,
@@ -20,10 +25,12 @@ export const UseFadeInAnimation = (effect: string) => {
   }
 
   const fade = useSpring(e)
+  const fadeIn = useSpring(e)
+  const fadeDown = useSpring(e)
 
   if (inView && !isVisible) {
     setIsVisible(true)
   }
 
-  return { ref, fade }
+  return { ref, fade, fadeIn, fadeDown }
 }

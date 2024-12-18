@@ -1,30 +1,46 @@
 "use client"
 
 import Heading from "@/lib/components/heading"
-import { Button } from "@/lib/components/ui/button"
 import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
 import content from "@contentJson"
-import Link from "next/link"
 import { animated } from "react-spring"
+import { 
+  Breadcrumb,
+  BreadcrumbItem, 
+  BreadcrumbLink, 
+  BreadcrumbList, 
+  BreadcrumbPage, 
+  BreadcrumbSeparator 
+} from "@/lib/components/ui/breadcrumb"
 
 export type heroProps = {
   name: string
 }
 
 const Hero = ({ name }: heroProps) => {
-  const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
+  const { ref: animate, fade } = UseFadeInAnimation("fadeDown")
 
   return (
-    <div
+    <section
       id={`hero-${name}`}
-      className="py-48 flex items-center justify-center overflow-hidden relative bg-blue"
+      className="pt-48 pb-12 overflow-hidden"
     >
-      <div className="container text-center relative">
-        <animated.div ref={animate} style={fade} className="transition delay-3">
-          <Heading tag="h1" content={content.services.title} className='text-white' />
-        </animated.div>
-      </div>
-    </div>
+      <animated.div ref={animate} style={fade} className="container">
+        <Heading tag="h1" content={content.services.h1} />
+        <Breadcrumb className='my-4'>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Accueil</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>{name}</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+        <p className="leading-16 text-xl">{content.services.introduction}</p>
+      </animated.div>
+    </section>
   )
 }
 

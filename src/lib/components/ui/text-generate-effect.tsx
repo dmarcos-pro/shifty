@@ -6,9 +6,9 @@ import { useInView } from "react-intersection-observer"
 export const TextGenerateEffect = ({
   words,
   className = '',
-  fontSize = 'text-lg md:text-xxl',
+  fontSize = '',
   bold = false,
-  fontTitle = true,
+  fontTitle = false,
   leading = 'md:leading-[4rem]',
 }: {
   words: string
@@ -41,8 +41,7 @@ export const TextGenerateEffect = ({
     return (
       <div ref={ref}>
         <motion.div ref={scope}>
-          {wordsArray.map((word, idx) => {
-            return (
+          {wordsArray.map((word, idx) => (
               <motion.span
                 key={word + idx}
                 className={`${bold ? 'font-extrabold' : ''} ${fontTitle ? 'font-title' : ''} ${fontSize} ${leading} opacity-0 ${className}`}
@@ -50,7 +49,7 @@ export const TextGenerateEffect = ({
                 {word}{" "}
               </motion.span>
             )
-          })}
+          )}
         </motion.div>
       </div>
     )

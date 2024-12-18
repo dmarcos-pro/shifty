@@ -5,12 +5,14 @@ import { QueryClient, QueryClientProvider } from "react-query"
 import Layout from "./layout"
 import AnimatedCursor from 'react-animated-cursor'
 
-import { Inter as FontSans } from "next/font/google"
+// import { Inter as FontSans } from "next/font/google"
+import { Figtree as FontSans } from "next/font/google"
 export const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
   weight: "400",
 })
+
 
 type MyAppProps = AppProps & {
   Component: any

@@ -123,9 +123,10 @@ export type ProjectsProps = {
   brand: string
   id: string
   category: string[]
-  url: string
-  main: boolean
-  desc: { 
+  url?: string
+  main?: boolean
+  selected: boolean
+  desc?: { 
     title: string, 
     result: {text: string}[]
   }[]

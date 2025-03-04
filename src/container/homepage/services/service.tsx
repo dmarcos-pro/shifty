@@ -78,7 +78,7 @@ const Service = ({
           </CardHeader>
           <CardContent>
             {price &&
-              <div className="text-sm mb-6 text-center flex flex-col justify-between items-center">
+              <div className="mb-6 text-center flex flex-col justify-between items-center">
                 <p className="text-md tracking-wide flex flex-col">
                   <span className="">
                     {monthly ? ( <>
@@ -93,7 +93,7 @@ const Service = ({
                 </p>
               </div>
             }
-            <ul className='text-sm'>
+            <ul>
               {services.resume.desc?.map((cat, index: number) => (
                 <li key={`service-resume-${index}`} className="flex py-1">
                   {monthly ? 
@@ -118,11 +118,11 @@ const Service = ({
               </Button>
               {monthly ?
                 availability !== undefined && availability !== null && availability > 0 &&
-                  <p className='text-center'>{availability > 1 ? `Plus que ${availability} places disponibles` : 'Dernière place disponible'}</p>
+                  <p className='text-center text-sm'>{availability > 1 ? `Plus que ${availability} places disponibles` : 'Dernière place disponible'}</p>
                 ||
-                  <p className='text-gray-400 text-center'>Bientôt disponible</p>
+                  <p className='text-gray-400 text-sm text-center'>Bientôt disponible</p>
               :
-                <Link className='text-gray-400 hover:text-blue-950 hover:dark:text-white flex justify-center items-center' href={`#simulator`}>
+                <Link className='text-gray-400 hover:text-blue-950 hover:dark:text-white flex justify-center items-center text-sm' href={`#simulator`}>
                   <ChevronRight className="mr-1" width="14" />
                   Estimation gratuite
                 </Link>

@@ -14,7 +14,7 @@ import {
 } from "@/lib/components/ui/breadcrumb"
 
 export type heroProps = {
-  name: string
+  name: "services" | "studio"
 }
 
 const Hero = ({ name }: heroProps) => {
@@ -26,7 +26,7 @@ const Hero = ({ name }: heroProps) => {
       className="pt-48 pb-12 overflow-hidden"
     >
       <animated.div ref={animate} style={fade} className="container">
-        <Heading tag="h1" content={content.services.h1} />
+        <Heading tag="h1" content={content[name].h1} />
         <Breadcrumb className='my-4'>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -38,7 +38,7 @@ const Hero = ({ name }: heroProps) => {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <p className="leading-16 text-xl">{content.services.introduction}</p>
+        <p className="leading-16 text-xl" dangerouslySetInnerHTML={{ __html: content[name].introduction }} />
       </animated.div>
     </section>
   )

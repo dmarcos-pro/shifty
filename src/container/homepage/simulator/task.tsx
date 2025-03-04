@@ -18,7 +18,7 @@ const Task = ({
 
   return <li 
       id={'task-' + id} 
-      className={`py-8 px-4 rounded shadow-lg border-2 flex justify-between items-center ${disabled ? '' : 'hidden'} ${selected ? "border-blue-800" : "border-gray-100 hover:border-blue-500 dark:bg-gray-800 dark:border-gray-700 hover:dark:border-blue-200"} cursor-pointer`} 
+      className={`py-8 px-4 rounded shadow-lg border flex justify-between items-center ${disabled ? '' : 'hidden'} ${selected ? "border-blue" : "border-gray-100 hover:border-blue-500 dark:bg-transparent dark:border-gray-700 hover:dark:border-blue-200"} cursor-pointer`} 
       onClick={() => toggleActiveTask(id, name, price)}
     >
       <span>{name}</span>

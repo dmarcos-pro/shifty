@@ -1,66 +1,27 @@
 import {
   Card,
-  CardContent,
-  CardDescription,
   CardHeader,
-  CardTitle,
 } from "@/lib/components/ui/card"
-import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
-import Image from "next/image"
-import Link from "next/link"
-import { animated } from "react-spring"
 import { ProjectsProps } from "@/type/component"
-import { Check } from "lucide-react"
+import { fontTitle } from "@/lib/components/heading"
 
-const Project = ({ id, brand, category, url, desc }: ProjectsProps) => {
-  const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
-  const imgMini = `/images/project/logo/${id}.png`
-  const imgProject = `/images/project/mini/${id}.jpg`
+const Project = ({ id, brand, category, selected }: ProjectsProps) => {
   return (
-    <animated.div ref={animate} style={fade}>
-      <Link href={url} target="_blank" passHref>
-        <Card>
-          <CardHeader>
-            <Image src={imgMini} width="80" height="80" alt={`Logo ${id}`} className='table mx-auto' />
-          </CardHeader>
-          <CardContent className="flex-1 mt-4">
-            <div
-              style={{ backgroundImage: `url(${imgProject})`}}
-              className={`bg-cover h-[200px] bg-center relative`}
+    <Card id={id} className={`p-4 ${selected ? 'border-blue-500' : ''}`}>
+      <CardHeader className='mb-0 text-center'>
+        <p className={`${fontTitle.className}`}>{brand}</p>
+        <div>
+          {category.map((item, index) => (
+            <span
+              className="uppercase inline-block text-xs text-blue bg-blue-50 dark:bg-gray-800 mr-2 py-1 px-2"
+              key={`project-category-${index}`}
             >
-              <div className="absolute top-2 right-1">
-                {category.map((item, index) => (
-                  <span
-                    className="uppercase inline-block text-xs bg-white mr-2 py-1 px-2 rounded-lg"
-                    key={`project-category-${index}`}
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <CardTitle className="mt-8 text-sm">{brand}</CardTitle>
-            <CardContent className="text-sm">
-              {desc.map((desc, index) => ( 
-                <div key={`project-content-${index}`}>
-                  <CardDescription key={`project-title-${index}`} className='text-gray-500 dark:text-gray-400 text-sm mt-6 p-0'>
-                    {desc.title}
-                  </CardDescription>
-                  <ul className="mt-2">
-                    {desc.result.map((item, i) =>
-                      <li key={`project-desc-${i}`} className='flex py-1'>
-                        <Check className="mr-2 text-green dark:text-green-300 relative -top-[3px]" width="20" />
-                        <span className='flex-1' dangerouslySetInnerHTML={{ __html: item.text}} />
-                      </li>
-                    )}
-                  </ul>
-                </div>
-              ))}
-            </CardContent>
-          </CardContent>
-        </Card>
-      </Link>
-    </animated.div>
+              {item}
+            </span>
+          ))}
+        </div>
+      </CardHeader>
+    </Card>
   )
 }
 

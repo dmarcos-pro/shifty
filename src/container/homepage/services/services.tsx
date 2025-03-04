@@ -19,10 +19,10 @@ const Services = () => {
   if (servicesError) return <div>Error fetching data...</div>
 
   return (
-    <section id="services" className="pb-48">
+    <section id="services" className="py-48">
       <div className="container">
         <animated.header ref={animate} style={fade} className="text-center">
-          <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-blue-300">
+          <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
             {content.services.subtitle}
           </span>
           <Heading tag="h2" content={content.services.title} />

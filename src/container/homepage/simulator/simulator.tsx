@@ -7,7 +7,7 @@ import Task from '@/container/homepage/simulator/task'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Button } from '@/lib/components/ui/button'
-import { Send, MessageCircleMore, CornerDownRight } from "lucide-react"
+import { Send, MessageCircleMore, MoveRight } from "lucide-react"
 
 const Simulator = () => {
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
@@ -56,7 +56,7 @@ const Simulator = () => {
     <section id="simulator" className="pb-48">
       <div className="container">
         <animated.header ref={animate} style={fade} className="text-center">
-          <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-blue-300">
+          <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
               {content.simulator.tag}
           </span>
           <Heading tag="h2" content={content.simulator.title} />
@@ -114,7 +114,7 @@ const Simulator = () => {
                     className='mt-2 text-sm justify-between flex items-center'
                   >
                     <span className='flex'>
-                      <CornerDownRight size={16} className='mr-1' />
+                      <MoveRight size={16} className='mr-2 relative top-[2px]' />
                       <span>{item.name}</span>
                     </span>
                     <span className='text-sm'>{item.price} €</span>

@@ -16,7 +16,7 @@ module.exports = {
       center: true,
       padding: "32px",
       screens: {
-        "2xl": "1400px",
+        "md": "1400px",
       },
     },
     extend: {
@@ -63,13 +63,13 @@ module.exports = {
         title: ["var(--font-title)", ...fontFamily.sans]
       },
       fontSize: {
-        'h1': ["6rem", "7rem"],
+        'h1': ["6rem", "6.5rem"],
         'h3': ["1.2rem", "1.5rem"],
-        base: ["1rem", "1.2rem"],
+        base: ["1.1rem", "1.4rem"],
         xs: [".7rem", ".9rem"],
         sm: [".9rem", "1.1rem"],
-        md: ["1.1rem", "1.4rem"],
-        lg: ["1.4rem", "1.8rem"],
+        md: ["1.3rem", "1.6rem"],
+        lg: ["1.5rem", "1.8rem"],
         xl: ["2rem", "2.4rem"],
         xxl: ["3rem", "3.5rem"]
 

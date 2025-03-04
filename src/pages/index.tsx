@@ -3,7 +3,7 @@
 import Head from "./head"
 import HeroBanner from "@/container/hero/heroBanner"
 import Services from "@/container/homepage/services/services"
-import Presentation from "@/container/studio/homepage/presentation"
+import Presentation from "@/container/homepage/studio/presentation"
 import Projects from "@/container/homepage/projects/projects"
 import Feedback from "@/container/homepage/feedback/feedback"
 import Simulator from "@/container/homepage/simulator/simulator"
@@ -15,8 +15,8 @@ const Page = () => {
     <>
       <Head>{name}</Head>
       <HeroBanner />
-      <Presentation />
       <Services />
+      <Presentation />
       <Feedback />
       <Projects />
       <Simulator />

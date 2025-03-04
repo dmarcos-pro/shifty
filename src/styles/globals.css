@@ -40,10 +40,27 @@
   h1, h2, h3 {
     @apply font-title;
   }
+
   
   
 }
 
+.bg-orange {
+  background-color: var(--color-orange);;
+}
+
+.container-xs {
+  @apply container;
+  max-width: 800px;
+}
+.container-sm {
+  @apply container;
+  max-width: 1000px;
+}
+.container-md {
+  @apply container;
+  max-width: 1200px;
+}
 
 
 @layer base {
@@ -51,6 +68,7 @@
     scroll-behavior: smooth;
     line-height: 1.4;
   }
+  
   /*ul {
     margin-top: 8px;
   }

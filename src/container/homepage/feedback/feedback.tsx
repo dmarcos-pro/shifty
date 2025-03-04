@@ -24,7 +24,7 @@ const Feedback = () => {
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
 
   return (
-    <animated.section ref={animate} style={fade} className="pb-48">
+    <animated.section ref={animate} style={fade} className="py-48">
       <header className="text-center">
         <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
           {content.feedback.tag}

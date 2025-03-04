@@ -5,14 +5,15 @@ import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
 import Heading from "@/lib/components/heading"
 import content from "@contentJson"
 import { animated } from "react-spring"
-import Link from 'next/link'
-import { Button } from "@/lib/components/ui/button"
-import { text } from 'stream/consumers'
+import { Check } from "lucide-react"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/lib/components/ui/carousel'
+import { useState } from "react"
+import Image from 'next/image'
 
 const Projects = () => {
-  const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
   const { ref: animateTitle, fadeIn } = UseFadeInAnimation("fadeIn")
   const projects = content.projects.project
+  const [projectActive, setProjectActive] = useState(0);
 
   return (
     <section id="projects" className="pb-48">
@@ -24,33 +25,54 @@ const Projects = () => {
         <Heading tag="h2" content={content.projects.title} />
       </animated.header>
       <div className="px-8 mt-8 container">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {projects &&
-            projects
-              .filter((project) => !!project.main)
+        {projects.length > 0 && (
+          <div className="grid grid-cols-2 gap-8 mt-24 mb-12">
+            <div
+              style={{ backgroundImage: `url(/images/project/mini/${projects[projectActive].id}.jpg)`}}
+              className={`bg-cover h-[400px] bg-center rounded-lg`}
+            ></div>
+            <div className='text-sm px-12'>
+              <Image src={`/images/project/logo/${projects[projectActive].id}.png`} width="150" height="150" alt={`Logo ${projects[projectActive].id}`} className='table' />
+              {projects[projectActive].desc.map((desc, index) => ( 
+                <div key={`project-content-${index}`}>
+                  <p className='text-gray-500 dark:text-gray-400 mt-6 p-0'>{desc.title}</p>
+                  <ul className="mt-2">
+                    {desc.result.map((item, i) =>
+                      <li key={`project-desc-${i}`} className='flex py-1'>
+                        <Check className="mr-2 text-green dark:text-green-300 relative -top-[3px]" width="20" />
+                        <span className='flex-1' dangerouslySetInnerHTML={{ __html: item.text}} />
+                      </li>
+                    )}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+          
+        <Carousel opts={{ align: "start" }}>
+          <CarouselContent>
+            {projects &&
+              projects
               .map((project, index: number) => (
-                <Project 
+                <CarouselItem 
                   key={`project-${index}`} 
-                  id={project.id}
-                  brand={project.brand}
-                  category={project.category}
-                  main={project.main}
-                  desc={project.desc}
-                  url={project.url}
-                />
+                  className="md:basis-1/2 lg:basis-1/4"
+                  onClick={() => setProjectActive(index)}
+                >
+                  <Project 
+                    id={project.id}
+                    brand={project.brand}
+                    category={project.category}
+                    selected={projectActive === index}
+                  />
+                </CarouselItem>
               ))
-          }
-        </div>
-        <animated.div ref={animate} style={fade} className={`transition delay-3 text-center`}>
-          <Button 
-            asChild 
-            className="my-10"
-            variant="outline"
-            size={'lg'}
-          >
-            <Link href={``}>Voir tous les projets</Link>
-          </Button>
-        </animated.div>
+            }
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   )

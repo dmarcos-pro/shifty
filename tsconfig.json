@@ -25,7 +25,7 @@
       "@type/*": ["./src/type/*"],
       "@styles/*": ["./src/styles/*"],
       "@images/*": ["./public/images/*"],
-      "@video/*": ["./public/videos/*"],
+      "@videos/*": ["./public/videos/*"],
       "@lib/*": ["./src/lib/*"],
       "@component/*": ["./src/lib/components/*"],
       "@shadcn/*": ["./src/lib/components/ui/*"],

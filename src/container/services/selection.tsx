@@ -4,7 +4,7 @@ import content from "@contentJson"
 import { useEffect } from 'react'
 import { fetchServices } from "@/api/index"
 import { useQuery } from "react-query"
-import { Sparkles } from 'lucide-react'
+import { PenTool, MousePointer2, Camera, ChevronRight, CheckCircle, Circle } from 'lucide-react'
 
 type SelectedServicesProps = {
   category: 'branding' | 'digital' | 'social_media';
@@ -22,7 +22,6 @@ const SelectedService = ({
   serviceSelected
 }: SelectedServicesProps) => {
   const { data: services, isLoading, isError } = useQuery("services", () => fetchServices())
-  
   
   useEffect(() => {
     if (cat && ['branding', 'digital', 'social_media'].includes(cat as string)) {
@@ -58,60 +57,53 @@ const SelectedService = ({
     social_media: "Social Media",
   }
 
-  return (
-    <>
-      <header className='flex gap-4 mb-6 items-center justify-between'>
-        <div>
-          <p>Quel est ton projet&nbsp;?</p>
-          <p className='text-xs'>{content.services.items[category].content.length} services</p>
-        </div>
-        <div className="flex-none">
-          <Select
-              value={category}
-              onValueChange={(value: 'branding' | 'digital' | 'social_media') => handleService(value)}
-          >
-            <SelectTrigger>
-              Filtre : <SelectValue placeholder={CATEGORY_LABELS[category]} />
-            </SelectTrigger>
-            <SelectContent>
-              {services && services.filter((service: ServicesProps) => !service.monthly).map((service: ServicesProps, index: number) => (
-                  <SelectItem
+  const CATEGORY_ICONS = {
+    branding: PenTool,
+    digital: MousePointer2,
+    social_media: Camera,
+  }
+
+  return <div className='sticky top-16'>
+    <header className="flex items-center gap-1 text-sm">
+      <span>Je recherche une prestation</span>
+      <div>
+        <Select
+            value={category}
+            onValueChange={(value: 'branding' | 'digital' | 'social_media') => handleService(value)}
+        >
+          <SelectTrigger>
+            <SelectValue placeholder={CATEGORY_LABELS[category]} />
+          </SelectTrigger>
+          <SelectContent>
+            {services && services.filter((service: ServicesProps) => !service.monthly).map((service: ServicesProps, index: number) => (
+                <SelectItem
                   key={`select-service-${index}`}
                   value={service.id}
                   className={`${category === service.id ? '' : 'text-gray-400'}`}
-                  >
+                >
                   {service.category}
-                  </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
-      </header>
-      {content.services.items[category].content.map((service, index: number) => (
-        <div
-          key={`services-${index}`} 
-          className={`${serviceSelected === index ? 'border-blue dark:border-blue-400' : 'border-gray-200 dark:border-gray-500 hover:border-gray-400'} mt-4 bg-white dark:bg-gray-700 p-4 rounded border`}
+                </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+    </header>
+    <div>
+      {content.services.items[category].content.map((service, index: number) => {
+        return <div
+          key={`services-${index}`}
+          className={`${serviceSelected === index ? 'border-blue-600' : 'border-gray-100 hover:border-blue-500 dark:bg-transparent dark:border-gray-700 hover:dark:border-blue-200'} mt-4 py-6 px-4 rounded shadow-lg border text-sm`}
+          onClick={selectService(index)}
         >
-        <div
-            className="flex gap-4 items-start border-b dark:border-b-gray-600 pb-4" 
-            onClick={selectService(index)}
-        >
-            <span className="p-2 rounded border">
-            <Sparkles size={23} />
-            </span>
-            <div>
-            <p className='mb-2'>{service.title}</p>
-            <p className='text-sm text-gray-400'><TruncateText text={service.resume} length={85} /></p>
-            </div>
+          <div className="flex gap-2 justify-between items-center">
+            <p>{service.title}</p>
+            {serviceSelected === index ? <CheckCircle size={15} className='' /> : <Circle size={15} className='text-gray-500' />}
+            {/* <p className='mt-2 text-sm text-gray-400'><TruncateText text={service.resume} length={85} /></p> */}
+          </div>
         </div>
-        <div className="flex justify-between text-gray-400 text-sm pt-4">
-            <span>{CATEGORY_LABELS[category]}</span>
-            <span>Sur devis</span>
-        </div>
-        </div>
-      ))}
-    </>
-  )
+      })}
+    </div>
+  </div>
 }
 
 export default SelectedService

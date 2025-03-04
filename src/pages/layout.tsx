@@ -13,11 +13,12 @@ export default function RootLayout({
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="light"
+      // defaultTheme="system"
       enableSystem
       disableTransitionOnChange
     >
-      <div className="App bg-gray-100 dark:bg-gray-800">
+      <div className="App bg-gray-50 dark:bg-gray-800">
         <Header />
         {children}
         <Footer />

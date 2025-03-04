@@ -19,9 +19,10 @@ const HeroBanner = () => {
   const counterRef = useRef<HTMLDivElement>(null)
   const [counter, setCounter] = useState<number>(0)
   const sizeImgRef = 100
-  const marginRef = 20
+  const marginRef = 50
   const [increment, setIncrement] = useState<boolean>(true)
-  const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
+  const { ref: animate, fadeIn } = UseFadeInAnimation("fadeIn")
+  const { ref: animateClient, fade } = UseFadeInAnimation("fade")
   const { data: nav } = useQuery("nav", () => fetchNav())
   const navService = nav ? nav.filter((item:any) => item.name === "Services") : []
 
@@ -50,7 +51,7 @@ const HeroBanner = () => {
             setIncrement(true)
           }
         }
-      }, 30)
+      }, 20)
 
       return () => {
         clearInterval(interval)
@@ -61,16 +62,16 @@ const HeroBanner = () => {
   if (isLoading) return <div>Loading...</div>
   if (isError) return <div>Error fetching data...</div>
 
-  const getImage = (product: any) => {
-    return require(`@images/project/logo/${product.id}.png`)
+  const getImage = (id: string) => {
+    return require(`@images/project/logo/${id}.png`)
   }
 
   return (
     <section
       id="hero-banner"
-      className="py-24 h-screen flex items-center justify-center overflow-hidden"
+      className="overflow-hidden relative"
     >
-      <animated.div ref={animate} style={fade} className="transition delay-2 container text-center">
+      <animated.div ref={animate} style={fadeIn} className="transition delay-2 container text-center mt-32 mb-24">
         <figure className="table mx-auto my-10">
           <Image
             width={120}
@@ -98,7 +99,7 @@ const HeroBanner = () => {
           <Button
             asChild
             size="lg"
-            variant="outlineLight"
+            variant="noBorder"
           >
             <Link href={`${navService[0].link}`}>
               <Layers size={`16`} className='mr-2' />
@@ -107,12 +108,12 @@ const HeroBanner = () => {
           </Button>
         </div>
       </animated.div>
-      <div ref={counterRef} className="p-4 absolute bottom-0 bg-white dark:bg-gray-800 w-full">
-        <div className='container'>
+      <animated.div ref={animateClient} style={fade} className="p-12 w-full bg-white transition delay-12">
+        <div ref={counterRef} className='overflow-hidden'>
           <div className="flex relative" style={{ left: `-${counter}px` }}>
             {projects &&
               projects.map((project: HeroBannerProject, index: number) => {
-                const img = getImage(project)
+                const img = getImage(project.id)
                 return (
                   <figure
                     key={`ref-${project.id}-${index}`}
@@ -135,7 +136,7 @@ const HeroBanner = () => {
               })}
           </div>
         </div>
-      </div>
+      </animated.div>
     </section>
   )
 }

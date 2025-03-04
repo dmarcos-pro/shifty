@@ -7,28 +7,131 @@
     "content": "Nous contacter",
     "url": "davidmarcos.pro@gmail.com"
   },
-  "about": {
-    "tag": "Pourquoi nous choisir&nbsp;?",
-    "welcome": "Découvre le studio Shifty",
+  "studio" : {
+    "h1": "Une équipe à ton écoute",
+    "subtitle": "Pourquoi nous choisir&nbsp;?",
     "desc": "Le studio Shifty met son expertise au service de la transformation digitale de ta marque. Grâce à notre collaboration, tu bénéficies d'un accompagnement sur-mesure pour atteindre efficacement tes objectifs de croissance et de fidélisation.",
+    "introduction": "Pour répondre aux besoins de nos clients, on a constitué une équipe d'experts passionnés et créatifs, prêts à relever tous les défis pour faire briller ta marque !",
     "cta": "Découvrir le studio",
-    "story": {
-      "title": "Le studio",
-      "content": "<p>Shifty est fondé en 2023 à l'initiative de David Marcos en réponse à une demande croissante de clients cherchant à externaliser la communication de leur entreprise.</p><p>Fort de plusieurs années d’expériences en freelance en tant que graphiste et développeur web et face à cette demande exigeante, David réalise que répondre de manière optimale nécessite du temps mais surtout de l’expertise dans chacun des domaines.</p><p>Il décide alors de créer le studio Shifty et de s’entourer d’autres experts de la communication tels que des graphistes, développeurs, monteurs, vidéastes, photographes et rédacteurs. Cette collaboration permet une meilleure réactivité vis à vis des clients, une palette de services plus large mais surtout des prestations de meilleure qualité.</p>"
-    },
-    "vision": {
-      "title": "Les valeurs Shifty",
-      "content": "<p>L’aspiration du studio est d'accompagner les entreprises dans le développement de leur image de marque et devenir un partenaire de confiance pour ses clients sur le long terme.</p><p>Chez Shifty, nous sommes convaincus que <b>chaque projet est unique</b> et mérite une approche personnalisée et adaptée aux besoins de votre projet, c’est pourquoi nous veillons à ce qu'il soit réalisé avec soin et efficacité pour garantir une entière satisfaction.</p><p>Nous vous considérons comme un partenaire&nbsp! Nous adoptons une approche basée sur la confiance et la transparence pour une collaboration fructueuse et durable.</p><p>Nous mettons tout en œuvre pour répondre à vos besoins et atteindre vos objectifs, dans le but de rendre vos marques visibles et performantes.</p>"
-    }
+    "items": [{
+        "title": "Année de création",
+        "class": "flex items-center justify-between",
+        "value": "2024",
+        "type": "number",
+        "icon": "creation",
+        "content": [
+          {"text": "Le studio Shifty a été fondé en 2023 par David Marcos, en réponse à une demande croissante d’entreprises souhaitant externaliser leur communication."},
+          {"text": "Fort de plusieurs années d’expérience en freelance, à la fois comme graphiste et développeur web, David a rapidement constaté que répondre efficacement à des attentes toujours plus exigeantes nécessitait non seulement du temps, mais surtout une expertise approfondie dans chaque domaine de la communication. C’est ainsi qu’est né le studio Shifty."},
+          {"text": "David s’est entouré d’une équipe d’experts spécialisés : graphistes, développeurs, monteurs, vidéastes, photographes et rédacteurs. Cette collaboration stratégique offre non seulement une meilleure réactivité aux demandes des clients, mais également une gamme de services plus étendue et des prestations d’une qualité supérieure."}
+        ]
+      },{
+        "title": "Projets réalisés",
+        "class": "flex items-center justify-between",
+        "value": "23",
+        "type": "number",
+        "icon": "project",
+        "content": [
+          {"text": "Le studio Shifty a été fondé en 2023 par David Marcos, en réponse à une demande croissante d’entreprises souhaitant externaliser leur communication."},
+          {"text": "Fort de plusieurs années d’expérience en freelance, à la fois comme graphiste et développeur web, David a rapidement constaté que répondre efficacement à des attentes toujours plus exigeantes nécessitait non seulement du temps, mais surtout une expertise approfondie dans chaque domaine de la communication. C’est ainsi qu’est né le studio Shifty."},
+          {"text": "David s’est entouré d’une équipe d’experts spécialisés : graphistes, développeurs, monteurs, vidéastes, photographes et rédacteurs. Cette collaboration stratégique offre non seulement une meilleure réactivité aux demandes des clients, mais également une gamme de services plus étendue et des prestations d’une qualité supérieure."}
+        ]
+      },{
+        "title": "Zone d’intervention",
+        "class": "",
+        "value": "Localisé à Montpellier, disponible dans toute la France",
+        "type": "string",
+        "picture": "map.png",
+        "content": [
+          {"text": "Le studio Shifty a été fondé en 2023 par David Marcos, en réponse à une demande croissante d’entreprises souhaitant externaliser leur communication."},
+          {"text": "Fort de plusieurs années d’expérience en freelance, à la fois comme graphiste et développeur web, David a rapidement constaté que répondre efficacement à des attentes toujours plus exigeantes nécessitait non seulement du temps, mais surtout une expertise approfondie dans chaque domaine de la communication. C’est ainsi qu’est né le studio Shifty."},
+          {"text": "David s’est entouré d’une équipe d’experts spécialisés : graphistes, développeurs, monteurs, vidéastes, photographes et rédacteurs. Cette collaboration stratégique offre non seulement une meilleure réactivité aux demandes des clients, mais également une gamme de services plus étendue et des prestations d’une qualité supérieure."}
+        ]
+      },{
+        "title": "Collaborateurs engagés",
+        "class": "",
+        "value": "~ 5",
+        "type": "number",
+        "picture": "team.png",
+        "content": [
+          {"text": "L’aspiration du studio est d'accompagner ton entreprise dans le développement de ton image de marque et devenir un partenaire de confiance sur le long terme."},
+          {"text": "Chez Shifty, on est convaincus que <b>chaque projet est unique</b> et mérite une approche personnalisée et adaptée aux besoins de ton projet, c’est pourquoi on veille à ce qu'il soit réalisé avec soin et efficacité pour garantir une entière satisfaction."},
+          {"text": "On te considère comme un partenaire&nbsp! On adopte une approche basée sur la confiance et la transparence pour une collaboration fructueuse et durable en mettant tout en œuvre pour répondre à tes besoins et atteindre tes objectifs, dans le but de rendre ta marque visible et performante."}
+        ]
+      },{
+        "title": "",
+        "class": "text-center",
+        "value": "",
+        "type": "number",
+        "picture": "logo.png",
+        "content": [
+          {"text": "Le studio Shifty a été fondé en 2023 par David Marcos, en réponse à une demande croissante d’entreprises souhaitant externaliser leur communication."},
+          {"text": "Fort de plusieurs années d’expérience en freelance, à la fois comme graphiste et développeur web, David a rapidement constaté que répondre efficacement à des attentes toujours plus exigeantes nécessitait non seulement du temps, mais surtout une expertise approfondie dans chaque domaine de la communication. C’est ainsi qu’est né le studio Shifty."},
+          {"text": "David s’est entouré d’une équipe d’experts spécialisés : graphistes, développeurs, monteurs, vidéastes, photographes et rédacteurs. Cette collaboration stratégique offre non seulement une meilleure réactivité aux demandes des clients, mais également une gamme de services plus étendue et des prestations d’une qualité supérieure."}
+        ]
+      },{
+        "title": "Années d'expérience",
+        "class": "flex items-center justify-between",
+        "value": "+12",
+        "type": "number",
+        "icon": "year",
+        "content": [
+          {"text": "L’aspiration du studio est d'accompagner ton entreprise dans le développement de ton image de marque et devenir un partenaire de confiance sur le long terme."},
+          {"text": "Chez Shifty, on est convaincus que <b>chaque projet est unique</b> et mérite une approche personnalisée et adaptée aux besoins de ton projet, c’est pourquoi on veille à ce qu'il soit réalisé avec soin et efficacité pour garantir une entière satisfaction."},
+          {"text": "On te considère comme un partenaire&nbsp! On adopte une approche basée sur la confiance et la transparence pour une collaboration fructueuse et durable en mettant tout en œuvre pour répondre à tes besoins et atteindre tes objectifs, dans le but de rendre ta marque visible et performante."}
+        ]
+      },{
+        "title": "Valeurs",
+        "class": "",
+        "value": "Créativité, qualité, fiabilité et transparence au cœur de nos engagements.",
+        "type": "string",
+        "content": [
+          {"text": "L’aspiration du studio est d'accompagner ton entreprise dans le développement de ton image de marque et devenir un partenaire de confiance sur le long terme."},
+          {"text": "Chez Shifty, on est convaincus que <b>chaque projet est unique</b> et mérite une approche personnalisée et adaptée aux besoins de ton projet, c’est pourquoi on veille à ce qu'il soit réalisé avec soin et efficacité pour garantir une entière satisfaction."},
+          {"text": "On te considère comme un partenaire&nbsp! On adopte une approche basée sur la confiance et la transparence pour une collaboration fructueuse et durable en mettant tout en œuvre pour répondre à tes besoins et atteindre tes objectifs, dans le but de rendre ta marque visible et performante."}
+        ]
+      },{
+        "title": "Taux de satisfaction",
+        "class": "flex items-center justify-between",
+        "value": "99%",
+        "type": "number",
+        "icon": "happy",
+        "content": [
+          {"text": "L’aspiration du studio est d'accompagner ton entreprise dans le développement de ton image de marque et devenir un partenaire de confiance sur le long terme."},
+          {"text": "Chez Shifty, on est convaincus que <b>chaque projet est unique</b> et mérite une approche personnalisée et adaptée aux besoins de ton projet, c’est pourquoi on veille à ce qu'il soit réalisé avec soin et efficacité pour garantir une entière satisfaction."},
+          {"text": "On te considère comme un partenaire&nbsp! On adopte une approche basée sur la confiance et la transparence pour une collaboration fructueuse et durable en mettant tout en œuvre pour répondre à tes besoins et atteindre tes objectifs, dans le but de rendre ta marque visible et performante."}
+        ]
+      },{
+        "title": "Temps de réponse",
+        "class": "flex items-center justify-between flex-row-reverse",
+        "value": "24h",
+        "type": "number",
+        "icon": "time",
+        "content": [
+          {"text": "L’aspiration du studio est d'accompagner ton entreprise dans le développement de ton image de marque et devenir un partenaire de confiance sur le long terme."},
+          {"text": "Chez Shifty, on est convaincus que <b>chaque projet est unique</b> et mérite une approche personnalisée et adaptée aux besoins de ton projet, c’est pourquoi on veille à ce qu'il soit réalisé avec soin et efficacité pour garantir une entière satisfaction."},
+          {"text": "On te considère comme un partenaire&nbsp! On adopte une approche basée sur la confiance et la transparence pour une collaboration fructueuse et durable en mettant tout en œuvre pour répondre à tes besoins et atteindre tes objectifs, dans le but de rendre ta marque visible et performante."}
+        ]
+      },{
+        "title": "Type de clients",
+        "class": "text-right",
+        "value": "TPE, PME, startups, associations",
+        "type": "string",
+        "content": [
+          {"text": "L’aspiration du studio est d'accompagner ton entreprise dans le développement de ton image de marque et devenir un partenaire de confiance sur le long terme."},
+          {"text": "Chez Shifty, on est convaincus que <b>chaque projet est unique</b> et mérite une approche personnalisée et adaptée aux besoins de ton projet, c’est pourquoi on veille à ce qu'il soit réalisé avec soin et efficacité pour garantir une entière satisfaction."},
+          {"text": "On te considère comme un partenaire&nbsp! On adopte une approche basée sur la confiance et la transparence pour une collaboration fructueuse et durable en mettant tout en œuvre pour répondre à tes besoins et atteindre tes objectifs, dans le but de rendre ta marque visible et performante."}
+        ]
+      }
+    ]
   },
-  "services": {
-    "h1": "Booste ton projet&nbsp;!",
+  "services" : {
+    "h1" : "Booste ton projet&nbsp;!",
     "title": "Des services flexibles pour ton projet",
     "subtitle": "Proposer. Personnaliser. Réaliser.",
-    "introduction": "Dans un monde numérique en constante évolution, nos pôles Digital, Branding et Motion te permettent de transformer ton audience en clients fidèles avec des solutions innovantes et adaptées.",      
+    "introduction" : "Dans un monde numérique en constante évolution, nos pôles Digital, Branding et Social&nbsp;Media te permettent de transformer ton audience en clients fidèles avec des solutions innovantes et adaptées.",      
     "items": {
       "digital": {
-        "resume" : {
+        "resume": {
           "title": "Booste ta visibilité en ligne",
           "desc": [
             { "title": "Conception de wireframes et maquettes personnalisées" },
@@ -39,162 +142,209 @@
         },
         "content": [
           {
-            "title": "Conception de maquette",
-            "resume": "Nous créons des maquettes et des wireframes intuitifs et fonctionnels pour donner vie à l'architecture de ton site web. Ces étapes permettent de définir la navigation, l'agencement, et le design final avant de passer à la phase de développement.",
+            "title": "Wireframe et Maquette",
+            "resume": "On crée des maquettes et des wireframes intuitifs et fonctionnels pour donner vie à l'architecture de ton site web. Ces étapes permettent de définir la navigation, l'agencement, et le design final avant de passer à la phase de développement.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Des maquettes sur-mesure : nous concevons des maquettes qui répondent à tes besoins spécifiques tout en garantissant une expérience utilisateur optimale.",
-                  "Des wireframes efficaces : nous créons des wireframes simples mais fonctionnels, offrant une structure claire pour la navigation et l’architecture du site.",
-                  "Une interface intuitive : nous nous assurons que l’interface est conviviale pour le visiteur en prenant en compte la facilité d’utilisation et l’accessibilité."
+                  { "title": "Wireframes efficaces", "text": "On crée des wireframes simples mais fonctionnels, offrant une structure claire pour la navigation et l’architecture du site."},
+                  { "title": "Maquettes sur-mesure", "text": "On conçoit des maquettes qui répondent à tes besoins spécifiques tout en garantissant une expérience utilisateur optimale."},
+                  { "title": "Interface intuitive", "text": "On s'assure que l’interface soit conviviale pour le visiteur en prenant en compte la facilité d’utilisation et l’accessibilité."},
+                  { "title": "Design attractif", "text": "On intègre des éléments visuels percutants pour capter l’attention de l’utilisateur et renforcer l’identité de la marque."}
+
                 ]
               },
               {
-                "title": "Les étapes de la création de ta maquette et de ton wireframe",
+                "title": "Le processus",
                 "content": [
-                  "Analyse des besoins : nous commençons par un brief pour bien comprendre ton projet, tes objectifs et ta cible, afin de définir les fonctionnalités nécessaires.",
-                  "Création du wireframe : sur la base du brief, nous élaborons un wireframe qui présente l’architecture du site, incluant la disposition des éléments, la navigation, et les interactions.",
-                  "Conception de la maquette : nous créons une maquette haute fidélité en prenant en compte les éléments visuels (typographie, couleurs, images) tout en respectant l’identité de la marque.",
-                  "Validation et ajustements : après validation de la maquette, nous effectuons les ajustements nécessaires en fonction des retours pour assurer la meilleure expérience utilisateur possible.",
-                  "Livraison des fichiers : une fois la maquette validée, nous te fournissons tous les fichiers nécessaires pour le développement du site, en formats adaptés aux besoins techniques."
+                  { "title": "Analyse des besoins", "text": "On commence par un brief pour bien comprendre ton projet, tes objectifs et ta cible, afin de définir les fonctionnalités nécessaires."},
+                  { "title": "Création du wireframe", "text": "Sur la base du brief, on élabore un wireframe qui présente l’architecture du site, incluant la disposition des éléments, la navigation, et les interactions."},
+                  { "title": "Conception de la maquette", "text": "On crée une maquette haute fidélité en prenant en compte les éléments visuels (typographie, couleurs, images) tout en respectant l’identité de la marque."},
+                  { "title": "Validation et ajustements", "text": "Après validation de la maquette, on effectue les ajustements nécessaires en fonction des retours pour assurer la meilleure expérience utilisateur possible."},
+                  { "title": "Livraison des fichiers", "text": "Une fois la maquette validée, on te fournit tous les fichiers nécessaires pour le développement du site, en formats adaptés aux besoins techniques."}
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Expérience et expertise : une équipe spécialisée dans la création de maquettes fonctionnelles et visuellement impactantes.",
-                  "Collaboration continue : un processus itératif avec des échanges réguliers pour s’assurer que le design répond parfaitement à tes attentes.",
-                  "Solution complète : nous te proposons non seulement des maquettes et des wireframes, mais aussi des conseils sur l'ergonomie et l’optimisation de ton site web."
+                  { "title": "Expérience et expertise", "text": "Une équipe spécialisée dans la création de maquettes fonctionnelles et visuellement impactantes."},
+                  { "title": "Collaboration continue", "text": "Un processus itératif avec des échanges réguliers pour s’assurer que le design répond parfaitement à tes attentes."},
+                  { "title": "Solution complète", "text": "On te propose non seulement des maquettes et des wireframes, mais aussi des conseils sur l'ergonomie et l’optimisation de ton site web."}
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à donner vie à ton projet web ?",
-                "content": "Contacte-nous dès aujourd’hui pour discuter de la création de ta maquette et de ton wireframe. Nous serons ravis de t’accompagner dans cette étape cruciale de ton projet digital."
+            "footer": [{
+              "title": "Prêt à donner vie à ton projet web ?",
+              "content": "Contacte-nous dès aujourd’hui pour discuter de la création de ta maquette et de ton wireframe. On sera ravis de t’accompagner dans cette étape cruciale de ton projet digital."
+            }],
+            "fun_fact": [{
+                "title": "Nombre de pixels déplacés",
+                "start": 12320,
+                "end": 12342,
+                "result": "Et pas un de moins !"
+              }, {
+                "title": "Maquettes validées d’un seul coup",
+                "start": 0,
+                "end": 6,
+                "result": "Et oui, ça arrive !"
+              }, {
+                "title": "Nombre de maquettes repensés après une idée de dernière minute",
+                "start": 0,
+                "end": 17,
+                "result": "La nuit porte conseil, c'est bien connu !"
               }
             ]
           },{
-            "title": "Création de landing page",
-            "resume": "Nous créons des landing pages performantes et attrayantes qui maximisent la conversion de tes visiteurs en clients. Que ce soit pour une campagne publicitaire, un lancement de produit ou une collecte d'informations, une landing page bien conçue optimise l'engagement et les résultats.",
+            "title": "Landing page",
+            "resume": "On crée des landing pages performantes et attrayantes qui maximisent la conversion de tes visiteurs en clients. Que ce soit pour une campagne publicitaire, un lancement de produit ou une collecte d'informations, une landing page bien conçue optimise l'engagement et les résultats.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Une page optimisée pour la conversion : chaque élément de la landing page est pensé pour encourager les visiteurs à passer à l'action (formulaire, appel à l’action, bouton d’achat, etc.).",
-                  "Un design adapté à ta marque : nous concevons une page qui reflète ton identité visuelle, avec une expérience utilisateur fluide et intuitive.",
-                  "Contenu percutant : nous rédigeons des textes clairs, persuasifs et adaptés à ton objectif, qu’il s’agisse d’une inscription, d’une vente ou de la génération de leads.",
-                  "Optimisation mobile : nous nous assurons que ta landing page soit entièrement responsive, pour une expérience utilisateur fluide sur tous les appareils (ordinateur, tablette, smartphone).",
-                  "Suivi et analyse des performances : nous te fournissons des outils pour analyser la performance de ta page (taux de conversion, comportements des utilisateurs, etc.) et améliorer continuellement les résultats."
+                  { "title": "Page optimisée pour la conversion", "text": "Chaque élément de la landing page est pensé pour encourager les visiteurs à passer à l’action (formulaire, appel à l’action, bouton d’achat, etc.)."},
+                  { "title": "Design adapté à ta marque", "text": "On conçoit une page qui reflète ton identité visuelle, avec une expérience utilisateur fluide et intuitive."},
+                  { "title": "Contenu percutant", "text": "On rédige des textes clairs, persuasifs et adaptés à ton objectif, qu’il s’agisse d’une inscription, d’une vente ou de la génération de leads."},
+                  { "title": "Optimisation mobile", "text": "On s'assure que ta landing page soit entièrement responsive, pour une expérience utilisateur fluide sur tous les appareils (ordinateur, tablette, smartphone)."},
+                  { "title": "Suivi et analyse des performances", "text": "On te fournit des outils pour analyser la performance de ta page (taux de conversion, comportements des utilisateurs, etc.) et améliorer continuellement les résultats."}
                 ]
               },
               {
-                "title": "Les étapes de création de ta landing page",
+                "title": "Le processus",
                 "content": [
-                  "Brief et définition des objectifs : on commence par comprendre ton projet, tes objectifs (conversion, inscription, vente, etc.) et ta cible pour définir le contenu et la structure de la page.",
-                  "Design et conception : nous créons une maquette de la landing page, en tenant compte de l'ergonomie, du design visuel et de l’emplacement des éléments clés (formulaires, CTA, visuels, etc.).",
-                  "Rédaction du contenu : nous élaborons des textes accrocheurs et persuasifs, tout en respectant ton ton de communication, pour capter l’attention de ton audience et la convaincre d’agir.",
-                  "Développement et mise en ligne : une fois validée, nous passons à l’intégration technique de la landing page, en assurant une rapidité de chargement optimale et une parfaite compatibilité avec les navigateurs.",
-                  "Tests et ajustements : avant le lancement, nous testons la page sur différents appareils et analysons les premiers retours pour optimiser la performance de la page et garantir sa conversion."
+                  { "title": "Brief et définition des objectifs", "text": "On commence par comprendre ton projet, tes objectifs (conversion, inscription, vente, etc.) et ta cible pour définir le contenu et la structure de la page."},
+                  { "title": "Design et conception", "text": "On crée une maquette de la landing page, en tenant compte de l'ergonomie, du design visuel et de l’emplacement des éléments clés (formulaires, CTA, visuels, etc.)."},
+                  { "title": "Rédaction du contenu", "text": "On élabore des textes accrocheurs et persuasifs, tout en respectant ton ton de communication, pour capter l’attention de ton audience et la convaincre d’agir."},
+                  { "title": "Développement et mise en ligne", "text": "Une fois validée, on passe à l’intégration technique de la landing page, en assurant une rapidité de chargement optimale et une parfaite compatibilité avec les navigateurs."},
+                  { "title": "Tests et ajustements", "text": "Avant le lancement, on teste la page sur différents appareils et on analyse les premiers retours pour optimiser la performance de la page et garantir sa conversion."}
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Expertise : des UI/UX designers qui savent allier design et fonctionnalité pour offrir la meilleure expérience utilisateur.",
-                  "Optimisation des conversions : notre objectif est de maximiser ton taux de conversion, avec des techniques éprouvées de mise en page, de call-to-action et de persuasion.",
-                  "Accompagnement personnalisé : nous travaillons étroitement ensemble pour comprendre tes objectifs et créer une landing page qui répond spécifiquement à tes besoins."
+                  { "title": "Expertise", "text": "Des UI/UX designers qui savent allier design et fonctionnalité pour offrir la meilleure expérience utilisateur."},
+                  { "title": "Optimisation des conversions", "text": "Notre objectif est de maximiser ton taux de conversion, avec des techniques éprouvées de mise en page, de call-to-action et de persuasion."},
+                  { "title": "Accompagnement personnalisé", "text": "On travaille étroitement ensemble pour comprendre tes objectifs et créer une landing page qui répond spécifiquement à tes besoins."}
                 ]
               }
             ],
-            "footer": [
+            "footer": [{
+              "title": "Prêt à booster ta conversion ?",
+              "content": "Contacte-nous dès aujourd’hui pour créer une landing page qui transformera tes visiteurs en clients."
+            }],
+            "fun_fact": [{
+                "title": "Nombre d’idées testées",
+                "start": 0,
+                "end": 18,
+                "result": "et 17 dans un coin 'peut-être plus tard'"
+              },
               {
-                "title": "Prêt à booster ta conversion ?",
-                "content": "Contacte-nous dès aujourd’hui pour créer une landing page qui transformera tes visiteurs en clients."
+                "title": "Heures passées d'affilée à choisir une image",
+                "start": 0,
+                "end": 4,
+                "result": "Pour trouver LA photo parfaite (et non, ce n’était pas sur Pinterest)"
+              },{
+                "title": "Heures à débattre entre Arial et Helvetica",
+                "start": 20,
+                "end": 48,
+                "result": "Spoiler : on a pris aucune des deux !"
+              }
+            ]
+          }, {
+            "title": "Site vitrine",
+            "resume": "On crée des sites vitrines élégants et fonctionnels pour présenter ton activité en ligne. Que tu sois une petite entreprise ou un entrepreneur individuel, ton site vitrine sera conçu pour attirer l'attention de tes visiteurs et refléter l'image de ta marque.",
+            "list": [
+              {
+                "title": "Notre expertise",
+                "content": [
+                  { "title": "Site vitrine personnalisé", "text": "On conçoit un site qui correspond à l'identité de ta marque, avec un design moderne et une navigation fluide."},
+                  { "title": "Optimisation pour le référencement", "text": "Chaque site est pensé pour être facilement indexé par les moteurs de recherche et améliorer ta visibilité en ligne."},
+                  { "title": "Design responsive", "text": "Ton site sera parfaitement adapté à tous les types d’écrans (desktop, mobile, tablette), offrant une expérience utilisateur optimale partout."},
+                  { "title": "Gestion simplifiée", "text": "On te fournit une interface simple pour gérer ton site, mettre à jour ton contenu et suivre l’évolution de ta présence en ligne."}
+                ]
+              },
+              {
+                "title": "Le processus",
+                "content": [
+                  { "title": "Analyse de ton projet", "text": "On commence par un brief pour comprendre tes besoins, ton marché et ton objectif avec le site."},
+                  { "title": "Conception du design", "text": "On crée un design sur-mesure qui met en valeur ton activité tout en respectant ton identité visuelle et en offrant une navigation intuitive."},
+                  { "title": "Développement et intégration", "text": "Une fois le design validé, on passe à la phase de développement, en intégrant les fonctionnalités nécessaires (formulaire de contact, galerie d'images, etc.)."},
+                  { "title": "Tests et validation", "text": "On teste le site sur différents appareils et navigateurs pour garantir son bon fonctionnement et on effectue les ajustements nécessaires."},
+                  { "title": "Mise en ligne et accompagnement", "text": "Une fois le site prêt, on le met en ligne et on te fournit les outils pour le gérer, ainsi qu'un suivi pour optimiser sa performance."}
+                ]
+              },
+              {
+                "title": "Pourquoi nous faire confiance ?",
+                "content": [
+                  { "title": "Expertise complète", "text": "De la conception à la mise en ligne, on s'occupe de tout, tout en te garantissant un service sur-mesure."},
+                  { "title": "Accompagnement personnalisé", "text": "On est à ton écoute et on s'adapte à tes besoins, qu'il s'agisse de la création d’un simple site vitrine ou d’une solution plus complexe."},
+                  { "title": "Site performant", "text": "On s'assure que ton site soit non seulement esthétique, mais aussi rapide, sécurisé et optimisé pour les moteurs de recherche."}
+                ]
+              }
+            ],
+            "footer": [{
+              "title": "Prêt à lancer ton site vitrine ?",
+              "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet. On sera ravis de t'accompagner dans la création d'un site vitrine à la hauteur de tes ambitions."
+            }],
+            "fun_fact": [{
+                "title": "Nombre de tests mobiles effectués",
+                "start": 90,
+                "end": 120,
+                "result": "sur 10 tailles d'écran différentes."
+              },{
+                "title": "Nombre de bugs résolus à la dernière minute",
+                "start": 0,
+                "end": 7,
+                "result": "Juste avant de cliquer sur 'Publier'"
               }
             ]
           },{
-            "title": "Création de site vitrine",
-            "resume": "Nous créons des sites vitrines élégants et fonctionnels pour présenter ton activité en ligne. Que tu sois une petite entreprise ou un entrepreneur individuel, ton site vitrine sera conçu pour attirer l'attention de tes visiteurs et refléter l'image de ta marque.",
+            "title": "Site e-commerce",
+            "resume": "On conçoit des sites e-commerce performants et intuitifs pour t'aider à vendre tes produits en ligne. De l'interface utilisateur à la gestion des commandes, ton site e-commerce sera conçu pour maximiser les ventes tout en offrant une expérience d'achat agréable à tes clients.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Un site vitrine personnalisé : nous concevons un site qui correspond à l'identité de ta marque, avec un design moderne et une navigation fluide.",
-                  "Optimisation pour le référencement : chaque site est pensé pour être facilement indexé par les moteurs de recherche et améliorer ta visibilité en ligne.",
-                  "Design responsive : ton site sera parfaitement adapté à tous les types d’écrans (desktop, mobile, tablette), offrant une expérience utilisateur optimale partout.",
-                  "Une gestion simplifiée : nous te fournissons une interface simple pour gérer ton site, mettre à jour ton contenu et suivre l’évolution de ta présence en ligne."
+                  { "title": "Site e-commerce sur-mesure", "text": "On crée une boutique en ligne unique, avec un design adapté à ton image de marque et une navigation fluide."},
+                  { "title": "Système de gestion des produits et des commandes", "text": "On intègre un système simple et puissant pour gérer ton catalogue produits, suivre tes commandes et gérer les stocks."},
+                  { "title": "Optimisation de l'expérience utilisateur", "text": "Ton site est conçu pour offrir une navigation fluide et intuitive, avec un parcours d'achat simplifié pour convertir les visiteurs en clients."},
+                  { "title": "Paiements sécurisés et solutions de livraison", "text": "On intègre des passerelles de paiement fiables et une gestion des options de livraison adaptées à tes besoins."}
                 ]
               },
               {
-                "title": "Les étapes de la création de ton site vitrine",
+                "title": "Le processus",
                 "content": [
-                  "Analyse de ton projet : nous commençons par un brief pour comprendre tes besoins, ton marché et ton objectif avec le site.",
-                  "Conception du design : nous créons un design sur-mesure qui met en valeur ton activité tout en respectant ton identité visuelle et en offrant une navigation intuitive.",
-                  "Développement et intégration : une fois le design validé, nous passons à la phase de développement, en intégrant les fonctionnalités nécessaires (formulaire de contact, galerie d'images, etc.).",
-                  "Tests et validation : nous testons le site sur différents appareils et navigateurs pour garantir son bon fonctionnement et effectuons les ajustements nécessaires.",
-                  "Mise en ligne et accompagnement : une fois le site prêt, nous le mettons en ligne et te fournissons les outils pour le gérer, ainsi qu'un suivi pour optimiser sa performance."
+                  { "title": "Analyse des besoins", "text": "On commence par un entretien pour comprendre ton projet, ton marché, et les fonctionnalités spécifiques que tu souhaites pour ton site."},
+                  { "title": "Conception du design", "text": "On crée un design attrayant et intuitif, qui met en valeur tes produits et améliore l'expérience d'achat des utilisateurs."},
+                  { "title": "Développement", "text": "On développe la plateforme, en intégrant des fonctionnalités comme la gestion des produits, les options de paiement, les promotions et la gestion des stocks."},
+                  { "title": "Tests et optimisation", "text": "On teste le site sur différents appareils et on résout les éventuels problèmes techniques, puis on optimise la vitesse et la performance du site."},
+                  { "title": "Mise en ligne et suivi", "text": "Après validation, on met ton site en ligne et on t'accompagne pour le suivi de son fonctionnement et son évolution."}
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Une expertise complète : de la conception à la mise en ligne, nous nous occupons de tout, tout en te garantissant un service sur-mesure.",
-                  "Un accompagnement personnalisé : nous sommes à ton écoute et nous nous adaptons à tes besoins, qu'il s'agisse de la création d’un simple site vitrine ou d’une solution plus complexe.",
-                  "Un site performant : nous nous assurons que ton site soit non seulement esthétique, mais aussi rapide, sécurisé et optimisé pour les moteurs de recherche."
+                  { "title": "Expertise e-commerce", "text": "On a une grande expérience dans la création de sites e-commerce, avec un savoir-faire technique et une approche centrée sur l'utilisateur."},
+                  { "title": "Solutions personnalisées", "text": "Chaque site est conçu sur-mesure pour répondre aux besoins spécifiques de ton activité, que ce soit pour une petite boutique ou une grande plateforme de vente."},
+                  { "title": "Suivi et maintenance", "text": "On t'accompagne après la mise en ligne pour assurer le bon fonctionnement de ton site et t'aider à l'améliorer continuellement."}
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à lancer ton site vitrine ?",
-                "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet. Nous serons ravis de t'accompagner dans la création d'un site vitrine à la hauteur de tes ambitions."
-              }
+            "footer": [{
+              "title": "Prêt à vendre en ligne ?",
+              "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet. On sera ravis de t'aider à créer un site e-commerce qui boostera tes ventes et t'offrira une présence en ligne efficace."
+            }],
+            "fun_fact": [{
+              "title": "Temps passé à tester la vitesse de chargement",
+              "start": 0,
+              "end": 20,
+              "result": "Heures passées à gagner chaque milliseconde de chargement."
+            }
             ]
-          },{
-            "title": "Création de Site E-commerce",
-            "resume": "Nous concevons des sites e-commerce performants et intuitifs pour t'aider à vendre tes produits en ligne. De l'interface utilisateur à la gestion des commandes, ton site e-commerce sera conçu pour maximiser les ventes tout en offrant une expérience d'achat agréable à tes clients.",
-            "list": [
-              {
-                "title": "Ce que nous pouvons t'apporter",
-                "content": [
-                  "Un site e-commerce sur-mesure : nous créons une boutique en ligne unique, avec un design adapté à ton image de marque et une navigation fluide.",
-                  "Système de gestion des produits et des commandes : nous intégrons un système simple et puissant pour gérer ton catalogue produits, suivre tes commandes et gérer les stocks.",
-                  "Optimisation de l'expérience utilisateur : ton site sera conçu pour offrir une navigation fluide et intuitive, avec un parcours d'achat simplifié pour convertir les visiteurs en clients.",
-                  "Paiements sécurisés et solutions de livraison : nous intégrons des passerelles de paiement fiables et une gestion des options de livraison adaptées à tes besoins."
-                ]
-              },
-              {
-                "title": "Les étapes de la création de ton site e-commerce",
-                "content": [
-                  "Analyse des besoins : nous commençons par un entretien pour comprendre ton projet, ton marché, et les fonctionnalités spécifiques que tu souhaites pour ton site.",
-                  "Conception du design : nous créons un design attrayant et intuitif, qui met en valeur tes produits et améliore l'expérience d'achat des utilisateurs.",
-                  "Développement du site e-commerce : nous développons la plateforme, en intégrant des fonctionnalités comme la gestion des produits, les options de paiement, les promotions et la gestion des stocks.",
-                  "Tests et optimisation : nous testons le site sur différents appareils et résolvons les éventuels problèmes techniques, puis optimisons la vitesse et la performance du site.",
-                  "Mise en ligne et suivi : après validation, nous mettons ton site en ligne et t'accompagnons pour le suivi de son fonctionnement et son évolution."
-                ]
-              },
-              {
-                "title": "Pourquoi nous faire confiance ?",
-                "content": [
-                  "Expertise e-commerce : nous avons une grande expérience dans la création de sites e-commerce, avec un savoir-faire technique et une approche centrée sur l'utilisateur.",
-                  "Solutions personnalisées : chaque site est conçu sur-mesure pour répondre aux besoins spécifiques de ton activité, que ce soit pour une petite boutique ou une grande plateforme de vente.",
-                  "Suivi et maintenance : nous t'accompagnons après la mise en ligne pour assurer le bon fonctionnement de ton site et t'aider à l'améliorer continuellement."
-                ]
-              }
-            ],
-            "footer": [
-              {
-                "title": "Prêt à vendre en ligne ?",
-                "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet. Nous serons ravis de t'aider à créer un site e-commerce qui boostera tes ventes et t'offrira une présence en ligne efficace."
-              }
-            ]
-          }
-        ]
+          }]
       },
       "branding": {
-        "resume" : {
+        "resume": {
           "title": "Améliore ton image de marque",
           "desc": [
             { "title": "Création de logo et charte graphique personnalisée" },
@@ -205,236 +355,398 @@
         },
         "content": [
           {
-            "title": "Création de l’identité visuelle",
-            "resume": "Nous créons un logo sur-mesure qui reflète l’essence de ta marque. Plus qu’une simple image, un logo est le visage de ton entreprise : il attire, marque les esprits et communique tes valeurs en un coup d’œil.",
+            "title": "Identité visuelle",
+            "resume": "On crée un logo sur-mesure qui reflète l’essence de ta marque. Plus qu’une simple image, un logo est le visage de ton entreprise : il attire, marque les esprits et communique tes valeurs en un coup d’œil.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
-                "content" : [
-                  "Une identité visuelle unique : ton logo sera conçu pour se démarquer et être immédiatement reconnaissable, tout en restant intemporel. On s'assure qu’il reflète ton positionnement, tes valeurs, ta cible et ton secteur d’activité.",
-                  "Cohérence avec ta stratégie de marque : ton logo s’intègrera parfaitement dans ta communication globale (site web, réseaux sociaux, supports imprimés, etc.). Il deviendra le point de départ de ton identité visuelle.",
-                  "Une expertise créative et technique : nous combinons créativité artistique et maîtrise technique, en tenant compte des dernières tendances graphiques et des besoins de flexibilité pour l'utilisation de ton logo (formats numériques, impressions, etc.)."
+                "title": "Notre expertise",
+                "content": [
+                  {
+                    "title" : "Identité visuelle unique",
+                    "text" : "Ton logo sera conçu pour se démarquer et être immédiatement reconnaissable, tout en restant intemporel. On s'assure qu’il reflète ton positionnement, tes valeurs, ta cible et ton secteur d’activité."
+                  },
+                  {
+                    "title" : "Cohérence avec ta stratégie de marque",
+                    "text" : "Ton logo s’intègrera parfaitement dans ta communication globale (site web, réseaux sociaux, supports imprimés, etc.). Il deviendra le point de départ de ton identité visuelle."
+                  },
+                  {
+                    "title" : "Expertise créative et technique",
+                    "text" : "On combine créativité artistique et maîtrise technique, en tenant compte des dernières tendances graphiques et des besoins de flexibilité pour l'utilisation de ton logo (formats numériques, impressions, etc.)."
+                  }
                 ]
               },
               {
-                "title": "Les étapes de la création de ton logo",
-                "content" : [
-                  "Découverte et analyse : on commence par un brief pour comprendre ton activité, ta cible, tes valeurs et tes besoins, et on analyse tes concurrents pour identifier les opportunités de différenciation.",
-                  "Recherche et inspiration : on explore différentes pistes créatives en créant un moodboard pour définir une direction artistique en s’inspirant de tes idées et de notre expertise.",
-                  "Esquisses et concepts : on conçoit plusieurs propositions de logos sous forme de croquis ou de maquettes digitales, en travaillant la forme, la typographie, la palette de couleurs et la symbolique.",
-                  "Révisions et affinage : on recueille tes retours pour affiner le concept retenu et créer une version finale polyvalente, adaptée à tous les formats et supports.",
-                  "Livraison des fichiers : une fois validé, on te fournit tous les fichiers nécessaires (vectoriels, web, monochrome) et on t’accompagne dans l’intégration de ton logo sur tes supports."
+                "title": "Le processus",
+                "content": [
+                  {
+                    "title" : "Découverte et analyse",
+                    "text" : "On commence par un brief pour comprendre ton activité, ta cible, tes valeurs et tes besoins, et on analyse tes concurrents pour identifier les opportunités de différenciation."
+                  },
+                  {
+                    "title" : "Recherche et inspiration",
+                    "text" : "On explore différentes pistes créatives en créant un moodboard pour définir une direction artistique en s’inspirant de tes idées et de notre expertise."
+                  },
+                  {
+                    "title" : "Esquisses et concepts",
+                    "text" : "On conçoit plusieurs propositions de logos sous forme de croquis ou de maquettes digitales, en travaillant la forme, la typographie, la palette de couleurs et la symbolique."
+                  },
+                  {
+                    "title" : "Révisions et affinage",
+                    "text" : "On recueille tes retours pour affiner le concept retenu et créer une version finale polyvalente, adaptée à tous les formats et supports."
+                  },
+                  {
+                    "title" : "Livraison des fichiers",
+                    "text" : "Une fois validé, on te fournit tous les fichiers nécessaires (vectoriels, web, monochrome) et on t’accompagne dans l’intégration de ton logo sur tes supports."
+                  }
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
-                "content" : [
-                  "Créativité et expertise : une équipe de designers passionnés et expérimentés.",
-                  "Collaboration : un processus basé sur l’écoute et l’échange pour garantir un résultat qui vous ressemble.",
-                  "Un accompagnement global : au-delà du logo, nous pouvons développer ta charte graphique, ton site web et tes supports de communication."
+                "content": [
+                  {
+                    "title" : "Créativité et expertise",
+                    "text" : "Une équipe de designers passionnés et expérimentés."
+                  },
+                  {
+                    "title" : "Étroite collaboration",
+                    "text" : "Un processus basé sur l’écoute et l’échange pour garantir un résultat qui vous ressemble."
+                  },
+                  {
+                    "title" : "Accompagnement global",
+                    "text" : "Au-delà du logo, on peut développer ta charte graphique, ton site web et tes supports de communication."
+                  }
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à donner vie à ta marque ?",
-                "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet. Nous serons ravis de t'accompagner dans la création d’un logo qui marquera les esprits et portera haut tes ambitions."
+            "footer": [{
+              "title": "Prêt à donner vie à ta marque ?",
+              "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet. On sera ravis de t'accompagner dans la création d’un logo qui marquera les esprits et portera haut tes ambitions."
+            }],
+            "fun_fact": [{
+                "title": "Nombre de 'Est-ce qu’on peut essayer avec une autre police ?'",
+                "start": 0,
+                "end": 18,
+                "result": "Avant de revenir à la première !"
+              },{
+                "title": "Requêtes de clients pour rendre le design plus 'punchy'",
+                "start": 0,
+                "end": 12,
+                "result": "On ne sait toujours pas ce que ça veut dire !"
               }
             ]
           },{
-            "title": "Création de la charte graphique",
-            "resume": "Nous concevons une charte graphique complète et cohérente qui reflète l'identité visuelle de ta marque. Cette charte servira de guide pour l’utilisation de ton logo, des couleurs, des typographies, et des éléments visuels afin de garantir une communication uniforme et professionnelle sur tous tes supports.",
+            "title": "Charte graphique",
+            "resume": "On conçoit une charte graphique complète et cohérente qui reflète l'identité visuelle de ta marque. Cette charte servira de guide pour l’utilisation de ton logo, des couleurs, des typographies, et des éléments visuels afin de garantir une communication uniforme et professionnelle sur tous tes supports.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Une identité visuelle cohérente : nous définissons les éléments visuels de ta marque (logo, couleurs, typographies, etc.) afin de garantir une harmonie sur tous tes supports de communication.",
-                  "Création de supports personnalisés : nous créons des templates pour tes supports de communication (cartes de visite, brochures, présentations, etc.), afin d'assurer une continuité visuelle.",
-                  "Flexibilité et adaptation : notre charte graphique est pensée pour s'adapter à différents supports, qu'ils soient numériques ou imprimés, tout en restant fidèle à ton identité de marque.",
-                  "Respect des normes graphiques : nous veillons à ce que la charte respecte les meilleures pratiques graphiques et techniques pour une utilisation optimale sur tous les types de supports."
+                  {
+                    "title" : "Identité visuelle cohérente",
+                    "text" : "On définit les éléments visuels de ta marque (logo, couleurs, typographies, etc.) afin de garantir une harmonie sur tous tes supports de communication."
+                  },
+                  {
+                    "title" : "Création de supports personnalisés",
+                    "text" : "On crée des templates pour tes supports de communication (cartes de visite, brochures, présentations, etc.), afin d'assurer une continuité visuelle."
+                  },
+                  {
+                    "title" : "Flexibilité et adaptation",
+                    "text" : "Notre charte graphique est pensée pour s'adapter à différents supports, qu'ils soient numériques ou imprimés, tout en restant fidèle à ton identité de marque."
+                  },
+                  {
+                    "title" : "Respect des normes graphiques",
+                    "text" : "On veille à ce que la charte respecte les meilleures pratiques graphiques et techniques pour une utilisation optimale sur tous les types de supports."
+                  }
                 ]
               },
               {
-                "title": "Les étapes de la création de ta charte graphique",
+                "title": "Le processus",
                 "content": [
-                  "Analyse et définition des valeurs de ta marque : nous commençons par comprendre l’essence de ta marque, ses valeurs, son positionnement et ses objectifs, afin de créer une charte graphique qui te ressemble.",
-                  "Création des éléments visuels : nous concevons les éléments principaux de l’identité visuelle (logo, couleurs, typographies) en veillant à ce qu’ils soient cohérents et adaptés à ton univers.",
-                  "Développement de la charte graphique : nous créons le document de la charte graphique, avec des instructions claires sur l'utilisation de chaque élément visuel, afin d'assurer la cohérence et la qualité de la communication visuelle.",
-                  "Révisions et ajustements : après une première présentation, nous recueillons tes retours et effectuons les ajustements nécessaires pour garantir que la charte graphique reflète parfaitement ta marque.",
-                  "Livraison et accompagnement : nous te fournissons la charte graphique dans les formats nécessaires et offrons un accompagnement pour l'intégration des éléments sur tous tes supports."
+                  {
+                    "title" : "Analyse et définition des valeurs",
+                    "text" : "On commence par comprendre l’essence de ta marque, ses valeurs, son positionnement et ses objectifs, afin de créer une charte graphique qui te ressemble."
+                  },
+                  {
+                    "title" : "Création des éléments visuels",
+                    "text" : "On conçoit les éléments principaux de l’identité visuelle (logo, couleurs, typographies) en veillant à ce qu’ils soient cohérents et adaptés à ton univers."
+                  },
+                  {
+                    "title" : "Conception de la charte",
+                    "text" : "On crée le document de la charte graphique, avec des instructions claires sur l'utilisation de chaque élément visuel, afin d'assurer la cohérence et la qualité de la communication visuelle."
+                  },
+                  {
+                    "title" : "Révisions et ajustements",
+                    "text" : "Après une première présentation, on recueille tes retours et on effectue les ajustements nécessaires pour garantir que la charte graphique reflète parfaitement ta marque."
+                  },
+                  {
+                    "title" : "Livraison finale",
+                    "text" : "On te fournit la charte graphique dans les formats nécessaires et on offre un accompagnement pour l'intégration des éléments sur tous tes supports."
+                  }
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Expertise en design graphique : une équipe de designers expérimentés qui comprend l’importance d’une identité visuelle forte et cohérente pour une marque.",
-                  "Création sur-mesure : nous ne proposons pas de solutions génériques, chaque charte graphique est conçue en fonction de l’essence et des objectifs de ta marque.",
-                  "Accompagnement continu : nous te guidons tout au long du processus et nous restons disponibles pour toute question ou demande d’adaptation future de ta charte graphique."
+                  {
+                    "title" : "Expertise en design",
+                    "text" : "Une équipe de designers expérimentés qui comprend l’importance d’une identité visuelle forte et cohérente pour une marque."
+                  },
+                  {
+                    "title" : "Création sur-mesure",
+                    "text" : "On ne propose pas de solutions génériques, chaque charte graphique est conçue en fonction de l’essence et des objectifs de ta marque."
+                  },
+                  {
+                    "title" : "Accompagnement continu",
+                    "text" : "On te guide tout au long du processus et on reste disponibles pour toute question ou demande d’adaptation future de ta charte graphique."
+                  }
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à créer une identité visuelle forte ?",
-                "content": "Contacte-nous dès aujourd’hui pour discuter de la création de ta charte graphique. Nous serons ravis de t’accompagner pour établir une identité visuelle cohérente et impactante pour ta marque."
+            "footer": [{
+              "title": "Prêt à créer une identité visuelle forte ?",
+              "content": "Contacte-nous dès aujourd’hui pour discuter de la création de ta charte graphique. On sera ravis de t’accompagner pour établir une identité visuelle cohérente et impactante pour ta marque."
+            }],
+            "fun_fact": [{
+                "title": "Savais-tu que&nbsp;?",
+                "start": 0,
+                "end": 0,
+                "result": ""
               }
             ]
           },{
-            "title": "Création de flyer",
-            "resume": "Nous concevons des flyers percutants qui attirent l'attention et communiquent efficacement ton message. Que ce soit pour un événement, une promotion ou un lancement, chaque flyer est conçu pour maximiser l'impact visuel et inciter à l'action.",
+            "title": "Flyer",
+            "resume": "On conçoit des flyers percutants qui attirent l'attention et communiquent efficacement ton message. Que ce soit pour un événement, une promotion ou un lancement, chaque flyer est conçu pour maximiser l'impact visuel et inciter à l'action.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Un design attractif : nous créons des flyers visuellement impactants qui captent immédiatement l'attention et se démarquent de la concurrence.",
-                  "Une communication claire et efficace : nous structurons le contenu de manière à ce que ton message soit facilement compréhensible, en mettant l'accent sur l'essentiel.",
-                  "Des supports personnalisés : nous pouvons adapter le format, les couleurs, les images et les typographies pour que le flyer corresponde parfaitement à ton identité visuelle et à ton objectif.",
-                  "Optimisation pour tous supports : ton flyer sera conçu pour être imprimé en haute qualité et également optimisé pour une diffusion numérique si nécessaire."
+                  {
+                    "title" : "Design attractif",
+                    "text" : "On crée des flyers visuellement impactants qui captent immédiatement l'attention et se démarquent de la concurrence."
+                  },
+                  {
+                    "title" : "Communication efficace",
+                    "text" : "On structure le contenu de manière à ce que ton message soit facilement compréhensible, en mettant l'accent sur l'essentiel."
+                  },
+                  {
+                    "title" : "Supports personnalisés",
+                    "text" : "On peut adapter le format, les couleurs, les images et les typographies pour que le flyer corresponde parfaitement à ton identité visuelle et à ton objectif."
+                  },
+                  {
+                    "title" : "Optimisation pour tous supports",
+                    "text" : "Ton flyer est conçu pour être imprimé en haute qualité et également optimisé pour une diffusion numérique si nécessaire."
+                  }
                 ]
               },
               {
-                "title": "Les étapes de création de ton flyer",
+                "title": "Le processus",
                 "content": [
-                  "Analyse de ton besoin : nous commençons par une discussion pour comprendre ton objectif (promotion, événement, lancement de produit, etc.), ta cible et ton message.",
-                  "Conception du design : après avoir récolté toutes les informations nécessaires, nous réalisons un design adapté à ta marque et à ton message, avec une attention particulière portée sur la lisibilité et l'impact visuel.",
-                  "Révisions et ajustements : une fois le design préliminaire prêt, nous te le soumettons pour recueillir tes retours et procéder aux ajustements nécessaires.",
-                  "Livraison des fichiers : après validation, nous te fournissons les fichiers finaux prêts pour l'impression ou pour la diffusion numérique dans les formats appropriés."
+                  {
+                    "title" : "Analyse de ton besoin",
+                    "text" : "On commence par une discussion pour comprendre ton objectif (promotion, événement, lancement de produit, etc.), ta cible et ton message."
+                  },
+                  {
+                    "title" : "Conception du design",
+                    "text" : "Après avoir récolté toutes les informations nécessaires, on réalise un design adapté à ta marque et à ton message, avec une attention particulière portée sur la lisibilité et l'impact visuel."
+                  },
+                  {
+                    "title" : "Révisions et ajustements",
+                    "text" : "Une fois le design préliminaire prêt, on te le soumets pour recueillir tes retours et procéder aux ajustements nécessaires."
+                  },
+                  {
+                    "title" : "Livraison des fichiers",
+                    "text" : "Après validation, on te fournit les fichiers finaux prêts pour l'impression ou pour la diffusion numérique dans les formats appropriés."
+                  }
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Créativité et expertise : une équipe de designers spécialisés dans la création de supports visuels percutants et efficaces.",
-                  "Respect de ta charte graphique : nous veillons à ce que ton flyer respecte l’identité visuelle de ta marque tout en répondant aux objectifs de communication spécifiques.",
-                  "Accompagnement complet : nous t'accompagnons dans la création de ton flyer, de la conception à la livraison, en t'assurant que ton message soit parfaitement transmis."
+                  {
+                    "title" : "Créativité et expertise",
+                    "text" : "Une équipe de designers spécialisés dans la création de supports visuels percutants et efficaces."
+                  },
+                  {
+                    "title" : "Respect de ta charte graphique",
+                    "text" : "On veille à ce que ton flyer respecte l’identité visuelle de ta marque tout en répondant aux objectifs de communication spécifiques."
+                  },
+                  {
+                    "title" : "Accompagnement complet",
+                    "text" : "On t'accompagne dans la création de ton flyer, de la conception à la livraison, en t'assurant que ton message soit parfaitement transmis."
+                  }
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à faire passer ton message ?",
-                "content": "Contacte-nous dès aujourd’hui pour créer un flyer percutant qui mettra en valeur ton événement, ton produit ou ta promotion. Nous serons heureux de t’accompagner dans la conception d’un support visuel qui captera l'attention de ton public."
+            "footer": [{
+              "title": "Prêt à faire passer ton message ?",
+              "content": "Contacte-nous dès aujourd’hui pour créer un flyer percutant qui mettra en valeur ton événement, ton produit ou ta promotion. On sera heureux de t’accompagner dans la conception d’un support visuel qui captera l'attention de ton public."
+            }],
+            "fun_fact": [{
+                "title": "Savais-tu que&nbsp;?",
+                "start": 0,
+                "end": 0,
+                "result": ""
               }
             ]
           },{
-            "title": "Création de carte de visite",
-            "resume": "Nous concevons des cartes de visite élégantes et professionnelles qui reflètent l'identité de ton entreprise. Une carte de visite bien conçue permet de laisser une première impression mémorable et de renforcer l'image de marque de ton entreprise.",
+            "title": "Carte de visite",
+            "resume": "On conçoit des cartes de visite élégantes et professionnelles qui reflètent l'identité de ton entreprise. Une carte de visite bien conçue permet de laisser une première impression mémorable et de renforcer l'image de marque de ton entreprise.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Un design unique : chaque carte de visite est créée sur mesure pour correspondre parfaitement à ton image de marque et à ton secteur d'activité.",
-                  "Des finitions soignées : nous nous assurons que la qualité d'impression et des matériaux soit irréprochable pour que ta carte de visite donne une sensation premium à chaque contact.",
-                  "Une expérience utilisateur optimisée : nous réfléchissons à l'ergonomie de ta carte pour qu'elle soit facile à lire et à conserver, avec une disposition soignée des informations.",
-                  "Conformité à ta charte graphique : chaque élément graphique (couleurs, typographie, logo) est respecté pour maintenir la cohérence avec l'ensemble de ton identité visuelle."
+                  {
+                    "title" : "Design moderne",
+                    "text" : "Chaque carte de visite est créée sur mesure pour correspondre parfaitement à ton image de marque et à ton secteur d'activité."
+                  },
+                  {
+                    "title" : "Finitions soignées",
+                    "text" : "On s'assure que la qualité d'impression et des matériaux soit irréprochable pour que ta carte de visite donne une sensation premium à chaque contact."
+                  },
+                  {
+                    "title" : "Ergonomie optimisée",
+                    "text" : "On réfléchit à l'ergonomie de ta carte pour qu'elle soit facile à lire et à conserver, avec une disposition soignée des informations."
+                  },
+                  {
+                    "title" : "Conformité avec la charte graphique",
+                    "text" : "Chaque élément graphique (couleurs, typographie, logo) est respecté pour maintenir la cohérence avec l'ensemble de ton identité visuelle."
+                  }
                 ]
               },
               {
-                "title": "Les étapes de création de ta carte de visite",
+                "title": "Le processus",
                 "content": [
-                  "Analyse de ton besoin : nous commençons par une discussion pour comprendre tes attentes, ton secteur d’activité et l’image que tu souhaites véhiculer.",
-                  "Design de la carte : nous concevons plusieurs propositions de design, en intégrant les éléments de ton identité visuelle, tout en tenant compte de la lisibilité et de l’esthétique.",
-                  "Révisions et ajustements : une fois le design initial validé, nous recueillons tes retours et apportons les modifications nécessaires pour que la carte corresponde parfaitement à tes attentes.",
-                  "Livraison des fichiers : après validation, nous te fournissons les fichiers prêts pour l’impression, dans les formats requis (impression standard ou sur supports spécifiques)."
+                  {
+                    "title" : "Analyse du besoin",
+                    "text" : "On commence par une discussion pour comprendre tes attentes, ton secteur d’activité et l’image que tu souhaites véhiculer."
+                  },
+                  {
+                    "title" : "Conception",
+                    "text" : "On conçoit plusieurs propositions de design, en intégrant les éléments de ton identité visuelle, tout en tenant compte de la lisibilité et de l’esthétique."
+                  },
+                  {
+                    "title" : "Révisions et ajustements",
+                    "text" : "Une fois le design initial validé, on recueille tes retours et on apporte les modifications nécessaires pour que la carte corresponde parfaitement à tes attentes."
+                  },
+                  {
+                    "title" : "Livraison des fichiers",
+                    "text" : "Après validation, on te fournit les fichiers prêts pour l’impression, dans les formats requis (impression standard ou sur supports spécifiques)."
+                  }
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Créativité et expertise : une équipe de designers expérimentés spécialisée dans la création de cartes de visite uniques et mémorables.",
-                  "Respect de ton identité visuelle : nous veillons à ce que chaque carte de visite respecte la cohérence de ta charte graphique et de ton image de marque.",
-                  "Accompagnement complet : de la conception à l’impression, nous t’accompagnons tout au long du processus pour créer une carte de visite qui te représente parfaitement."
+                  {
+                    "title" : "Créativité et expertise",
+                    "text" : "Une équipe de designers expérimentés spécialisée dans la création de cartes de visite uniques et mémorables."
+                  },
+                  {
+                    "title" : "Respect de ton identité visuelle",
+                    "text" : "On veille à ce que chaque carte de visite respecte la cohérence de ta charte graphique et de ton image de marque."
+                  },
+                  {
+                    "title" : "Accompagnement complet",
+                    "text" : "De la conception à l’impression, on t'accompagne tout au long du processus pour créer une carte de visite qui te représente parfaitement."
+                  }
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à faire bonne impression ?",
-                "content": "Contacte-nous dès aujourd’hui pour créer une carte de visite qui marquera l'esprit de tes prospects et partenaires. Nous serons heureux de t'accompagner dans la création de cet outil de communication essentiel."
+            "footer": [{
+              "title": "Prêt à faire bonne impression ?",
+              "content": "Contacte-nous dès aujourd’hui pour créer une carte de visite qui marquera l'esprit de tes prospects et partenaires. On sera heureux de t'accompagner dans la création de cet outil de communication essentiel."
+            }],
+            "fun_fact": [{
+                "title": "Savais-tu que&nbsp;?",
+                "start": 0,
+                "end": 0,
+                "result": ""
               }
             ]
           },{
-            "title": "Création de Nom de Marque",
-            "resume": "Nous imaginons des noms de marque uniques, mémorables et pertinents, qui incarnent l’essence de ton entreprise ou de ton produit. Un bon nom est essentiel pour capter l’attention, marquer les esprits et construire une identité forte et distincte.",
+            "title": "Nom de marque",
+            "resume": "On imagine des noms de marque uniques, mémorables et pertinents, qui incarnent l’essence de ton entreprise ou de ton produit. Un bon nom est essentiel pour capter l’attention, marquer les esprits et construire une identité forte et distincte.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Un nom original et distinctif : nous créons des noms qui se démarquent dans ton secteur d’activité et qui véhiculent clairement les valeurs et la mission de ton entreprise ou produit.",
-                  "Adaptabilité et flexibilité : ton nom sera conçu pour être facilement adaptable à différents supports de communication (site web, réseaux sociaux, logo, packaging, etc.).",
-                  "Une réflexion stratégique : nous prenons en compte des éléments tels que la simplicité, la prononciation, la mémorisation et la recherche de disponibilité du nom (domaine, réseaux sociaux, etc.).",
-                  "Une vision à long terme : nous nous assurons que le nom choisi ait une portée durable, capable d’évoluer avec ton entreprise ou produit et de résister aux tendances passagères."
+                  {
+                    "title" : "Nom distinctif",
+                    "text" : "On crée des noms qui se démarquent dans ton secteur d’activité et qui véhiculent clairement les valeurs et la mission de ton entreprise ou produit."
+                  },
+                  {
+                    "title" : "Adaptabilité et flexibilité",
+                    "text" : "Ton nom sera conçu pour être facilement adaptable à différents supports de communication (site web, réseaux sociaux, logo, packaging, etc.)."
+                  },
+                  {
+                    "title" : "Réflexion stratégique",
+                    "text" : "On prend en compte des éléments tels que la simplicité, la prononciation, la mémorisation et la recherche de disponibilité du nom (domaine, réseaux sociaux, etc.)."
+                  },
+                  {
+                    "title" : "Vision à long terme",
+                    "text" : "On s'assure que le nom choisi ait une portée durable, capable d’évoluer avec ton entreprise ou produit et de résister aux tendances passagères."
+                  }
                 ]
               },
               {
-                "title": "Les étapes de création de ton nom de marque",
+                "title": "Le processus",
                 "content": [
-                  "Analyse de ton marché et de tes valeurs : on commence par une étude approfondie de ton secteur, de tes objectifs, de ta cible et de tes valeurs pour définir une direction claire pour ton nom.",
-                  "Brainstorming créatif : nous organisons des sessions créatives pour générer une liste de noms potentiels, en utilisant des techniques variées pour stimuler l'originalité.",
-                  "Sélection et affinage : nous réduisons la liste à quelques propositions et nous affinons les choix en fonction de critères spécifiques tels que la pertinence, la sonorité, la mémorisation, et la disponibilité.",
-                  "Tests et validation : nous effectuons des tests pour vérifier la perception du nom auprès de ta cible, ainsi que sa disponibilité sur le marché (domaine, réseaux sociaux, dépôt de marque).",
-                  "Finalisation : après validation, nous te livrons un nom qui correspond à 100% à ton image et à tes objectifs, accompagné d’une stratégie de lancement si nécessaire."
+                  {
+                    "title" : "Analyse du marché et de tes valeurs",
+                    "text" : "On commence par une étude approfondie de ton secteur, de tes objectifs, de ta cible et de tes valeurs pour définir une direction claire pour ton nom."
+                  },
+                  {
+                    "title" : "Brainstorming créatif",
+                    "text" : "On organise des sessions créatives pour générer une liste de noms potentiels, en utilisant des techniques variées pour stimuler l'originalité."
+                  },
+                  {
+                    "title" : "Sélection et affinage",
+                    "text" : "On réduit la liste à quelques propositions et on affine les choix en fonction de critères spécifiques tels que la pertinence, la sonorité, la mémorisation, et la disponibilité."
+                  },
+                  {
+                    "title" : "Tests et validation",
+                    "text" : "On effectue des tests pour vérifier la perception du nom auprès de ta cible, ainsi que sa disponibilité sur le marché (domaine, réseaux sociaux, dépôt de marque)."
+                  },
+                  {
+                    "title" : "Finalisation",
+                    "text" : "Après validation, on te livre un nom qui correspond à 100% à ton image et à tes objectifs, accompagné d’une stratégie de lancement si nécessaire."
+                  }
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Expertise créative : une équipe de spécialistes en branding et en naming pour imaginer des noms uniques et percutants.",
-                  "Approche stratégique : nous ne nous contentons pas de trouver un nom, nous nous assurons qu’il soutienne les objectifs de ton entreprise à long terme.",
-                  "Accompagnement complet : de la recherche à la validation, nous te guidons à chaque étape pour te fournir un nom parfaitement adapté à ta vision."
+                  {
+                    "title" : "Expertise créative",
+                    "text" : "Une équipe de spécialistes en branding et en naming pour imaginer des noms uniques et percutants."
+                  },
+                  {
+                    "title" : "Approche stratégique",
+                    "text" : "On ne se contente pas de trouver un nom, on s'assure qu’il soutienne les objectifs de ton entreprise à long terme."
+                  },
+                  {
+                    "title" : "Accompagnement complet",
+                    "text" : "De la recherche à la validation, on te guide à chaque étape pour te fournir un nom parfaitement adapté à ta vision."
+                  }
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à trouver le nom parfait pour ta marque ?",
-                "content": "Contacte-nous dès aujourd’hui pour commencer à réfléchir à un nom de marque qui marquera les esprits et contribuera à l’identité forte de ton entreprise ou produit."
+            "footer": [{
+              "title": "Prêt à trouver le nom parfait pour ta marque ?",
+              "content": "Contacte-nous dès aujourd’hui pour commencer à réfléchir à un nom de marque qui marquera les esprits et contribuera à l’identité forte de ton entreprise ou produit."
+            }],
+            "fun_fact": [{
+                "title": "Savais-tu que&nbsp;?",
+                "start": 0,
+                "end": 0,
+                "result": ""
               }
             ]
-          },{
-            "title": "Création d'Affiche Publicitaire",
-            "resume": "Nous concevons des affiches publicitaires impactantes qui attirent l'attention et transmettent ton message de manière claire et efficace. Que ce soit pour des campagnes locales ou nationales, une affiche bien pensée fait toute la différence dans l'engagement de ton public.",
-            "list": [
-              {
-                "title": "Ce que nous pouvons t'apporter",
-                "content": [
-                  "Une conception visuelle accrocheuse : nous créons des affiches qui captent immédiatement l'attention, avec une mise en page soignée, des visuels percutants et une hiérarchie claire de l'information.",
-                  "Un message fort et adapté : nous nous assurons que le message soit concis, pertinent et adapté à ta cible, qu'il s'agisse d'une promotion, d'un événement ou d'une image de marque.",
-                  "Cohérence avec ta stratégie : ton affiche s'intégrera harmonieusement dans ta communication globale, en respectant les codes de ta marque, qu'il s'agisse de couleurs, de typographies ou de ton de communication.",
-                  "Optimisation pour tous les formats : qu’il s’agisse d’affiches grand format, de flyers ou de versions digitales, nous concevons des visuels qui fonctionnent sur tous les supports."
-                ]
-              },
-              {
-                "title": "Les étapes de création de ton affiche publicitaire",
-                "content": [
-                  "Brief créatif : on commence par comprendre ton objectif, ton public cible et les éléments à mettre en avant (produit, événement, offre spéciale, etc.).",
-                  "Recherche et inspiration : nous recherchons des inspirations visuelles qui correspondent à ton univers et à ton message. Nous explorons les tendances actuelles pour te proposer des idées novatrices.",
-                  "Conception graphique : nous créons plusieurs maquettes d'affiches, en jouant avec la composition, les couleurs, les typographies et les images pour renforcer l'impact visuel.",
-                  "Révisions et ajustements : nous te présentons les premières propositions et ajustons le design en fonction de tes retours, jusqu'à ce que nous trouvions l'affiche parfaite.",
-                  "Livraison et préparation des fichiers : une fois validée, nous te fournissons tous les fichiers nécessaires pour imprimer ou diffuser ton affiche sur différents supports (numériques ou physiques)."
-                ]
-              },
-              {
-                "title": "Pourquoi nous faire confiance ?",
-                "content": [
-                  "Expertise en design : une équipe de designers expérimentés pour créer des affiches qui marquent les esprits.",
-                  "Approche personnalisée : chaque projet est unique, nous nous assurons que ton affiche reflète parfaitement ton identité et ton message.",
-                  "Accompagnement complet : nous gérons la création de l'affiche de A à Z, de l'idée initiale à la livraison des fichiers finaux, en t'apportant des conseils à chaque étape."
-                ]
-              }
-            ],
-            "footer": [
-              {
-                "title": "Prêt à créer une affiche percutante ?",
-                "content": "Contacte-nous dès aujourd’hui pour créer une affiche publicitaire qui captivera ton public et mettra en valeur ton message."
-              }
-            ]
-          }
-        ]
+          }]
       },
       "social_media": {
         "resume":{
-          "title": "Communique avec ta communauté",
+          "title": "Engage ta communauté",
           "desc": [
             { "title": "Création de vidéos promotionnelles captivantes" },
             { "title": "Production de films d'entreprise professionnels" },
@@ -445,154 +757,211 @@
         },
         "content": [
           {
-            "title": "Création de vidéos promotionnelles",
-            "resume": "Nous réalisons des vidéos professionnelles pour mettre en valeur ton entreprise ou tes produits. Que ce soit pour une présentation institutionnelle ou une vidéo produit, nous capturons l'essence de ton message et le transmettons de manière percutante pour capter l'attention de ton audience.",
+            "title": "Vidéos promotionnelles",
+            "resume": "On réalise des vidéos professionnelles pour mettre en valeur ton entreprise ou tes produits. Que ce soit pour une présentation institutionnelle ou une vidéo produit, on capture l'essence de ton message et on le transmet de manière percutante pour capter l'attention de ton audience.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Vidéo sur-mesure : nous créons des vidéos adaptées à ton image de marque, qu'il s'agisse d'une vidéo d'entreprise ou d'une présentation produit.",
-                  "Expertise créative et technique : nous combinons créativité et expertise technique pour réaliser des vidéos à la fois esthétiques et efficaces, en tenant compte des tendances actuelles du marché.",
-                  "Impact visuel et narratif : chaque vidéo est conçue pour capturer l'attention dès les premières secondes et transmettre ton message de manière claire et mémorable.",
-                  "Optimisation pour tous supports : nos vidéos sont pensées pour être diffusées sur différents canaux (site web, réseaux sociaux, etc.), et nous t'aidons à les optimiser pour un impact maximal."
+                  {
+                    "title" : "Vidéo sur-mesure",
+                    "text" : "On crée des vidéos adaptées à ton image de marque, qu'il s'agisse d'une vidéo d'entreprise ou d'une présentation produit."
+                  },
+                  {
+                    "title" : "Expertise créative et technique",
+                    "text" : "On combine créativité et expertise technique pour réaliser des vidéos à la fois esthétiques et efficaces, en tenant compte des tendances actuelles du marché."
+                  },
+                  {
+                    "title" : "Impact visuel et narratif",
+                    "text" : "Chaque vidéo est conçue pour capturer l'attention dès les premières secondes et transmettre ton message de manière claire et mémorable."
+                  },
+                  {
+                    "title" : "Optimisation pour tous supports",
+                    "text" : "Nos vidéos sont pensées pour être diffusées sur différents canaux (site web, réseaux sociaux, etc.), et on t'aide à les optimiser pour un impact maximal."
+                  }
                 ]
               },
               {
-                "title": "Les étapes de création de ta vidéo",
+                "title": "Le processus",
                 "content": [
-                  "Brief et analyse : nous commençons par un brief pour comprendre tes objectifs, ton message, ton audience et le format de vidéo souhaité.",
-                  "Écriture du scénario : nous élaborons un script qui structure ton message et capte l'attention de ton audience, tout en restant fidèle à ton identité.",
-                  "Tournage et production : nous passons à la phase de captation, en filmant les scènes selon les besoins du projet, avec un équipement professionnel pour garantir la qualité.",
-                  "Montage et post-production : nous montons les images, ajoutons des effets visuels, du son et des animations pour créer une vidéo dynamique et engageante.",
-                  "Livraison et diffusion : une fois la vidéo finalisée, nous te fournissons les fichiers dans les formats adaptés à ta diffusion, et nous t'accompagnons dans la mise en ligne sur tes plateformes."
+                  {
+                    "title" : "Brief et analyse",
+                    "text" : "On commence par un brief pour comprendre tes objectifs, ton message, ton audience et le format de vidéo souhaité."
+                  },
+                  {
+                    "title" : "Écriture du scénario",
+                    "text" : "On élabore un script qui structure ton message et capte l'attention de ton audience, tout en restant fidèle à ton identité."
+                  },
+                  {
+                    "title" : "Tournage et production",
+                    "text" : "On passe à la phase de captation, en filmant les scènes selon les besoins du projet, avec un équipement professionnel pour garantir la qualité."
+                  },
+                  {
+                    "title" : "Montage et post-production",
+                    "text" : "On monte les images, ajoute des effets visuels, du son et des animations pour créer une vidéo dynamique et engageante."
+                  },
+                  {
+                    "title" : "Livraison et diffusion",
+                    "text" : "Une fois la vidéo finalisée, on te fournit les fichiers dans les formats adaptés à ta diffusion, et on t'accompagne dans la mise en ligne sur tes plateformes."
+                  }
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Expertise en vidéo : notre équipe possède une grande expérience dans la réalisation de vidéos d'entreprise et de produits, avec une approche professionnelle et créative.",
-                  "Personnalisation : chaque projet est unique, et nous nous engageons à créer une vidéo qui correspond exactement à ton identité et à tes besoins.",
-                  "Accompagnement complet : de la création du scénario à la diffusion, nous t’accompagnons tout au long du processus pour assurer un résultat de qualité."
+                  {
+                    "title" : "Expertise en vidéo",
+                    "text" : "Notre équipe possède une grande expérience dans la réalisation de vidéos d'entreprise et de produits, avec une approche professionnelle et créative."
+                  },
+                  {
+                    "title" : "Personnalisation",
+                    "text" : "Chaque projet est unique, et on s'engage à créer une vidéo qui correspond exactement à ton identité et à tes besoins."
+                  },
+                  {
+                    "title" : "Accompagnement complet",
+                    "text" : "De la création du scénario à la diffusion, on t'accompagne tout au long du processus pour assurer un résultat de qualité."
+                  }
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à mettre ton entreprise ou ton produit en vidéo ?",
-                "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet vidéo. Nous serons ravis de t'accompagner dans la création d'une vidéo percutante qui captivera ton audience et renforcera ta communication."
+            "footer": [{
+              "title": "Prêt à mettre ton entreprise ou ton produit en vidéo ?",
+              "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet vidéo. On sera ravis de t'accompagner dans la création d'une vidéo percutante qui captivera ton audience et renforcera ta communication."
+            }],
+            "fun_fact": [{
+                "title": "Savais-tu que&nbsp;?",
+                "start": 0,
+                "end": 0,
+                "result": ""
               }
             ]
           },{
             "title": "Shooting photo",
-            "resume": "Nous réalisons des shootings photo professionnels pour mettre en valeur tes produits ou tes modèles. Que ce soit pour des photos produits détaillées ou des portraits de modèles, nous capturons l’essence de ton univers visuel avec un regard créatif et une expertise technique.",
+            "resume": "On réalise des shootings photo professionnels pour mettre en valeur tes produits ou tes modèles. Que ce soit pour des photos produits détaillées ou des portraits de modèles, on capture l’essence de ton univers visuel avec un regard créatif et une expertise technique.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Photos sur-mesure : nous créons des images adaptées à ton image de marque, que ce soit pour la mise en valeur de produits ou pour des portraits de modèles.",
-                  "Excellence technique et artistique : nous utilisons du matériel haut de gamme et une approche créative pour garantir des photos de qualité professionnelle.",
-                  "Ambiance personnalisée : chaque shooting est conçu pour refléter l’ambiance que tu souhaites transmettre, qu’il s’agisse d’un shooting produit minimaliste ou d’une session créative de mode.",
-                  "Flexibilité : nous nous adaptons à tes besoins, que ce soit pour des photos en studio ou en extérieur, des photos pour un site web ou des réseaux sociaux."
+                  { "title" : "Photos sur-mesure", "text" : "On crée des images adaptées à ton image de marque, que ce soit pour la mise en valeur de produits ou pour des portraits de modèles." },
+                  { "title" : "Excellence technique et artistique", "text" : "On utilise du matériel haut de gamme et une approche créative pour garantir des photos de qualité professionnelle." },
+                  { "title" : "Ambiance personnalisée", "text" : "Chaque shooting est conçu pour refléter l’ambiance que tu souhaites transmettre, qu’il s’agisse d’un shooting produit minimaliste ou d’une session créative de mode." },
+                  { "title" : "Flexibilité", "text" : "On s'adapte à tes besoins, que ce soit pour des photos en studio ou en extérieur, des photos pour un site web ou des réseaux sociaux."}
                 ]
               },
               {
-                "title": "Les étapes de création de tes photos",
+                "title": "Le processus",
                 "content": [
-                  "Brief et préparation : nous commençons par un brief pour comprendre ton projet, ta cible et le style de photo souhaité, afin de préparer le shooting dans les moindres détails.",
-                  "Sélection du lieu et de l’ambiance : en fonction du style de photos que tu recherches, nous choisissons ensemble le lieu (studio, extérieur, ambiance spécifique) et préparons l’éclairage et la scénographie.",
-                  "Shooting : lors du shooting, nous mettons en œuvre notre savoir-faire pour capturer les images parfaites, que ce soit pour des produits ou des modèles, avec un soin particulier porté aux détails.",
-                  "Post-production : après la séance, nous procédons au tri des photos, à la retouche et à l’édition pour garantir une finition impeccable et un rendu fidèle à ta vision.",
-                  "Livraison des photos : nous te livrons les photos finales dans les formats adaptés à ta diffusion, que ce soit pour ton site web, tes réseaux sociaux ou des supports imprimés."
+                  { "title" : "Brief et préparation", "text" : "On commence par un brief pour comprendre ton projet, ta cible et le style de photo souhaité, afin de préparer le shooting dans les moindres détails." },
+                  { "title" : "Sélection du lieu et de l’ambiance", "text" : "En fonction du style de photos que tu recherches, on choisis ensemble le lieu (studio, extérieur, ambiance spécifique) et on prépare l’éclairage et la scénographie." },
+                  { "title" : "Shooting", "text" : "Lors du shooting, on met en œuvre notre savoir-faire pour capturer les images parfaites, que ce soit pour des produits ou des modèles, avec un soin particulier porté aux détails." },
+                  { "title" : "Post-production", "text" : "Après la séance, on procède au tri des photos, à la retouche et à l’édition pour garantir une finition impeccable et un rendu fidèle à ta vision." },
+                  { "title" : "Livraison des photos", "text": "On te livre les photos finales dans les formats adaptés à ta diffusion, que ce soit pour ton site web, tes réseaux sociaux ou des supports imprimés."}
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Expertise en photographie : une équipe de photographes professionnels, expérimentés dans les shootings produit et modèle, avec une attention particulière portée à chaque détail.",
-                  "Créativité et personnalisation : chaque shooting est unique et conçu spécifiquement pour répondre à tes besoins et à l’ambiance que tu souhaites transmettre.",
-                  "Accompagnement complet : du brief à la livraison, nous nous occupons de toutes les étapes pour garantir que tes photos correspondent parfaitement à tes attentes."
+                  { "title" : "Expertise en photographie", "text" : "Une équipe de photographes professionnels, expérimentés dans les shootings produit et modèle, avec une attention particulière portée à chaque détail."},
+                  { "title" : "Créativité et personnalisation", "text" : "Chaque shooting est unique et conçu spécifiquement pour répondre à tes besoins et à l’ambiance que tu souhaites transmettre."},
+                  { "title" : "Accompagnement complet", "text" : "Du brief à la livraison, on s'occupe de toutes les étapes pour garantir que tes photos correspondent parfaitement à tes attentes."}
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à capturer l’image parfaite ?",
-                "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet photo. Nous serons ravis de t’accompagner dans la réalisation de photos professionnelles qui mettront en valeur tes produits ou tes modèles."
+            "footer": [{
+              "title": "Prêt à capturer l’image parfaite ?",
+              "content": "Contacte-nous dès aujourd’hui pour discuter de ton projet photo. On sera ravis de t’accompagner dans la réalisation de photos professionnelles qui mettront en valeur tes produits ou tes modèles."
+            }],
+            "fun_fact": [{
+                "title": "Savais-tu que&nbsp;?",
+                "start": 0,
+                "end": 0,
+                "result": ""
               }
             ]
           },{
             "title": "Couverture d'événements sportifs",
-            "resume": "Nous assurons la couverture complète de tes événements sportifs, que ce soit en photo ou en vidéo. Avec notre expertise technique et notre expérience dans le domaine sportif, nous capturons l'intensité, l'émotion et l'énergie de chaque moment pour offrir des visuels percutants et dynamiques.",
+            "resume": "On s'assure la couverture complète de tes événements sportifs, que ce soit en photo ou en vidéo. Avec notre expertise technique et notre expérience dans le domaine sportif, on capture l'intensité, l'émotion et l'énergie de chaque moment pour offrir des visuels percutants et dynamiques.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Captation d’action en temps réel : nous capturons les moments clés de ton événement, que ce soit des actions de jeu, des interactions entre les participants ou des moments de célébration.",
-                  "Expertise technique en sport : nous maîtrisons les techniques nécessaires pour capturer des images et vidéos de qualité, même dans des environnements dynamiques et en mouvement.",
-                  "Montage vidéo dynamique : pour les vidéos, nous offrons un montage percutant, rythmé, qui met en valeur l’intensité des événements tout en offrant une narration fluide.",
-                  "Photos et vidéos haute qualité : nous utilisons du matériel professionnel pour garantir des images nettes et des vidéos fluides, avec un rendu optimal quelles que soient les conditions de lumière."
+                  { "title" : "Expertise technique en sport", "text" : "On maîtrise les techniques nécessaires pour capturer des images et vidéos de qualité, même dans des environnements dynamiques et en mouvement." },
+                  { "title" : "Montage vidéo dynamique", "text" : "Pour les vidéos, on offre un montage percutant, rythmé, qui met en valeur l’intensité des événements tout en offrant une narration fluide."},
+                  { "title" : "Captation en temps réel", "text" : "On capture les moments clés de ton événement, que ce soit des actions de jeu, des interactions entre les participants ou des moments de célébration." },
+                  { "title" : "Prestation de haute qualité", "text" : "On utilise du matériel professionnel pour garantir des images nettes et des vidéos fluides, avec un rendu optimal quelles que soient les conditions de lumière."}
                 ]
               },
               {
-                "title": "Les étapes de couverture de ton événement sportif",
+                "title": "Le processus",
                 "content": [
-                  "Préparation et briefing : avant l'événement, nous échangeons avec toi pour comprendre les moments-clés que tu souhaites capturer et la direction visuelle souhaitée pour la couverture.",
-                  "Captation en direct : le jour de l’événement, nous capturons en temps réel les moments forts du déroulement, en nous assurant de capturer à la fois les actions sportives, les réactions du public et les moments clés des participants.",
-                  "Post-production photo et vidéo : après l'événement, nous effectuons la sélection des meilleurs clichés et vidéos, suivie de l'édition et du montage pour un rendu optimal.",
-                  "Livraison des visuels : les photos sont livrées en haute définition et les vidéos sont montées selon tes besoins spécifiques, prêtes à être diffusées ou partagées sur tes supports."
+                  { "title" : "Préparation et briefing", "text" : "Avant l'événement, on échange ensemble pour comprendre les moments-clés que tu souhaites capturer et la direction visuelle souhaitée pour la couverture." },
+                  { "title" : "Captation en direct", "text" : "Le jour de l’événement, on capture en temps réel les moments forts du déroulement, en s'assurant de capturer à la fois les actions sportives, les réactions du public et les moments clés des participants." },
+                  { "title" : "Post-production", "text" : "Après l'événement, on effectue la sélection des meilleurs clichés et vidéos, suivie de l'édition et du montage pour un rendu optimal."},
+                  { "title" : "Livraison des visuels", "text" : "Les photos sont livrées en haute définition et les vidéos sont montées selon tes besoins spécifiques, prêtes à être diffusées ou partagées sur tes supports."}
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Expertise dans les événements sportifs : notre équipe possède une expérience solide dans la couverture d’événements sportifs de toutes tailles, des compétitions locales aux événements de plus grande envergure.",
-                  "Captation dynamique : nous savons comment capturer l’énergie de l’action, avec une grande maîtrise des techniques spécifiques pour photographier et filmer en mouvement.",
-                  "Accompagnement personnalisé : nous nous adaptons à tes besoins spécifiques pour garantir une couverture qui reflète l’essence de ton événement, tout en respectant ton timing et tes attentes."
+                  { "title" : "Expertise dans le domaine", "text" : "Notre équipe possède une expérience solide dans la couverture d’événements sportifs de toutes tailles, des compétitions locales aux événements de plus grande envergure." },
+                  { "title" : "Captation dynamique", "text" : "On sait comment capturer l’énergie de l’action, avec une grande maîtrise des techniques spécifiques pour photographier et filmer en mouvement." },
+                  { "title" : "Accompagnement personnalisé", "text" : "On s'adapte à tes besoins spécifiques pour garantir une couverture qui reflète l’essence de ton événement, tout en respectant ton timing et tes attentes."}
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à capturer ton événement sportif ?",
-                "content": "Contacte-nous dès aujourd’hui pour discuter de la couverture de ton événement sportif. Nous serons ravis de t'accompagner et de créer des visuels qui immortalisent chaque instant de ton événement."
+            "footer": [{
+              "title": "Prêt à capturer ton événement sportif ?",
+              "content": "Contacte-nous dès aujourd’hui pour discuter de la couverture de ton événement sportif. On sera ravis de t'accompagner et de créer des visuels qui immortalisent chaque instant de ton événement."
+            }],
+            "fun_fact": [{
+                "title": "Savais-tu que&nbsp;?",
+                "start": 0,
+                "end": 0,
+                "result": ""
               }
             ]
           },{
-            "title": "Stratégie de marketing & Community management",
-            "resume": "Nous créons et mettons en œuvre des stratégies de marketing digital personnalisées, en nous concentrant sur la gestion de ta communauté. Grâce à une gestion active de tes réseaux sociaux et une communication ciblée, nous aidons à renforcer la notoriété de ta marque, stimuler l’engagement et développer des relations authentiques avec ton audience.",
+            "title": "Stratégie de marketing",
+            "resume": "On crée et met en œuvre des stratégies de marketing digital personnalisées, en se concentrant sur la gestion de ta communauté. Grâce à une gestion active de tes réseaux sociaux et une communication ciblée, on aide à renforcer la notoriété de ta marque, stimuler l’engagement et développer des relations authentiques avec ton audience.",
             "list": [
               {
-                "title": "Ce que nous pouvons t'apporter",
+                "title": "Notre expertise",
                 "content": [
-                  "Création de contenu engageant : nous créons du contenu original et captivant adapté à chaque plateforme pour susciter l’engagement de ta communauté et renforcer l'identité de ta marque.",
-                  "Gestion des réseaux sociaux : nous assurons une présence active sur tes réseaux sociaux en publiant régulièrement, en répondant aux commentaires et en interagissant avec ta communauté.",
-                  "Stratégie de communication ciblée : nous définissons une stratégie de communication adaptée à ta marque, en fonction de ton audience cible et des objectifs spécifiques que tu souhaites atteindre (notoriété, engagement, conversion).",
-                  "Analyse et reporting : nous suivons les performances de tes actions de marketing et fournissons des rapports détaillés, avec des analyses sur l'engagement, la portée, et l'évolution de ta communauté."
+                  { "title" : "Création de contenu engageant", "text" : "On crée du contenu original et captivant adapté à chaque plateforme pour susciter l’engagement de ta communauté et renforcer l'identité de ta marque."},
+                  { "title" : "Gestion des réseaux sociaux", "text" : "On s'assure une présence active sur tes réseaux sociaux en publiant régulièrement, en répondant aux commentaires et en interagissant avec ta communauté."},
+                  { "title" : "Stratégie de communication ciblée", "text" : "On définit une stratégie de communication adaptée à ta marque, en fonction de ton audience cible et des objectifs spécifiques que tu souhaites atteindre (notoriété, engagement, conversion)."},
+                  { "title" : "Analyse et reporting", "text" : "On suit les performances de tes actions de marketing et on fournit des rapports détaillés, avec des analyses sur l'engagement, la portée, et l'évolution de ta communauté."},
+                  { "title" : "Veille et innovation", "text" : "On reste à l'affût des dernières tendances et évolutions du marketing digital pour te proposer des idées créatives et innovantes qui te démarqueront de la concurrence."}
                 ]
               },
               {
-                "title": "Les étapes de la gestion de ta stratégie marketing",
+                "title": "Le processus",
                 "content": [
-                  "Audit et définition des objectifs : nous commençons par un audit complet de ta présence en ligne et de tes réseaux sociaux, puis nous définissons les objectifs à atteindre pour ta stratégie marketing.",
-                  "Création de la stratégie : en fonction des objectifs, nous élaborons une stratégie de contenu et de communication sur les réseaux sociaux qui correspond à ta cible, à ton ton de marque et à tes valeurs.",
-                  "Planification et création de contenu (Abonnement mensuel) : nous planifions les publications et créons du contenu visuel et écrit de manière régulière, en utilisant des outils de gestion pour garantir une organisation optimale.",
-                  "Gestion (Abonnement mensuel) : nous assurons la gestion continue de tes comptes, en publiant, en répondant aux commentaires et messages, et en surveillant l’activité de ta communauté.",
-                  "Analyse et ajustement (Abonnement mensuel) : nous analysons les performances des campagnes et ajustons la stratégie si nécessaire, afin d'optimiser les résultats et de garantir la satisfaction de ta communauté."
+                  { "title" : "Audit et définition des objectifs", "text" : "On commence par un audit complet de ta présence en ligne et de tes réseaux sociaux, puis on définit les objectifs à atteindre pour ta stratégie marketing."},
+                  { "title" : "Création de la stratégie", "text" : "En fonction des objectifs, on élabore une stratégie de contenu et de communication sur les réseaux sociaux qui correspond à ta cible, à ton ton de marque et à tes valeurs."},
+                  { "title" : "Planification et création de contenu (Abonnement mensuel)", "text" : "On planifie les publications et on crée du contenu visuel et écrit de manière régulière, en utilisant des outils de gestion pour garantir une organisation optimale."},
+                  { "title" : "Gestion (Abonnement mensuel)", "text": "On s'assure la gestion continue de tes comptes, en publiant, en répondant aux commentaires et messages, et en surveillant l’activité de ta communauté."},
+                  { "title" : "Analyse et ajustement (Abonnement mensuel)", "text" : "On analyse les performances des campagnes et on ajuste la stratégie si nécessaire, afin d'optimiser les résultats et de garantir la satisfaction de ta communauté."}
                 ]
               },
               {
                 "title": "Pourquoi nous faire confiance ?",
                 "content": [
-                  "Expertise en stratégie digitale : notre équipe possède une solide expérience en marketing digital et en community management, ce qui nous permet de comprendre parfaitement les enjeux de chaque plateforme.",
-                  "Créativité et innovation : nous apportons des idées créatives et innovantes pour faire briller ta marque, en restant toujours à l'affût des dernières tendances et évolutions du secteur.",
-                  "Gestion proactive et réactive : nous gérons activement ta communauté, mais aussi réagissons rapidement aux commentaires, questions ou crises potentielles pour maintenir une image positive de ta marque."
+                  { "title" : "Expertise en stratégie digitale", "text" : "Notre équipe possède une solide expérience en marketing digital et en community management, ce qui nous permet de comprendre parfaitement les enjeux de chaque plateforme." },
+                  { "title" : "Créativité et innovation", "text" : "On apporte des idées créatives et innovantes pour faire briller ta marque, en restant toujours à l'affût des dernières tendances et évolutions du secteur." },
+                  { "title" : "Gestion proactive et réactive", "text" : "On gère activement ta communauté, mais on réagit également rapidement aux commentaires, questions ou crises potentielles pour maintenir une image positive de ta marque."}
                 ]
               }
             ],
-            "footer": [
-              {
-                "title": "Prêt à booster ta présence en ligne ?",
-                "content": "Contacte-nous dès aujourd’hui pour discuter de ta stratégie de marketing digital et de community management. Nous serons ravis de t’accompagner pour faire grandir ta communauté et atteindre tes objectifs en ligne."
+            "footer": [{
+              "title": "Prêt à booster ta présence en ligne ?",
+              "content": "Contacte-nous dès aujourd’hui pour discuter de ta stratégie de marketing digital et de community management. On sera ravis de t’accompagner pour faire grandir ta communauté et atteindre tes objectifs en ligne."
+            }],
+            "fun_fact": [{
+                "title": "Savais-tu que&nbsp;?",
+                "start": 0,
+                "end": 0,
+                "result": ""
               }
             ]
           } 
@@ -602,7 +971,6 @@
         "resume": {
           "title": "Offre idéale pour les sites nécessitant une maintenance de base",
           "desc": [
-            { "title": "Sauvegarde mensuelle" },
             { "title": "Mise à jour des logiciels et des plugins" },
             { "title": "Analyse et correction des vulnérabilités" },
             { "title": "Rapport de maintenance mensuel" },
@@ -611,29 +979,25 @@
         }
       },
       "premium": {
-        "resume" : {
+        "resume": {
           "title": "Offre idéale pour les sites nécessitant une maintenance régulière",
           "desc": [
-            { "title": "Sauvegarde mensuelle" },
             { "title": "Mise à jour des logiciels et des plugins" },
             { "title": "Analyse et correction des vulnérabilités" },
             { "title": "Rapport de maintenance mensuel" },
-            { "title": "Optimisation des performances" },
-            { "title": "4 heures de support technique dédiées" }
+            { "title": "6 heures de support technique dédiées" }
           ]
         }
       },
       "vip": {
-        "resume" : {
+        "resume": {
           "title": "Offre idéale pour les sites nécessitant une maintenance avancée",
           "desc": [
-            { "title": "Sauvegarde mensuelle" },
             { "title": "Mise à jour des logiciels et des plugins" },
             { "title": "Analyse et correction des vulnérabilités" },
             { "title": "Rapport de maintenance mensuel" },
-            { "title": "Optimisation des performances" },
             { "title": "Support prioritaire par e-mail pour toute demande technique" },
-            { "title": "8 heures de support technique dédiées" }
+            { "title": "10 heures de support technique dédiées" }
           ]
         }
       }
@@ -642,129 +1006,140 @@
   "projects": {
     "title": "Découvre nos dernières collaborations",
     "tag": "Et si tu étais le prochain&nbsp;?",
-    "project": [
-      {
-        "id": "loreal-luxe",
-        "brand": "L'Oréal Luxe",
-        "category": ["Digital"],
-        "url": "https://zupimages.net/up/23/15/2mpy.png",
-        "main" : true,
-        "desc": [{ 
-          "title": "A/B Testing pour améliorer le taux de conversion",
-          "result": [
-            {"text": "Optimisation des temps de chargement des pages"},
-            {"text": "Suivi des KPI pour mesurer les performances de chaque variation"},
-            {"text": "Analyse statistique des résultats pour déterminer les gagnants"},
-            {"text": "Tests continus pour optimiser en permanence l'expérience utilisateur"}
-          ]
-        }, { 
-          "title": "Marques concernées",
-          "result": [
-            {"text": "Yves Saint Laurent, Lancôme, Kiehl’s, Mugler, Urban Decay, Biotherm"}
-            
-          ]
-        }
+    "project": [{
+      "id": "loreal-luxe",
+      "brand": "L'Oréal Luxe",
+      "category": ["Digital"],
+      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "main": true,
+      "desc": [{ 
+        "title": "A/B Testing pour améliorer le taux de conversion",
+        "result": [
+          {"text": "Optimisation des temps de chargement des pages"},
+          {"text": "Suivi des KPI pour mesurer les performances de chaque variation"},
+          {"text": "Analyse statistique des résultats"},
+          {"text": "Implémentation des changements validés"}
         ]
-      },{
-        "id": "new-balance",
-        "brand": "New Balance",
-        "category": ["Digital"],
-        "url": "https://zupimages.net/up/23/15/2mpy.png",
-        "main" : true,
-        "desc": [{ 
-          "title": "A/B Testing pour améliorer le parcours utilisateur",
-          "result": [
-            {"text": "Analyse des données existantes pour identifier les points de friction"},
-            {"text": "Segmentations des utilisateurs pour des tests plus pertinents"},
-            {"text": "Tests continus pour optimiser en permanence l'expérience utilisateur"},
-            {"text": "Suivi des KPI pour mesurer les performances de chaque variation"},
-            {"text": "Analyse statistique des résultats "},
-            {"text": "Implémentation des changements validés"}
-          ]
-        }
+      }, { 
+        "title": "Marques concernées",
+        "result": [
+          {"text": "Yves Saint Laurent, Lancôme, Kiehl’s, Mugler, Urban Decay, Biotherm"}
+          
         ]
-      },{
-        "id": "tcv",
-        "brand": "Tennis Club Vendargues",
-        "category": ["Branding"],
-        "url": "https://zupimages.net/up/23/15/2mpy.png",
-        "main" : true,
-        "desc": [{ 
-          "title": "Création du logo",
-          "result": [
-            {"text": "Analyse des valeurs et de l'identité de marque"},
-            {"text": "Recherche et benchmarking des tendances du secteur"},
-            {"text": "Création de moodboards pour inspirer le design"},
-            {"text": "Choix de palettes de couleurs stratégiques et adaptées"},
-            {"text": "Simplification et optimisation pour une reconnaissance instantanée"},
-            {"text": "Tests de lisibilité et d'impact sur différents supports"},
-            {"text": "Fourniture des fichiers sources et des déclinaisons"}
-          ]
-        }
+      }]
+    },{
+      "id": "new-balance",
+      "brand": "New Balance",
+      "category": ["Digital"],
+      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "main": true,
+      "desc": [{ 
+        "title": "A/B Testing pour améliorer le parcours utilisateur",
+        "result": [
+          {"text": "Analyse des données existantes pour identifier les points de friction"},
+          {"text": "Segmentations des utilisateurs pour des tests plus pertinents"},
+          {"text": "Tests continus pour optimiser en permanence l'expérience utilisateur"},
+          {"text": "Suivi des KPI pour mesurer les performances de chaque variation"},
+          {"text": "Analyse statistique des résultats "},
+          {"text": "Implémentation des changements validés"}
         ]
-      },{
-        "id": "leyders-associates",
-        "brand": "Leyders Associates",
-        "category": ["Digital", "Branding"],
-        "url": "https://zupimages.net/up/23/15/2mpy.png",
-        "main" : true,
-        "desc": [{ 
-          "title": "Création de la charte graphique",
-          "result": [
-            {"text": "Définition d'une palette de couleurs cohérente et sélection de typographie"},
-            {"text": "Mise en place des règles de mise en page (grilles, marges, ...)"},
-            {"text": "Livraison d'un document de référence (brandbook)"}
-          ]
-        },
-        { 
-          "title": "Refonte du site vitrine",
-          "result": [
-            {"text": "Conception de wireframes et de maquettes pour structurer le site"},
-            {"text": "Mise en place d'un système de gestion de contenu (CMS)"},
-            {"text": "Développement responsive pour une compatibilité mobile et tablette"},
-            {"text": "Formation à l'administration et à la gestion du site"}
-          ]
-        }
+      }]
+    },{
+      "id": "tcv",
+      "brand": "Tennis Club Vendargues",
+      "category": ["Branding"],
+      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "main": true,
+      "desc": [{ 
+        "title": "Création du logo",
+        "result": [
+          {"text": "Analyse des valeurs et de l'identité de marque"},
+          {"text": "Recherche et benchmarking des tendances du secteur"},
+          {"text": "Création de moodboards pour inspirer le design"},
+          {"text": "Choix de palettes de couleurs stratégiques et adaptées"},
+          {"text": "Simplification et optimisation pour une reconnaissance instantanée"},
+          {"text": "Tests de lisibilité et d'impact sur différents supports"},
+          {"text": "Fourniture des fichiers sources et des déclinaisons"}
         ]
-      },{
-        "id": "yellow-korner",
-        "brand": "Yellow Korner",
-        "category": ["Digital"],
-        "url": "https://zupimages.net/up/23/15/2mpy.png",
-        "main" : true,
-        "desc": [{ 
-          "title": "Refonte du site e-commerce",
-          "result": [
-            {"text": "Modernisation du design UX/UI pour améliorer l'expérience utilisateur"},
-            {"text": "Mise en place d'un design responsive pour mobile, tablette et desktop"},
-            {"text": "Développement responsive pour une compatibilité mobile et tablette"},
-            {"text": "Optimisation des temps de chargement des pages"},
-            {"text": "Intégration d'une gestion avancée des filtres et des tris produits"},
-            {"text": "Mise en place d'un système de prévisualisation rapide des produits"}
-          ]
-        }
+      }]
+    },{
+      "id": "leyders-associates",
+      "brand": "Leyders Associates",
+      "category": ["Digital", "Branding"],
+      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "main": true,
+      "desc": [{ 
+        "title": "Création de la charte graphique",
+        "result": [
+          {"text": "Mise en place des règles de mise en page"},
+          {"text": "Brandbook : livraison pour l'ensemble des supports de communication"}
         ]
-      },{
-        "id": "ooreka",
-        "brand": "Ooreka",
-        "category": ["Digital", "Branding"],
-        "url": "https://zupimages.net/up/23/15/2mpy.png",
-        "main" : true,
-        "desc": [{ 
-          "title": "Refonte du site",
-          "result": [
-            {"text": "Réalisation de wireframes et de maquettes pour une navigation fluide et intuitive" },
-            {"text": "Développement responsive pour une compatibilité mobile et tablette"},
-            {"text": "Création de newsletters" },
-            {"text": "Intégration de contenu multimédia enrichi (vidéos et infographies) pour diversifier l'expérience utilisateur" },
-            {"text": "Tests utilisateurs pour valider ou ajuster les parcours" },
-            {"text": "Amélioration continue du site à partir des retours et des données recueillies" }
-
-          ]
-        }
+      },
+      { 
+        "title": "Refonte du site vitrine",
+        "result": [
+          {"text": "Conception de wireframes et de maquettes"},
+          {"text": "Mise en place du CMS WordPress"},
+          {"text": "Développement responsive pour une compatibilité mobile et tablette"},
+          {"text": "Formation à la gestion du site"}
         ]
-      }
-    ]
+      }]
+    },{
+      "id": "yellow-korner",
+      "brand": "YellowKorner",
+      "category": ["Digital"],
+      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "main": true,
+      "desc": [{ 
+        "title": "Refonte du site e-commerce",
+        "result": [
+          {"text": "Modernisation du design UX/UI pour améliorer l'expérience utilisateur"},
+          {"text": "Mise en place d'un design responsive pour mobile, tablette et desktop"},
+          {"text": "Développement responsive pour une compatibilité mobile et tablette"},
+          {"text": "Optimisation des temps de chargement des pages"},
+          {"text": "Intégration d'une gestion avancée des filtres et des tris produits"},
+          {"text": "Mise en place d'un système de prévisualisation rapide des produits"}
+        ]
+      }]
+    },{
+      "id": "ooreka",
+      "brand": "Ooreka",
+      "category": ["Digital", "Branding"],
+      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "main": false,
+      "desc": [{
+        "title": "Refonte du site",
+        "result": [
+          {"text": "Réalisation de wireframes et de maquettes pour une navigation fluide et intuitive" },
+          {"text": "Développement responsive pour une compatibilité mobile et tablette"},
+          {"text": "Création de newsletters" },
+          {"text": "Intégration de contenu multimédia enrichi (vidéos et infographies) pour diversifier l'expérience utilisateur" },
+          {"text": "Tests utilisateurs pour valider ou ajuster les parcours" },
+          {"text": "Amélioration continue du site à partir des retours et des données recueillies" }
+        ]
+      }]
+    }, {
+      "id": "yotta",
+      "brand": "Yotta",
+      "category": ["Branding", "Digital"],
+      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "main": true,
+      "desc": [{ 
+        "title": "Création du logo",
+        "result": [
+          {"text": "Création de moodboards pour inspirer le design"},
+          {"text": "Tests de lisibilité et d'impact sur différents supports"},
+          {"text": "Fourniture des fichiers sources et des déclinaisons"}
+        ]
+      }, {
+        "title" : "Creation du site vitrine",
+        "result": [
+          {"text": "Conception de wireframes et de maquettes pour structurer le site"},
+          {"text": "Mise en place d'un système de gestion de contenu (CMS)"},
+          {"text": "Développement responsive pour une compatibilité mobile et tablette"}
+        ]
+      }]
+    }]
   },
   "feedback": {
     "tag": "À propos du studio",
@@ -775,127 +1150,118 @@
     "title": "Découvre notre simulateur",
     "content": "Le studio met à ta disposition un simulateur pour t'aider à estimer les coûts associés à tes besoins.",
     "info": "Le montant total indiqué est une estimation, il peut varier en fonction de la complexité et des exigences de ton projet.",
-    "tasks": [
-      {
-        "name": "Wireframe / Maquette",
-        "id": "wireframe_maquette",
-        "category": "Digital",
-        "image": "https://zupimages.net/up/23/15/2mpy.png",
-        "price": 1000,
-        "enabled": true
-      },
-      {
-        "name": "Site vitrine",
-        "id": "site_vitrine",
-        "category": "Digital",
-        "image": "https://zupimages.net/up/23/15/pvzk.png",
-        "price": 2000,
-        "enabled": true
-      },
-      {
-        "name": "Site e-commerce",
-        "id": "site_e_commerce",
-        "category": "Digital",
-        "image": "https://zupimages.net/up/23/15/flw9.png",
-        "price": 3000,
-        "enabled": true
-      },
-      {
-        "name": "Charte graphique",
-        "id": "charte_graphique",
-        "category": "Branding",
-        "image": "https://zupimages.net/up/23/15/kkz7.png",
-        "price": 300,
-        "enabled": true
-      },
-      {
-        "name": "Flyer",
-        "id": "flyer",
-        "category": "Branding",
-        "image": "https://zupimages.net/up/23/15/r11c.png",
-        "price": 200,
-        "enabled": true
-      },
-      {
-        "name": "Carte de visite",
-        "id": "carte_de_visite",
-        "category": "Branding",
-        "image": "https://zupimages.net/up/23/15/jop7.png",
-        "price": 200,
-        "enabled": true
-      },
-      {
-        "name": "Nom de marque",
-        "id": "nom_de_marque",
-        "category": "Branding",
-        "image": "https://zupimages.net/up/23/15/fy77.png",
-        "price": 1000,
-        "enabled": true
-      },
-      {
-        "name": "Logo",
-        "id": "logo",
-        "category": "Branding",
-        "image": "https://zupimages.net/up/23/15/dtoe.png",
-        "price": 400,
-        "enabled": true
-      },
-      {
-        "name": "Vidéos",
-        "id": "video",
-        "category": "Social Media",
-        "image": "https://zupimages.net/up/23/15/x76e.png",
-        "price": 1000,
-        "enabled": true
-      },
-      {
-        "name": "Photo",
-        "id": "photo",
-        "category": "Social Media",
-        "image": "https://zupimages.net/up/23/15/x76e.png",
-        "price": 600,
-        "enabled": true
-      },
-      {
-        "name": "Copywriting",
-        "id": "copywriting",
-        "category": "Social Media",
-        "image": "https://zupimages.net/up/23/15/qymd.png",
-        "price": 500,
-        "enabled": true
-      },
-      {
-        "name": "Affiche publicitaire",
-        "id": "affiche_publicitaire",
-        "category": "Branding",
-        "image": "https://zupimages.net/up/23/15/q9t8.png",
-        "price": 1500,
-        "enabled": true
-      },
-      {
-        "name": "Kakémono",
-        "id": "kakemono",
-        "category": "Branding",
-        "image": "https://zupimages.net/up/23/15/q9t8.png",
-        "price": 500,
-        "enabled": false
-      },
-      {
-        "name": "Plaquette commerciale",
-        "id": "plaquette_commerciale",
-        "category": "Branding",
-        "image": "https://zupimages.net/up/23/15/epqp.png",
-        "price": 800,
-        "enabled": false
-      },
-      {
-        "name": "Catalogue commercial",
-        "id": "catalogue_commercial",
-        "category": "Branding",
-        "image": "https://zupimages.net/up/23/15/qjvh.png",
-        "price": 1500,
-        "enabled": false
-      }
-    ]
+    "tasks": [{
+      "name": "Wireframe / Maquette",
+      "id": "wireframe_maquette",
+      "category": "Digital",
+      "image": "https://zupimages.net/up/23/15/2mpy.png",
+      "price": 1000,
+      "enabled": true
+    },{
+      "name": "Site vitrine",
+      "id": "site_vitrine",
+      "category": "Digital",
+      "image": "https://zupimages.net/up/23/15/pvzk.png",
+      "price": 2000,
+      "enabled": true
+    },{
+      "name": "Site e-commerce",
+      "id": "site_e_commerce",
+      "category": "Digital",
+      "image": "https://zupimages.net/up/23/15/flw9.png",
+      "price": 3000,
+      "enabled": true
+    },{
+      "name": "Charte graphique",
+      "id": "charte_graphique",
+      "category": "Branding",
+      "image": "https://zupimages.net/up/23/15/kkz7.png",
+      "price": 300,
+      "enabled": true
+    },{
+      "name": "Flyer",
+      "id": "flyer",
+      "category": "Branding",
+      "image": "https://zupimages.net/up/23/15/r11c.png",
+      "price": 200,
+      "enabled": true
+    },{
+      "name": "Carte de visite",
+      "id": "carte_de_visite",
+      "category": "Branding",
+      "image": "https://zupimages.net/up/23/15/jop7.png",
+      "price": 200,
+      "enabled": true
+    },{
+      "name": "Nom de marque",
+      "id": "nom_de_marque",
+      "category": "Branding",
+      "image": "https://zupimages.net/up/23/15/fy77.png",
+      "price": 1000,
+      "enabled": true
+    },{
+      "name": "Logo",
+      "id": "logo",
+      "category": "Branding",
+      "image": "https://zupimages.net/up/23/15/dtoe.png",
+      "price": 500,
+      "enabled": true
+    },{
+      "name": "Vidéos",
+      "id": "video",
+      "category": "Social Media",
+      "image": "https://zupimages.net/up/23/15/x76e.png",
+      "price": 1000,
+      "enabled": true
+    },{
+      "name": "Photo",
+      "id": "photo",
+      "category": "Social Media",
+      "image": "https://zupimages.net/up/23/15/x76e.png",
+      "price": 600,
+      "enabled": true
+    },{
+      "name": "Copywriting",
+      "id": "copywriting",
+      "category": "Social Media",
+      "image": "https://zupimages.net/up/23/15/qymd.png",
+      "price": 500,
+      "enabled": true
+    },{
+      "name": "Référencement naturel",
+      "id": "seo",
+      "category": "Digital",
+      "image": "https://zupimages.net/up/23/15/q9t8.png",
+      "price": 800,
+      "enabled": true
+    },{
+      "name": "Affiche publicitaire",
+      "id": "affiche_publicitaire",
+      "category": "Branding",
+      "image": "https://zupimages.net/up/23/15/q9t8.png",
+      "price": 1500,
+      "enabled": false
+    },{
+      "name": "Kakémono",
+      "id": "kakemono",
+      "category": "Branding",
+      "image": "https://zupimages.net/up/23/15/q9t8.png",
+      "price": 500,
+      "enabled": false
+    },{
+      "name": "Plaquette commerciale",
+      "id": "plaquette_commerciale",
+      "category": "Branding",
+      "image": "https://zupimages.net/up/23/15/epqp.png",
+      "price": 800,
+      "enabled": false
+    },{
+      "name": "Catalogue commercial",
+      "id": "catalogue_commercial",
+      "category": "Branding",
+      "image": "https://zupimages.net/up/23/15/qjvh.png",
+      "price": 1500,
+      "enabled": false
+    }]
   }
 }

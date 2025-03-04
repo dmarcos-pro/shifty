@@ -27,20 +27,20 @@ const Header = () => {
         <animated.nav
           ref={animate}
           style={fade}
-          className={`transition delay-4 flex rounded-50 py-1 bg-gray-200 dark:bg-gray-800 text-sm font-bold`}
+          className={`transition delay-4 flex gap-1 px-1 rounded-50 py-1 bg-gray-200 dark:bg-gray-800 text-sm font-bold`}
         >
           {nav &&
             nav.map((item: HeaderNav, index: number) => (
               <Link
                 key={`navHeader-${index}`}
                 href={`${item.link}`}
-                className={`${pathname === item.link ? 'bg-blue text-white hover:bg-blue' : 'hover:bg-gray-100'} block p-2 mx-1 md:px-4 rounded-50 uppercase text-xs font-extrabold tracking-wide hover:dark:bg-gray-700 text-gray-400`}
+                className={`${pathname === item.link ? 'bg-blue text-white hover:bg-blue' : 'hover:bg-gray-200 hover:dark:bg-gray-700'} block p-2 md:px-4 rounded-50 uppercase text-xs font-extrabold tracking-wide text-gray-400`}
               >
                 {item.name}
               </Link>
             ))}
         </animated.nav>
-        <div className="absolute right-md md:right-lg top-xs">
+        {/* <div className="absolute right-md md:right-lg top-xs">
           <DropdownMenu>
             <DropdownMenuTrigger>
               <SunIcon
@@ -54,7 +54,7 @@ const Header = () => {
               <span className="sr-only">Toggle theme</span>
             </DropdownMenuTrigger>
           </DropdownMenu>
-        </div>
+        </div> */}
       </header>
     </>
   )

@@ -15,15 +15,23 @@ const nextConfig = {
     config.resolve.alias['@images'] = imagesPath
     config.resolve.alias['@videos'] = videoPath
 
+    config.module.rules.push({
+      test: /\.(mp4|webm|ogg|avi|mov)$/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'static/media/[name].[hash][ext]',
+      },
+    });
+    
     // Retourner la configuration webpack modifiée
     return config
   },
   images: {
     remotePatterns: [{
-      protocol: "https", // Obligatoire : "http" ou "https"
-      hostname: "zupimages.net", // Le domaine autorisé
+      protocol: "https",
+      hostname: "zupimages.net",
       port: "", // Facultatif
-      pathname: "/images/**", // Facultatif : chemin à autoriser
+      pathname: "/images/**", // Facultatif
     }],
   },
 }

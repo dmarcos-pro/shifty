@@ -19,7 +19,7 @@ const StudioContent = () => {
     year: Hourglass
   }
 
-  return <section id="studio" className="py-24">
+  return <section id="studio" className="pt-12 pb-24">
     <div className="container">
     <Heading tag='h2' content="L'histoire du studio" />
     <p className='mt-4 mb-12 text-md leading-8'>Créé en 2024 par David Marcos, le studio Shifty répond au besoin croissant des entreprises d’externaliser leur communication. Après plusieurs années en freelance comme graphiste et développeur web, j'ai constaté que répondre efficacement aux attentes des clients nécessitait non seulement du temps, mais surtout une expertise approfondie dans chaque domaine de la communication. C'est pourquoi je collabore en fonction des projets avec des experts dans leur domaine (graphistes, développeurs, vidéastes, etc.) pour offrir des services réactifs et des prestations de qualité supérieure.</p>

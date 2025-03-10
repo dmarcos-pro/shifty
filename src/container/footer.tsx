@@ -19,22 +19,22 @@ const Footer = () => {
     <footer className="border-t dark:border-gray-600 py-12">
       <div className="container">  
         <aside className='flex gap-12'>
-          <div className='flex-1'>
+          <div>
             <Link href="/">
               <Image
-                width={120}
-                height={80}
-                style={{ width: "100px", height: "auto" }}
+                width={150}
+                height={100}
+                // style={{ width: "100px", height: "auto" }}
                 src={logo.src}
                 alt={`logo-${content.short_name}`}
               />
             </Link>
-            <p
+            {/* <p
               className="mt-4"
-              dangerouslySetInnerHTML={{ __html: content.baseline }}
-            />
+              dangerouslySetInnerHTML={{ __html: content.hero.home.intro }}
+            /> */}
           </div>
-          <div className='flex-none flex justify-end gap-12'>
+          <div className='flex-1 flex justify-end gap-12'>
             <div className='text-sm'>
               <p className='font-bold mb-2 text-base'>Nos services</p>
               <ul>
@@ -63,18 +63,18 @@ const Footer = () => {
                 <li className='py-1'>Mentions légales</li>
                 <li className='py-1'>CGV</li>
               </ul>
-              <p className='text-sm flex my-4 gap-2'>
-                <Instagram size={16} />
-                <Instagram size={16} />
-                <Instagram size={16} />
-                <Instagram size={16} />
-              </p>
             </div>
           </div>
         </aside>
         <div className='flex justify-between items-center gap-4 pt-8 mt-8 border-t dark:border-gray-600'>
-          <p className='mt-2 text-sm'>{content.name} © 2012 - {currentYear}</p>
-          <div className='gap-4 flex'>
+          <div className='text-sm flex my-4 gap-2'>
+            <Instagram size={16} />
+            <Instagram size={16} />
+            <Instagram size={16} />
+            <Instagram size={16} />
+          </div>
+          <p className='mt-2 text-sm'>{content.name} ©{currentYear}</p>
+          {/* <div className='gap-4 flex'>
             <Button asChild>
               <Link href={`mailto:${content.contact.url}`}>
                 <Send size={16} className='mr-1' />
@@ -87,7 +87,7 @@ const Footer = () => {
                 Whatsapp
               </Link>
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

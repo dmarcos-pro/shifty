@@ -2,141 +2,94 @@
 import Heading from "@/lib/components/heading"
 import { Button } from "@/lib/components/ui/button"
 import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
-import { fetchProjects, fetchNav } from "@api"
 import content from "@contentJson"
 import logo from "@images/logo.png"
-import { type HeroBannerProject } from "@type/component"
 import Image from "next/image"
 import Link from "next/link"
-import { useEffect, useRef, useState } from "react"
-import { useQuery } from "react-query"
 import { animated } from "react-spring"
-import { Send, Layers } from 'lucide-react'
+import { Send, CornerLeftDown } from 'lucide-react'
 
 const name = process.env.NAME as string
 
-const HeroBanner = () => {
-  const counterRef = useRef<HTMLDivElement>(null)
-  const [counter, setCounter] = useState<number>(0)
-  const sizeImgRef = 100
-  const marginRef = 50
-  const [increment, setIncrement] = useState<boolean>(true)
-  const { ref: animate, fadeIn } = UseFadeInAnimation("fadeIn")
-  const { ref: animateClient, fade } = UseFadeInAnimation("fade")
-  const { data: nav } = useQuery("nav", () => fetchNav())
-  const navService = nav ? nav.filter((item:any) => item.name === "Services") : []
+type heroProps = {
+  type?: 'home' | 'services' | 'studio'
+}
 
-  const {
-    data: projects,
-    isLoading,
-    isError,
-  } = useQuery("projects", () => fetchProjects())
+type heroCtaProps = {
+  content: string
+  variant: buttonVariantProps
+  url: string
+  icon?: {
+    name: string
+    size: number
+    class?: string
+  }
+  image?: {
+    src: string
+    alt: string
+    style: string
+  }
+}
 
-  useEffect(() => {
-    if (!isLoading && !isError && projects) {
-      const imgWidth = projects.length * (sizeImgRef + marginRef)
-      const sizeCounterBox = counterRef.current
-        ? counterRef?.current?.clientWidth
-        : 0
+type buttonVariantProps = "noBorder" | "outline" | "outlineDark" | "outlineLight" | "fullDark" | "green" | "white" | "square" | "default" | undefined | null;
 
-      const interval = setInterval(() => {
-        if (increment) {
-          setCounter((prevCounter) => prevCounter + 1)
-          if (counter >= imgWidth - sizeCounterBox) {
-            setIncrement(false)
-          }
-        } else {
-          setCounter((prevCounter) => prevCounter - 1)
-          if (counter <= 0) {
-            setIncrement(true)
-          }
-        }
-      }, 20)
+const HeroBanner = ({ type = 'home' }: heroProps) => {
+  const { ref: animate, fade } = UseFadeInAnimation("fade")
 
-      return () => {
-        clearInterval(interval)
-      }
-    }
-  }, [isLoading, isError, projects, counter, sizeImgRef, increment])
-
-  if (isLoading) return <div>Loading...</div>
-  if (isError) return <div>Error fetching data...</div>
-
-  const getImage = (id: string) => {
-    return require(`@images/project/logo/${id}.png`)
+  const CATEGORY_ICONS = {
+    send: Send,
+    corner: CornerLeftDown
+  }
+  
+  const getImage = (name: string) => {
+    return require(`@images/heroBanner/${name}`)
   }
 
   return (
     <section
-      id="hero-banner"
-      className="overflow-hidden relative"
+      id={`hero-banner-${type}`}
+      className="overflow-hidden"
     >
-      <animated.div ref={animate} style={fadeIn} className="transition delay-2 container text-center mt-32 mb-24">
+      <div className='absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-b from-blue-300 -z-0'></div>
+      <animated.div ref={animate} style={fade} className="transition delay-1 container-lg text-center mt-48 mb-24 relative z-1">
         <figure className="table mx-auto my-10">
           <Image
-            width={120}
+            width={150}
             height={80}
-            style={{ width: "120px", height: "auto" }}
             src={logo.src}
             alt={`Logo ${name}`}
           />
         </figure>
-        <Heading tag="h1" content={content.catch_phrase} />
+        <Heading tag="h1" content={content.hero[type].h1} />
         <p
-          className="mt-4"
-          dangerouslySetInnerHTML={{ __html: content.baseline }}
+          className="mt-4 text-lg"
+          dangerouslySetInnerHTML={{ __html: content.hero[type].intro }}
         />
-        <div className="flex gap-4 justify-center my-10">
-          <Button
-            asChild
-            size="lg"
-          >
-            <Link href={`mailto:${content.contact.url}`}>
-              <Send size={16} className='mr-2' />
-              {content.contact.content}
-            </Link>
-          </Button>
-          <Button
-            asChild
-            size="lg"
-            variant="noBorder"
-          >
-            <Link href={`${navService[0].link}`}>
-              <Layers size={`16`} className='mr-2' />
-              Voir nos services
-            </Link>
-          </Button>
+        <div className="flex gap-4 justify-center mt-16">
+          {content.hero[type] && content.hero[type].cta?.map((cta: heroCtaProps, index: number) => {
+            const CustomIcon = CATEGORY_ICONS[cta?.icon?.name as keyof typeof CATEGORY_ICONS] || null
+            let img = ''
+            if (cta.image) {
+              img = getImage(cta?.image?.src)
+            }
+            return (
+              <Button
+                key={`herobanner-cta-${index}`}
+                asChild
+                size="lg"
+                variant={cta.variant as buttonVariantProps || 'default'}
+              >
+                <Link href={cta.url}>
+                  {CustomIcon && !cta.image ? <CustomIcon size={cta?.icon?.size} className={`${cta.icon?.class ? cta.icon.class : ''} mr-2`} /> : null}
+                  {cta.image ? <Image src={img} alt={cta?.image?.alt} width={100} height={100} className="top-[45px] relative -rotate-[10deg] -left-2" /> : null}
+                  {cta.content}
+                </Link>
+              </Button>
+            )
+          })}
         </div>
       </animated.div>
-      <animated.div ref={animateClient} style={fade} className="p-12 w-full bg-white transition delay-12">
-        <div ref={counterRef} className='overflow-hidden'>
-          <div className="flex relative" style={{ left: `-${counter}px` }}>
-            {projects &&
-              projects.map((project: HeroBannerProject, index: number) => {
-                const img = getImage(project.id)
-                return (
-                  <figure
-                    key={`ref-${project.id}-${index}`}
-                    style={{
-                      flex: `1 0 ${sizeImgRef}px`,
-                      marginRight: marginRef,
-                    }}
-                  >
-                    <Link href={project.url} target="_blank">
-                      <Image
-                        style={{opacity: '0.5'}}
-                        height={48}
-                        width={sizeImgRef}
-                        src={img}
-                        alt={project.brand}
-                      />
-                    </Link>
-                  </figure>
-                )
-              })}
-          </div>
-        </div>
-      </animated.div>
+      
     </section>
   )
 }

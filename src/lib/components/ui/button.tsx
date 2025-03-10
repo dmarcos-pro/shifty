@@ -4,7 +4,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import * as React from "react"
 
 const buttonVariants = cva(
-  "rounded-full border border-2 border-blue cursor-pointer text-sm inline-flex items-center justify-center whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-20",
+  "rounded-full border border-2 border-blue cursor-pointer inline-flex items-center justify-center whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-20",
   {
     variants: {
       variant: {
@@ -23,12 +23,14 @@ const buttonVariants = cva(
         green:
           "border-green text-green-800 hover:bg-green hover:text-white dark:text-green-400 dark:border-green-400 hover:dark:bg-green-400 hover:dark:text-green",
         white:
-          "border-white bg-white text-blue-900 hover:bg-blue hover:text-white" 
+          "border-white bg-white text-blue-900 hover:bg-blue hover:text-white",
+        square:
+          "rounded-none bg-blue text-white hover:bg-transparent hover:text-gray-900 hover:dark:text-gray-200 transition"
       },
       size: {
-        default: "py-3 px-5",
-        sm: "py-2 px-3 border-2",
-        lg: "py-4 px-8",
+        default: "py-3 px-6",
+        sm: "py-3 px-4 border-2 text-sm",
+        lg: "py-5 px-10",
         icon: "h-10 w-10 border-2",
       },
     },

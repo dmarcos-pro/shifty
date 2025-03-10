@@ -41,9 +41,15 @@
     @apply font-title;
   }
 
-  
-  
 }
+
+@layer base {
+  * {
+    scroll-behavior: smooth;
+    line-height: 1.4;
+  }
+}
+
 
 .bg-orange {
   background-color: var(--color-orange);;
@@ -61,32 +67,19 @@
   @apply container;
   max-width: 1200px;
 }
+.container-lg {
+  @apply container;
+  max-width: 1600px;
+}
 
-
-@layer base {
-  * {
-    scroll-behavior: smooth;
-    line-height: 1.4;
-  }
-  
-  /*ul {
-    margin-top: 8px;
-  }
-  li {
-    padding: 5px 0 0 16px;
-    position: relative;
-    &::before {
-      content: "•";
-      color: var(--color-cyan);
-      position: absolute;
-      top: 4px;
-      left: 0;
-    }
-  }*/
-  /** {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }*/
+@font-face {
+  font-family: 'Neulis';
+  src: url('/font/NeulisAlt-ExtraBold.woff2') format('eot'),
+       url('/font/NeulisAlt-ExtraBold.woff2') format('otf'),
+       url('/font/NeulisAlt-ExtraBold.woff2') format('svg'),
+       url('/font/NeulisAlt-ExtraBold.woff2') format('ttf'),
+       url('/font/NeulisAlt-ExtraBold.woff2') format('woff2'),
+       url('/font/NeulisAlt-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }

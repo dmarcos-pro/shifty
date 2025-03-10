@@ -19,14 +19,14 @@ const Services = () => {
   if (servicesError) return <div>Error fetching data...</div>
 
   return (
-    <section id="services" className="py-48">
-      <div className="container">
-        <animated.header ref={animate} style={fade} className="text-center">
+    <section id="services" className="px-10">
+      <animated.div ref={animate} style={fade} className="container-lg p-24 bg-gradient-to-b from-white rounded-lg relative transition delay-6 shadow-[0px_-50px_30px_-50px_rgba(0,0,0,0.2)]">
+        <header className="text-center">
           <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
             {content.services.subtitle}
           </span>
           <Heading tag="h2" content={content.services.title} />
-        </animated.header>
+        </header>
         <animated.div ref={animate} style={fade} className={`transition delay-3`}>
           <div className='flex justify-center mt-8 gap-2'>
             <Button 
@@ -47,7 +47,7 @@ const Services = () => {
             </Button>
           </div>
         </animated.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 container">
           {services &&
             services
             .filter((service: ServicesProps) => !service.monthly === monthly)
@@ -66,7 +66,7 @@ const Services = () => {
             )
           )}
         </div>
-      </div>
+      </animated.div>
     </section>
   )
 }

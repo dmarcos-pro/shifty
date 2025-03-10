@@ -13,7 +13,7 @@ import {
   BreadcrumbSeparator 
 } from "@/lib/components/ui/breadcrumb"
 
-export type heroProps = {
+type heroProps = {
   name: "services" | "studio"
 }
 
@@ -27,7 +27,7 @@ const Hero = ({ name }: heroProps) => {
     >
       <animated.div ref={animate} style={fade} className="container">
         <Heading tag="h1" content={content[name].h1} />
-        <Breadcrumb className='my-4'>
+        <Breadcrumb className='mt-4'>
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Accueil</BreadcrumbLink>
@@ -38,7 +38,7 @@ const Hero = ({ name }: heroProps) => {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <p className="leading-16 text-xl" dangerouslySetInnerHTML={{ __html: content[name].introduction }} />
+        <p className="leading-16 text-xl mt-16" dangerouslySetInnerHTML={{ __html: content[name].introduction }} />
       </animated.div>
     </section>
   )

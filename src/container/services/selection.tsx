@@ -7,11 +7,12 @@ import { useQuery } from "react-query"
 import { PenTool, MousePointer2, Camera, ChevronRight, CheckCircle, Circle } from 'lucide-react'
 
 type SelectedServicesProps = {
-  category: 'branding' | 'digital' | 'social_media';
-  cat: string;
-  setCategory: (id: 'branding' | 'digital' | 'social_media') => void;
-  setServiceSelected: (index: number) => void;
-  serviceSelected: number;
+  category: 'branding' | 'digital' | 'social_media'
+  cat: string
+  setCategory: (id: 'branding' | 'digital' | 'social_media') => void
+  setServiceSelected: (index: number) => void
+  serviceSelected: number
+  monthly: boolean
 }
 
 const SelectedService = ({
@@ -65,30 +66,31 @@ const SelectedService = ({
 
   return <div className='sticky top-16'>
     <header className="flex items-center gap-1 text-sm">
-      <span>Je recherche une prestation</span>
-      <div>
-        <Select
-            value={category}
-            onValueChange={(value: 'branding' | 'digital' | 'social_media') => handleService(value)}
-        >
-          <SelectTrigger>
-            <SelectValue placeholder={CATEGORY_LABELS[category]} />
-          </SelectTrigger>
-          <SelectContent>
-            {services && services.filter((service: ServicesProps) => !service.monthly).map((service: ServicesProps, index: number) => (
+        <span>Je recherche une prestation</span>
+        <div>
+          <Select
+              value={category}
+              onValueChange={(value: 'branding' | 'digital' | 'social_media') => handleService(value)}
+              >
+            <SelectTrigger>
+              <SelectValue placeholder={CATEGORY_LABELS[category]} />
+            </SelectTrigger>
+            <SelectContent>
+              {services && services.filter((service: ServicesProps) => !service.monthly).map((service: ServicesProps, index: number) => (
                 <SelectItem
-                  key={`select-service-${index}`}
-                  value={service.id}
-                  className={`${category === service.id ? '' : 'text-gray-400'}`}
+                key={`select-service-${index}`}
+                value={service.id}
+                className={`${category === service.id ? '' : 'text-gray-400'}`}
                 >
-                  {service.category}
-                </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-      </div>
+                    {service.category}
+                  </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
     </header>
     <div>
+      
       {content.services.items[category].content.map((service, index: number) => {
         return <div
           key={`services-${index}`}
@@ -98,7 +100,6 @@ const SelectedService = ({
           <div className="flex gap-2 justify-between items-center">
             <p>{service.title}</p>
             {serviceSelected === index ? <CheckCircle size={15} className='' /> : <Circle size={15} className='text-gray-500' />}
-            {/* <p className='mt-2 text-sm text-gray-400'><TruncateText text={service.resume} length={85} /></p> */}
           </div>
         </div>
       })}

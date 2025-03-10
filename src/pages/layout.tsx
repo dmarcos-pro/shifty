@@ -1,7 +1,6 @@
 import Footer from "@container/footer"
 import Header from "@container/header"
 import { ThemeProvider } from "@lib/components/theme-provider"
-import { useScroll } from "framer-motion"
 import React from "react"
 
 export default function RootLayout({
@@ -9,7 +8,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const { scrollYProgress } = useScroll()
   return (
     <ThemeProvider
       attribute="class"

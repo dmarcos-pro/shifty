@@ -1,19 +1,19 @@
 import { cn } from "@lib/utils"
 import { type HeadingProps } from "@type/component"
 // import { Anton as FontTitle } from "next/font/google"
-import { DM_Serif_Text as FontTitle } from "next/font/google"
+import { Figtree as FontTitle } from "next/font/google"
 
 export const fontTitle = FontTitle({
   subsets: ["latin"],
-  weight: "400",
+  weight: "700",
 })
 
-const Heading = ({ tag, content, className }: HeadingProps) => {
+const Heading = ({ tag, content, className, font }: HeadingProps) => {
   return (
     <>
       {tag === "h1" && (
         <h1
-          className={cn("text-h1", fontTitle.className, `${className}`)}
+          className={cn("text-h1", `${className}`)}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )}
@@ -25,7 +25,7 @@ const Heading = ({ tag, content, className }: HeadingProps) => {
       )}
       {tag === "h3" && (
         <h3
-          className={cn("text-md", fontTitle.className)}
+          className={cn("text-md", font ? font : fontTitle.className)}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       )}

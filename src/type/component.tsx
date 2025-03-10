@@ -36,6 +36,7 @@ export type ServicesProps = {
   isNew: string
   monthly?: string
   order?: number
+  transition?: boolean
 }
 
 export type ServiceAnim = {
@@ -46,6 +47,7 @@ export type HeadingProps = {
   tag: string
   content: string
   className?: string
+  font?: boolean | string
 }
 export type HeaderSubMenuItem = {
   name: string

@@ -53,7 +53,7 @@ const Simulator = () => {
   };
 
   return (
-    <section id="simulator" className="pb-48">
+    <section id="simulator" className="pt-24 pb-48">
       <div className="container">
         <animated.header ref={animate} style={fade} className="text-center">
           <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">

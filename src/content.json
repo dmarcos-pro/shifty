@@ -1,17 +1,52 @@
 {
   "short_name": "Shifty",
   "name": "Studio Shifty",
-  "catch_phrase": "Optimise le potentiel de&nbsp;ta&nbsp;marque&nbsp;!",
-  "baseline": "Shifty, le studio spécialisé en stratégie de marque, identité visuelle et projets&nbsp;digitaux.",
   "contact": {
     "content": "Nous contacter",
     "url": "davidmarcos.pro@gmail.com"
   },
+  "hero" : {
+    "home" : {
+      "h1": "Booste ta visibilité&nbsp;!",
+      "intro": "Shifty, le studio spécialisé en stratégie de marque, identité visuelle et projets digitaux.",
+      "cta": [{
+        "content": "Nous contacter",
+        "url": "/",
+        "icon": {
+          "name": "send",
+          "size": 16
+        }
+      },{
+        "content": "Estimation gratuite",
+        "url": "#simulation",
+        "variant": "noBorder"
+      }]
+    },
+    "services" : {
+      "h1" : "L'expertise qui fait la&nbsp;différence&nbsp;!",
+      "intro" : "Dans un monde numérique en constante évolution, transformer ton audience<br>en clients fidèles avec des solutions innovantes et adaptées est primordial !",
+      "cta": [{
+        "content": "Notre offre",
+        "url": "#services",
+        "image" : {
+          "src": "arrow-back.svg",
+          "alt": "Illustration - Flèche vers le bas"
+        },
+        "variant": "noBorder"
+      },{
+        "content": "Abonnement mensuel",
+        "url": "#simulation",
+        "variant": "noBorder"
+      }]
+    },
+    "studio": {
+      "h1": "Une équipe à ton écoute",
+      "intro": "Pour répondre aux besoins de nos clients, on a constitué une équipe d'experts passionnés et créatifs, prêts à relever tous les défis pour faire briller ta marque !" 
+    }
+  },
   "studio" : {
-    "h1": "Une équipe à ton écoute",
-    "subtitle": "Pourquoi nous choisir&nbsp;?",
-    "desc": "Le studio Shifty met son expertise au service de la transformation digitale de ta marque. Grâce à notre collaboration, tu bénéficies d'un accompagnement sur-mesure pour atteindre efficacement tes objectifs de croissance et de fidélisation.",
-    "introduction": "Pour répondre aux besoins de nos clients, on a constitué une équipe d'experts passionnés et créatifs, prêts à relever tous les défis pour faire briller ta marque !",
+    "subtitle": "L’expertise qui fait la différence",
+    "desc": "Bénéficie d'un accompagnement sur-mesure pour atteindre efficacement tes objectifs de&nbsp;croissance et&nbsp;de&nbsp;fidélisation",
     "cta": "Découvrir le studio",
     "items": [{
         "title": "Année de création",
@@ -125,10 +160,8 @@
     ]
   },
   "services" : {
-    "h1" : "Booste ton projet&nbsp;!",
-    "title": "Des services flexibles pour ton projet",
+    "title": "Une offre flexible qui s'adapte à ton projet",
     "subtitle": "Proposer. Personnaliser. Réaliser.",
-    "introduction" : "Dans un monde numérique en constante évolution, nos pôles Digital, Branding et Social&nbsp;Media te permettent de transformer ton audience en clients fidèles avec des solutions innovantes et adaptées.",      
     "items": {
       "digital": {
         "resume": {
@@ -143,7 +176,7 @@
         "content": [
           {
             "title": "Wireframe et Maquette",
-            "resume": "On crée des maquettes et des wireframes intuitifs et fonctionnels pour donner vie à l'architecture de ton site web. Ces étapes permettent de définir la navigation, l'agencement, et le design final avant de passer à la phase de développement.",
+            "resume": "Structure et optimise la navigation, le design et l'expérience utilisateur",
             "list": [
               {
                 "title": "Notre expertise",
@@ -197,7 +230,7 @@
             ]
           },{
             "title": "Landing page",
-            "resume": "On crée des landing pages performantes et attrayantes qui maximisent la conversion de tes visiteurs en clients. Que ce soit pour une campagne publicitaire, un lancement de produit ou une collecte d'informations, une landing page bien conçue optimise l'engagement et les résultats.",
+            "resume": "Maximise la conversion et optimise l'engagement de tes visiteurs",
             "list": [
               {
                 "title": "Notre expertise",
@@ -252,7 +285,7 @@
             ]
           }, {
             "title": "Site vitrine",
-            "resume": "On crée des sites vitrines élégants et fonctionnels pour présenter ton activité en ligne. Que tu sois une petite entreprise ou un entrepreneur individuel, ton site vitrine sera conçu pour attirer l'attention de tes visiteurs et refléter l'image de ta marque.",
+            "resume": "Présente l'entreprise et assure sa présence en ligne",
             "list": [
               {
                 "title": "Notre expertise",
@@ -300,7 +333,7 @@
             ]
           },{
             "title": "Site e-commerce",
-            "resume": "On conçoit des sites e-commerce performants et intuitifs pour t'aider à vendre tes produits en ligne. De l'interface utilisateur à la gestion des commandes, ton site e-commerce sera conçu pour maximiser les ventes tout en offrant une expérience d'achat agréable à tes clients.",
+            "resume": "Met en valeur les produits et maximise les ventes",
             "list": [
               {
                 "title": "Notre expertise",
@@ -356,7 +389,7 @@
         "content": [
           {
             "title": "Identité visuelle",
-            "resume": "On crée un logo sur-mesure qui reflète l’essence de ta marque. Plus qu’une simple image, un logo est le visage de ton entreprise : il attire, marque les esprits et communique tes valeurs en un coup d’œil.",
+            "resume": "Marque les esprits et communique les valeurs en un coup d’œil",
             "list": [
               {
                 "title": "Notre expertise",
@@ -436,7 +469,7 @@
             ]
           },{
             "title": "Charte graphique",
-            "resume": "On conçoit une charte graphique complète et cohérente qui reflète l'identité visuelle de ta marque. Cette charte servira de guide pour l’utilisation de ton logo, des couleurs, des typographies, et des éléments visuels afin de garantir une communication uniforme et professionnelle sur tous tes supports.",
+            "resume": "Garantir une communication uniforme et professionnelle sur tous supports",
             "list": [
               {
                 "title": "Notre expertise",
@@ -515,7 +548,7 @@
             ]
           },{
             "title": "Flyer",
-            "resume": "On conçoit des flyers percutants qui attirent l'attention et communiquent efficacement ton message. Que ce soit pour un événement, une promotion ou un lancement, chaque flyer est conçu pour maximiser l'impact visuel et inciter à l'action.",
+            "resume": "Communique efficacement ton message (événement, promotion ou lancement) et incite à l'action",
             "list": [
               {
                 "title": "Notre expertise",
@@ -590,7 +623,7 @@
             ]
           },{
             "title": "Carte de visite",
-            "resume": "On conçoit des cartes de visite élégantes et professionnelles qui reflètent l'identité de ton entreprise. Une carte de visite bien conçue permet de laisser une première impression mémorable et de renforcer l'image de marque de ton entreprise.",
+            "resume": "Reflète les valeurs et renforce l'image de marque",
             "list": [
               {
                 "title": "Notre expertise",
@@ -1010,7 +1043,7 @@
       "id": "loreal-luxe",
       "brand": "L'Oréal Luxe",
       "category": ["Digital"],
-      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "url": "",
       "main": true,
       "desc": [{ 
         "title": "A/B Testing pour améliorer le taux de conversion",
@@ -1024,14 +1057,13 @@
         "title": "Marques concernées",
         "result": [
           {"text": "Yves Saint Laurent, Lancôme, Kiehl’s, Mugler, Urban Decay, Biotherm"}
-          
         ]
       }]
     },{
       "id": "new-balance",
       "brand": "New Balance",
       "category": ["Digital"],
-      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "url": "https://www.newbalance.fr/",
       "main": true,
       "desc": [{ 
         "title": "A/B Testing pour améliorer le parcours utilisateur",
@@ -1048,7 +1080,7 @@
       "id": "tcv",
       "brand": "Tennis Club Vendargues",
       "category": ["Branding"],
-      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "url": "https://tennisclubvendargues.fr/",
       "main": true,
       "desc": [{ 
         "title": "Création du logo",
@@ -1066,7 +1098,7 @@
       "id": "leyders-associates",
       "brand": "Leyders Associates",
       "category": ["Digital", "Branding"],
-      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "url": "https://www.leyders-associates.com/",
       "main": true,
       "desc": [{ 
         "title": "Création de la charte graphique",
@@ -1088,7 +1120,7 @@
       "id": "yellow-korner",
       "brand": "YellowKorner",
       "category": ["Digital"],
-      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "url": "https://www.yellowkorner.com/fr/home",
       "main": true,
       "desc": [{ 
         "title": "Refonte du site e-commerce",
@@ -1105,7 +1137,7 @@
       "id": "ooreka",
       "brand": "Ooreka",
       "category": ["Digital", "Branding"],
-      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "url": "https://www.ooreka.fr/",
       "main": false,
       "desc": [{
         "title": "Refonte du site",
@@ -1119,10 +1151,28 @@
         ]
       }]
     }, {
+      "id": "studio-huguette",
+      "brand": "Studio Huguette",
+      "category": ["Branding"],
+      "url": "https://www.studiohuguette.fr/",
+      "main": true,
+      "desc": [{ 
+        "title": "Création du logo",
+        "result": [
+          {"text": "Analyse des valeurs et de l'identité de marque"},
+          {"text": "Recherche et benchmarking des tendances du secteur"},
+          {"text": "Création de moodboards pour inspirer le design"},
+          {"text": "Choix de palettes de couleurs stratégiques et adaptées"},
+          {"text": "Simplification et optimisation pour une reconnaissance instantanée"},
+          {"text": "Tests de lisibilité et d'impact sur différents supports"},
+          {"text": "Fourniture des fichiers sources et des déclinaisons"}
+        ]
+      }]
+    },{
       "id": "yotta",
       "brand": "Yotta",
       "category": ["Branding", "Digital"],
-      "url": "https://zupimages.net/up/23/15/2mpy.png",
+      "url": "https://www.yotta.fr",
       "main": true,
       "desc": [{ 
         "title": "Création du logo",
@@ -1132,7 +1182,7 @@
           {"text": "Fourniture des fichiers sources et des déclinaisons"}
         ]
       }, {
-        "title" : "Creation du site vitrine",
+        "title" : "Création du site vitrine",
         "result": [
           {"text": "Conception de wireframes et de maquettes pour structurer le site"},
           {"text": "Mise en place d'un système de gestion de contenu (CMS)"},
@@ -1142,7 +1192,7 @@
     }]
   },
   "feedback": {
-    "tag": "À propos du studio",
+    "tag": "Et si tu étais le prochain ?",
     "title": "Ils nous ont fait confiance"
   },
   "simulator": {

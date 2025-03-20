@@ -39,6 +39,20 @@ export type ServicesProps = {
   transition?: boolean
 }
 
+export type ServicesIntroProps = {
+  id: string,
+  category?: string,
+  title: string,
+  subtitle: string,
+  price: string,
+  isNew?: boolean,
+  transition?: boolean
+  subscription?: boolean
+  desc?: { title: string }[]
+  availability?: number,
+  indexation?: number
+}
+
 export type ServiceAnim = {
   box: boolean
 }

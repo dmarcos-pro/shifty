@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "@/lib/components/ui/card"
 import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
-import { ServicesProps } from "@/type/component"
+import { ServicesIntroProps } from "@/type/component"
 import content from "@contentJson"
 import Link from "next/link"
 import { animated } from "react-spring"
@@ -43,22 +43,24 @@ type ServiceContent = {
 
 const Service = ({
   id,
-  category,
-  index,
+  indexation = 0,
   isNew,
-  availability,
+  title,
+  subtitle,
   price,
-  monthly,
-  transition = true
-}: ServicesProps) => {
-  const delayClass = transition && index < delays.length ? delays[index] : ""
+  transition = true,
+  subscription = false,
+  availability,
+  desc
+}: ServicesIntroProps) => {
+  const delayClass = transition && indexation < delays.length ? delays[indexation] : ""
   const { ref: animate, fade } = transition ? UseFadeInAnimation("fadeIn") : { ref: null, fade: null }
-  const services = (content.services.items as ServiceContent)[id]
+  // const services = (content.services.items as ServiceContent)[id]
   
   return (
     <animated.div
       ref={animate}
-      style={transition ? fade : undefined}
+      style={transition ? fade || undefined : undefined}
       className={`transition ${delayClass} flex`}
     >
       <Link href={`/services?cat=${id}`} className='flex' passHref>
@@ -71,22 +73,22 @@ const Service = ({
           <CardHeader>
             <div className="flex flex-row items-end justify-between">
               <CardTitle className={`${!!isNew ? 'text-orange' : ''}`}>
-                <Heading tag="h3" content={category} font />
+                <Heading tag="h3" content={title} font />
               </CardTitle>
             </div>
-            <CardDescription className='text-gray-500 dark:text-gray-300 text-center text-sm'>{services.resume.title}</CardDescription>
+            <CardDescription className='text-gray-500 dark:text-gray-300 text-center text-sm'>{subtitle}</CardDescription>
           </CardHeader>
           <CardContent>
             {price &&
               <div className="mb-6 text-center flex flex-col justify-between items-center">
                 <p className="text-md tracking-wide flex flex-col">
                   <span className="">
-                    {monthly ? ( <>
-                      <span className='text-xl font-bold'>{price}€</span>
+                    {subscription ? ( <>
+                      <span className='text-xl font-bold'>{price}</span>
                       <span className='mt-1 ml-1 text-xs uppercase'>/ mois</span> 
                     </>) : ( <>
                       <span className='mb-1 text-xs block uppercase'>À partir de</span> 
-                      <span className='text-xl font-bold'>{price}€</span>
+                      <span className='text-xl font-bold'>{price}</span>
                     </>
                     )}
                   </span>
@@ -94,9 +96,9 @@ const Service = ({
               </div>
             }
             <ul>
-              {services.resume.desc?.map((cat, index: number) => (
+              {desc?.map((cat, index: number) => (
                 <li key={`service-resume-${index}`} className="flex py-1">
-                  {monthly ? 
+                  {subscription ? 
                     <Check className="mr-2 text-green dark:text-green-300 relative -top-[2px]" width="20" />
                     :
                     <ChevronRight className="mr-1 relative -top-[2px]" width="16" />
@@ -108,15 +110,15 @@ const Service = ({
           </CardContent>
           <CardFooter>
             <div className="grid items-center justify-center mt-8 gap-4">
-              <Button asChild size={'sm'} variant={monthly && (availability === undefined || availability === null || availability <= 0) ? 'outlineLight' : 'default'}>
+              <Button asChild size={'sm'} variant={subscription && (availability === undefined || availability === null || availability <= 0) ? 'outlineLight' : 'default'}>
                 <a href={`/`}>
-                  {monthly ?
+                  {subscription ?
                     availability === undefined || availability === null || availability <= 0 ? "Me notifier de la disponibilité" : "Je souhaite m'abonner"
                   : "Je découvre les offres"
                   }
                 </a>
               </Button>
-              {monthly ?
+              {subscription ?
                 availability !== undefined && availability !== null && availability > 0 &&
                   <p className='text-center text-sm'>{availability > 1 ? `Plus que ${availability} places disponibles` : 'Dernière place disponible'}</p>
                 ||

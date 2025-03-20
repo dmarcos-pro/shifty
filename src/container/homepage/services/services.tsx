@@ -1,6 +1,6 @@
 "use client"
 import { fetchServices } from "@/api/index"
-import { type ServicesProps } from "@/type/component"
+import { type ServicesProps, type ServicesIntroProps } from "@/type/component"
 import content from "@contentJson"
 import Heading from "@lib/components/heading"
 import { useQuery } from "react-query"
@@ -48,7 +48,7 @@ const Services = () => {
           </div>
         </animated.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 container">
-          {services &&
+          {/* {services &&
             services
             .filter((service: ServicesProps) => !service.monthly === monthly)
             .sort((a: ServicesProps, b: ServicesProps) => (a.order ?? 0) - (b.order ?? 0))
@@ -64,6 +64,35 @@ const Services = () => {
                 monthly={service.monthly}
               />
             )
+          )} */}
+          {monthly ? (
+            content.service.items.intro.map((service: ServicesIntroProps, index: number) => (
+              <Service
+                key={`service-${index}`}
+                id={service.id}
+                indexation={index}
+                isNew={service.isNew}
+                title={service.title}
+                subtitle={service.subtitle}
+                price={service.price}
+                desc={service.desc}
+              />
+            ))
+          ) : (
+            content.service.subscription
+            .map((sub: ServicesIntroProps, index: number) => (
+              <Service
+                key={`service-${index}`}
+                id={sub.id}
+                indexation={index}
+                title={sub.title}
+                subtitle={sub.subtitle}
+                price={sub.price}
+                desc={sub.desc}
+                subscription={true}
+                availability={sub.availability}
+              />
+            ))
           )}
         </div>
       </animated.div>

@@ -16,7 +16,7 @@ module.exports = {
   		center: true,
   		padding: '32px',
   		screens: {
-  			'md': '1400px'
+  			md: '1400px'
   		}
   	},
   	extend: {
@@ -59,8 +59,14 @@ module.exports = {
   			xl: '30px'
   		},
   		fontFamily: {
-  			sans: ['var(--font-sans)', ...fontFamily.sans],
-  			title: ['Neulis', ...fontFamily.sans]
+  			sans: [
+  				'var(--font-sans)',
+                    ...fontFamily.sans
+                ],
+  			title: [
+  				'Neulis',
+                    ...fontFamily.sans
+                ]
   		},
   		fontSize: {
   			h1: [
@@ -179,9 +185,9 @@ module.exports = {
   			marquee: 'marquee var(--duration) infinite linear',
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
   		},
-		rotate: {
-			'20': '20deg',
-		}
+  		rotate: {
+  			'20': '20deg'
+  		}
   	}
   },
   plugins: [require("tailwindcss-animate")],

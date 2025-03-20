@@ -6,7 +6,8 @@ import Layout from "./layout"
 import AnimatedCursor from 'react-animated-cursor'
 
 // import { Inter as FontSans } from "next/font/google"
-import { Figtree as FontSans } from "next/font/google"
+// import { Figtree as FontSans } from "next/font/google"
+import { Poppins as FontSans } from "next/font/google"
 export const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",

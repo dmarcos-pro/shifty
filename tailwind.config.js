@@ -70,8 +70,8 @@ module.exports = {
   		},
   		fontSize: {
   			h1: [
-  				'9rem',
-  				'10rem'
+  				'6rem',
+  				'7rem'
   			],
   			h3: [
   				'1.2rem',

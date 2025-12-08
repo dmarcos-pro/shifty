@@ -4,50 +4,37 @@ import content from "@contentJson"
 import Heading from "@lib/components/heading"
 import { animated } from "react-spring"
 import Task from '@/container/homepage/simulator/task'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import { Button } from '@/lib/components/ui/button'
 import { Send, MessageCircleMore, MoveRight } from "lucide-react"
+import { useQuery } from "react-query"
+import { getServices } from '@/api/strapi.server'
+
 
 const Simulator = () => {
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
-  const tasks = content.simulator.tasks
   const [category, setCategory] = useState('Tout')
-  const [categoryList, setCategoryList] = useState<string[]>([])
   const [activeTask, setActiveTask] = useState<{id: string; name: string, price: number}[]>([])
   const [price, setPrice] = useState(0)
 
-  useEffect(() => {
-    const categories : string[] = [];
-    tasks.map((item) => {
-      if (!categories.includes(item.category)) {
-        categories.push(item.category);
-      }
-      return categories;
-    });
-    setCategoryList(categories);
-  }, [tasks]);
-
-  const showFilter = (cat: string) => {
-    setCategory(cat);
-  }
+  const { data: services, isLoading, isError } = useQuery("services", () => getServices())
+    
+  if (isLoading) return <div>Loading...</div>
+  if (isError) return <div>Error fetching data...</div>
 
   const toggleTask = (id: string, name: string, price: number) => {
+    const numPrice = Number(price);
     
     setActiveTask((prev) => {
       const exists = prev.some((task) => task.id === id);
+      
       if (exists) {
+        setPrice((currentPrice) => currentPrice - numPrice);
         return prev.filter((task) => task.id !== id);
       } else {
-        return [...prev, { id, name, price }];
-      }
-    });
-    setPrice((prev) => {
-      const exists = activeTask.some((task) => task.id === id);
-      if (exists) {
-        return prev - price;
-      } else {
-        return prev + price;
+        setPrice((currentPrice) => currentPrice + numPrice);
+        return [...prev, { id, name, price: numPrice }];
       }
     });
   };
@@ -62,40 +49,17 @@ const Simulator = () => {
           <Heading tag="h2" content={content.simulator.title} />
           <p className='mt-4'>{content.simulator.content}</p>
         </animated.header>
-        <div className="flex gap-2 items-center justify-center my-8">
-          <Button
-            variant={category === "Tout" ? 'outline' : 'outlineLight'}
-            size="sm"
-            className={`uppercase text-xs`}
-            onClick={(e) => { showFilter("Tout"); }}
-            >
-            Tous les services
-          </Button>
-          {categoryList.map((item, index) => (
-            <Button
-              key={`simulator-tag-${index}`}
-              variant={item === category ? 'outline' : "outlineLight"}
-              size="sm"
-              className={`uppercase text-xs`}
-              onClick={(e) => { showFilter(item); }}
-            >
-              {item}
-            </Button>
-          ))}
-        </div>
-        <div className='flex'>
+        <div className='flex mt-16'>
           <div className='flex-[9]'>
-            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {tasks.filter((item) => item.enabled).map((item, index: number) => (
+            <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {services?.data?.map((item: any, index: number) => (
                 <Task
-                  key={`simulator-task-${index}`}
+                  key={`simulator-task-${item.id}`}
                   id={item.id}
-                  name={item.name}
-                  image={item.image}
-                  price={item.price}
-                  category={item.category}
+                  name={item.title}
+                  price={Number(item.price)}
                   update={toggleTask}
-                  disabled={category === item.category || category === 'Tout' ? true : false}
+                  disabled={category === item.category.slug || category === 'Tout' ? true : false}
                 />
               ))}
             </ul>

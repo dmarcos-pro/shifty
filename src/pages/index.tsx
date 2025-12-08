@@ -4,6 +4,7 @@ import Head from "./head"
 import HeroBanner from "@/container/hero/heroBanner"
 import Services from "@/container/homepage/services/services"
 import Presentation from "@/container/homepage/studio/presentation"
+import Brand from "@/container/homepage/brand/brand"
 import Feedback from "@/container/homepage/feedback/feedback"
 import Simulator from "@/container/homepage/simulator/simulator"
 
@@ -14,8 +15,9 @@ const Page = () => {
     <>
       <Head>{name}</Head>
       <HeroBanner />
-      <Services />
+      <Brand />
       <Presentation />
+      <Services />
       <Feedback />
       <Simulator />
     </>

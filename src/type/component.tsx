@@ -48,7 +48,7 @@ export type ServicesIntroProps = {
   isNew?: boolean,
   transition?: boolean
   subscription?: boolean
-  desc?: { title: string }[]
+  desc?: { text: string }[]
   availability?: number,
   indexation?: number
 }
@@ -106,11 +106,16 @@ export type HeroBannerProject = {
   url: string
 }
 
-export type FeedbackContainer = {
-  text: string
-  who: string
-  job: string
-  brand: string
+export type BrandContainer = {
+  id: string
+  name: string
+  url: string
+  logo: {
+    url: string
+  }
+  feedback: {
+    comment: string
+  }
 }
 
 export type FooterService = {
@@ -150,4 +155,13 @@ export type ProjectsProps = {
 
 export type ProjectsRefs = {
   title: React.RefObject<HTMLDivElement>
+}
+
+export type TaskProps ={
+  name: string
+  id: string
+  // category: string
+  price: number
+  update: (id: string, name: string, price: number) => void
+  disabled: boolean
 }

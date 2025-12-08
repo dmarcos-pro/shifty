@@ -19,7 +19,7 @@ export default function RootLayout({
       <div className="App bg-gray-50 dark:bg-gray-800">
         <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </ThemeProvider>
   )

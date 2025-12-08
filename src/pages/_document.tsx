@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        {/* Favicon will be handled via next/head in individual pages or _app.tsx */}
       </Head>
       <body>
         <Main />

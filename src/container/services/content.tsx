@@ -48,7 +48,7 @@ const ContentServices = ({
     setContentDisplay(value)
   }
   
-  return <article>
+  return <div>
     <header className=''>
       <div className='flex justify-between items-center'>
         <Heading tag='h2' content={content.services.items[category].content[serviceSelected].title} />
@@ -127,7 +127,7 @@ const ContentServices = ({
         </div>
       </footer>
     )}
-  </article>
+  </div>
 }
 
 export default ContentServices

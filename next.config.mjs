@@ -6,6 +6,7 @@ const nextConfig = {
     NAME: 'Studio Shifty',
     SHORT_NAME: 'Shifty',
     SERVER_URL: 'http://localhost:3001',
+    NEXT_PUBLIC_STRAPI_URL: process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337',
   },
   webpack: (config, { isServer }) => {
     const currentDir = new URL(import.meta.url).pathname
@@ -27,12 +28,20 @@ const nextConfig = {
     return config
   },
   images: {
-    remotePatterns: [{
-      protocol: "https",
-      hostname: "zupimages.net",
-      port: "", // Facultatif
-      pathname: "/images/**", // Facultatif
-    }],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "zupimages.net",
+        port: "",
+        pathname: "/images/**",
+      },
+      {
+        protocol: new URL(process.env.NEXT_PUBLIC_STRAPI_URL).protocol.replace(':', ''),
+        hostname: new URL(process.env.NEXT_PUBLIC_STRAPI_URL).hostname,
+        port: new URL(process.env.NEXT_PUBLIC_STRAPI_URL).port,
+        pathname: "/uploads/**",
+      },
+    ],
   },
 }
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TaskProps } from '@/type/task';
+import { TaskProps } from '@/type/component';
 
 const Task = ({
   id,
@@ -9,6 +9,7 @@ const Task = ({
   disabled
 
 }: TaskProps) => {
+  console.log('🚀 > Task > price ==> ', price);
   const [selected, setSelected] = useState(false);
 
   const toggleActiveTask = (id: string, name: string, price: number) => {

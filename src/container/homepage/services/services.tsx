@@ -1,7 +1,4 @@
 "use client"
-import { fetchServices } from "@/api/index"
-import { type ServicesProps, type ServicesIntroProps } from "@/type/component"
-import content from "@contentJson"
 import Heading from "@lib/components/heading"
 import { useQuery } from "react-query"
 import { animated } from "react-spring"
@@ -9,91 +6,65 @@ import { UseFadeInAnimation } from "@/lib/hooks/use-fade-in-animation"
 import Service from "@/container/homepage/services/service"
 import { Button } from '@/lib/components/ui/button'
 import { useState } from 'react'
+import { getOffer } from '@/api/strapi.server'
+
+// Définir les types d'offres possibles
+const OFFER_TYPES = [
+  { value: "Service", label: "Prestation" },
+  { value: "Subscription", label: "Abonnement" }
+] as const
+
+type OfferType = typeof OFFER_TYPES[number]['value']
 
 const Services = () => {
-  const { data: services, isLoading: servicesLoading, error: servicesError, } = useQuery("services", () => fetchServices())
+  const { data: offer, isLoading, isError } = useQuery("offer", () => getOffer())
   const { ref: animate, fade } = UseFadeInAnimation("fadeIn")
-  const [monthly, setMonthly] = useState(true)
+  const [selectedType, setSelectedType] = useState<OfferType>("Service")
 
-  if (servicesLoading) return <div>Loading...</div>
-  if (servicesError) return <div>Error fetching data...</div>
+  if (isLoading) return <div>Loading...</div>
+  if (isError) return <div>Error fetching data...</div>
 
   return (
     <section id="services" className="px-10">
-      <animated.div ref={animate} style={fade} className="container-lg p-24 bg-gradient-to-b from-white rounded-lg relative transition delay-6 shadow-[0px_-50px_30px_-50px_rgba(0,0,0,0.2)]">
+      <animated.div ref={animate} style={fade} className="container-lg p-24 ">
         <header className="text-center">
           <span className="mb-3 block text-sm uppercase text-gray-400 dark:text-gray-500">
-            {content.services.subtitle}
+            {offer?.data?.subtitle}
           </span>
-          <Heading tag="h2" content={content.services.title} />
+          <Heading tag="h2" content={offer?.data?.title} />
         </header>
         <animated.div ref={animate} style={fade} className={`transition delay-3`}>
           <div className='flex justify-center mt-8 gap-2'>
-            <Button 
-              onClick={() => setMonthly(true)}
-              variant={monthly ? 'outline' : 'outlineLight'}
-              size="sm"
-              className={`uppercase text-xs`}
+            {OFFER_TYPES.map((type) => (
+              <Button 
+                key={type.value}
+                onClick={() => setSelectedType(type.value)}
+                variant={selectedType === type.value ? 'outline' : 'outlineLight'}
+                size="sm"
+                className={`uppercase text-xs`}
               >
-              Prestation
-            </Button>
-            <Button 
-              onClick={() => setMonthly(false)}
-              variant={monthly ? 'outlineLight' : 'outline'}
-              size="sm"
-              className={`uppercase text-xs`}
-              >
-              Abonnement
-            </Button>
+                {type.label}
+              </Button>
+            ))}
           </div>
         </animated.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 container">
-          {/* {services &&
-            services
-            .filter((service: ServicesProps) => !service.monthly === monthly)
-            .sort((a: ServicesProps, b: ServicesProps) => (a.order ?? 0) - (b.order ?? 0))
-            .map((service: ServicesProps, index: number) => (
+          {offer?.data?.list
+            .filter((service: any) => service.type === selectedType)
+            .map((service: any, index: number) => (
               <Service
-                key={`service-${index}`}
-                id={service.id}
-                category={service.category}
-                index={index}
-                isNew={service.isNew}
-                availability={service.availability}
-                price={service.price}
-                monthly={service.monthly}
-              />
-            )
-          )} */}
-          {monthly ? (
-            content.service.items.intro.map((service: ServicesIntroProps, index: number) => (
-              <Service
-                key={`service-${index}`}
+                key={`service-${service.id}`}
                 id={service.id}
                 indexation={index}
                 isNew={service.isNew}
                 title={service.title}
                 subtitle={service.subtitle}
                 price={service.price}
-                desc={service.desc}
+                desc={service.description}
+                subscription={selectedType === 'Subscription'}
+                availability={service.availability}
               />
-            ))
-          ) : (
-            content.service.subscription
-            .map((sub: ServicesIntroProps, index: number) => (
-              <Service
-                key={`service-${index}`}
-                id={sub.id}
-                indexation={index}
-                title={sub.title}
-                subtitle={sub.subtitle}
-                price={sub.price}
-                desc={sub.desc}
-                subscription={true}
-                availability={sub.availability}
-              />
-            ))
-          )}
+            ))}
         </div>
       </animated.div>
     </section>

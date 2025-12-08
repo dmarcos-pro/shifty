@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "offers",
+  "info": {
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "Offer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.offer"
+    },
+    "ctaService": {
+      "type": "string"
+    },
+    "ctaSubscriptionEnabled": {
+      "type": "string"
+    },
+    "ctaSubscriptionDisabled": {
+      "type": "string"
+    },
+    "subscriptionEnabled": {
+      "type": "string"
+    },
+    "subscriptionDisabled": {
+      "type": "string"
+    }
+  }
+}

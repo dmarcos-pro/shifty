@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_feedbacks",
+  "info": {
+    "displayName": "Feedback",
+    "icon": "thumbUp"
+  },
+  "options": {},
+  "attributes": {
+    "comment": {
+      "type": "text"
+    },
+    "who": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "price": {
+      "type": "biginteger"
+    }
+  }
+}

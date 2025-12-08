@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "promises",
+  "info": {
+    "singularName": "promise",
+    "pluralName": "promises",
+    "displayName": "Promise"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.quote"
+    }
+  }
+}

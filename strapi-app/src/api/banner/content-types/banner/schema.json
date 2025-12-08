@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "banners",
+  "info": {
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "Banner",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "scheduleName": {
+      "type": "string"
+    },
+    "scheduleUrl": {
+      "type": "string"
+    },
+    "sendMessageName": {
+      "type": "string"
+    },
+    "sendMessageUrl": {
+      "type": "string"
+    }
+  }
+}

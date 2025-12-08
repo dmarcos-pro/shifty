@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_shared_offers",
+  "info": {
+    "displayName": "Offer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Service",
+        "Subscription"
+      ]
+    },
+    "description": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.list"
+    },
+    "isNew": {
+      "type": "boolean",
+      "default": false
+    },
+    "availability": {
+      "type": "integer"
+    }
+  }
+}
